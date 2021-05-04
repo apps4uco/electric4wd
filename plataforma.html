@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="es" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Plataforma</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="proyecto.html"><strong aria-hidden="true">1.</strong> Proyecto</a></li><li class="chapter-item expanded "><a href="objetivos.html"><strong aria-hidden="true">2.</strong> Objetivos</a></li><li class="chapter-item expanded "><a href="cronograma.html"><strong aria-hidden="true">3.</strong> Cronograma</a></li><li class="chapter-item expanded "><a href="fase_1.html"><strong aria-hidden="true">4.</strong> Fase 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="fase_1_1.html"><strong aria-hidden="true">4.1.</strong> Fase 1.1</a></li></ol></li><li class="chapter-item expanded "><a href="fase_2.html"><strong aria-hidden="true">5.</strong> Fase 2</a></li><li class="chapter-item expanded "><a href="fase_3.html"><strong aria-hidden="true">6.</strong> Fase 3</a></li><li class="chapter-item expanded "><a href="fase_4.html"><strong aria-hidden="true">7.</strong> Fase 4</a></li><li class="chapter-item expanded "><a href="fase_5.html"><strong aria-hidden="true">8.</strong> Fase 5</a></li><li class="chapter-item expanded "><a href="fase_6.html"><strong aria-hidden="true">9.</strong> Fase 6</a></li><li class="chapter-item expanded "><a href="fase_7.html"><strong aria-hidden="true">10.</strong> Fase 7</a></li><li class="chapter-item expanded "><a href="fase_8.html"><strong aria-hidden="true">11.</strong> Fase 8</a></li><li class="chapter-item expanded "><a href="fase_9.html"><strong aria-hidden="true">12.</strong> Fase 9</a></li><li class="chapter-item expanded "><a href="fase_10.html"><strong aria-hidden="true">13.</strong> Fase 10</a></li><li class="chapter-item expanded "><a href="normatividad.html"><strong aria-hidden="true">14.</strong> Normatividad</a></li><li class="chapter-item expanded "><a href="modelos.html"><strong aria-hidden="true">15.</strong> Modelos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modelo_pruebas.html"><strong aria-hidden="true">15.1.</strong> Pruebas del Modelo</a></li><li class="chapter-item expanded "><a href="modelo_validacion.html"><strong aria-hidden="true">15.2.</strong> Validación del Modelo</a></li></ol></li><li class="chapter-item expanded "><a href="escenarios.html"><strong aria-hidden="true">16.</strong> Escenarios</a></li><li class="chapter-item expanded "><a href="obd2.html"><strong aria-hidden="true">17.</strong> OBDII</a></li><li class="chapter-item expanded "><a href="j1939.html"><strong aria-hidden="true">18.</strong> J1939</a></li><li class="chapter-item expanded "><a href="j1939-pgn.html"><strong aria-hidden="true">19.</strong> J1939 PGN</a></li><li class="chapter-item expanded "><a href="plataforma.html" class="active"><strong aria-hidden="true">20.</strong> Plataforma</a></li><li class="chapter-item expanded "><a href="interfaz_usuario.html"><strong aria-hidden="true">21.</strong> Interfaz de Usuario</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="icons.html"><strong aria-hidden="true">21.1.</strong> Icons</a></li><li class="chapter-item expanded "><a href="interfaz_usuario_libreria.html"><strong aria-hidden="true">21.2.</strong> Interfaz de Usuario Libreria</a></li></ol></li><li class="chapter-item expanded "><a href="lenguaje.html"><strong aria-hidden="true">22.</strong> Lenguaje de Programación</a></li><li class="chapter-item expanded "><a href="rtos.html"><strong aria-hidden="true">23.</strong> RTOS</a></li><li class="chapter-item expanded "><a href="dbc.html"><strong aria-hidden="true">24.</strong> DBC</a></li><li class="chapter-item expanded "><a href="mdf.html"><strong aria-hidden="true">25.</strong> MDF</a></li><li class="chapter-item expanded "><a href="simulacion_fisica.html"><strong aria-hidden="true">26.</strong> Simulación Física</a></li><li class="chapter-item expanded "><a href="actividades.html"><strong aria-hidden="true">27.</strong> Actividades</a></li><li class="chapter-item expanded "><a href="pruebas_unidad.html"><strong aria-hidden="true">28.</strong> Pruebas de Unidad</a></li><li class="chapter-item expanded "><a href="pruebas_integracion.html"><strong aria-hidden="true">29.</strong> Pruebas de Integración</a></li><li class="chapter-item expanded "><a href="pruebas_HIL.html"><strong aria-hidden="true">30.</strong> Pruebas HIL</a></li><li class="chapter-item expanded "><a href="publicaciones.html"><strong aria-hidden="true">31.</strong> Publicaciones</a></li><li class="chapter-item expanded "><a href="medicion_inercial.html"><strong aria-hidden="true">32.</strong> Medición Inercial</a></li><li class="chapter-item expanded "><a href="arquitectura.html"><strong aria-hidden="true">33.</strong> Arquitectura</a></li><li class="chapter-item expanded "><a href="secuencia.html"><strong aria-hidden="true">34.</strong> Secuencia</a></li><li class="chapter-item expanded "><a href="clases.html"><strong aria-hidden="true">35.</strong> Clases</a></li><li class="chapter-item expanded "><a href="logging.html"><strong aria-hidden="true">36.</strong> Logging</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="plataforma"><a class="header" href="#plataforma">Plataforma</a></h1>
+<p>Analizamos 2 SBCs (Single Board Computers)</p>
+<h2 id="raspberry-pi"><a class="header" href="#raspberry-pi">Raspberry Pi</a></h2>
+<p><img src="https://www.raspberrypi.org/app/uploads/2019/06/HERO-ALT.jpg" alt="Photo" /></p>
+<h3 id="ficha-técnica"><a class="header" href="#ficha-técnica">Ficha Técnica</a></h3>
+<ul>
+<li>A 1.5GHz quad-core 64-bit ARM Cortex-A72 CPU</li>
+<li>1GB, 2GB, or 4GB of LPDDR4 SDRAM</li>
+<li>Full-throughput Gigabit Ethernet</li>
+<li>Dual-band 802.11ac wireless networking</li>
+<li>Bluetooth 5.0</li>
+<li>Two USB 3.0 and two USB 2.0 ports</li>
+<li>Dual monitor support, at resolutions up to 4K</li>
+<li>VideoCore VI graphics, supporting OpenGL ES 3.x</li>
+<li>4Kp60 hardware decode of HEVC video</li>
+<li>Complete compatibility with earlier Raspberry Pi products</li>
+</ul>
+<h3 id="stm32"><a class="header" href="#stm32">Stm32</a></h3>
+<p>Black Pill (Blue Pill) </p>
+<p><a href="https://hackaday.com/2021/01/20/blue-pill-vs-black-pill-transitioning-from-stm32f103-to-stm32f411/">https://hackaday.com/2021/01/20/blue-pill-vs-black-pill-transitioning-from-stm32f103-to-stm32f411/</a></p>
+<h2 id="beagleboard-x15"><a class="header" href="#beagleboard-x15">Beagleboard x15</a></h2>
+<p><img src="https://beagleboard.org/static/images/BeagleBoard-X15.png" alt="Photo" /></p>
+<h3 id="ficha-técnica-1"><a class="header" href="#ficha-técnica-1">Ficha Técnica</a></h3>
+<p>El Beagleboard X15 tiene 10 cores:</p>
+<ul>
+<li>Processor: TI AM5728 2×1.5-GHz ARM® Cortex-A15 
+<ul>
+<li><a href="https://www.ti.com/lit/ds/symlink/am5728.pdf">https://www.ti.com/lit/ds/symlink/am5728.pdf</a></li>
+</ul>
+</li>
+<li>2GB DDR3 RAM</li>
+<li>4GB 8-bit eMMC on-board flash storage</li>
+<li>2D/3D graphics and video accelerators (GPUs)</li>
+<li>2×700-MHz C66 digital signal processors (DSPs)</li>
+<li>2×ARM Cortex-M4 microcontrollers (MCUs)</li>
+<li>4×32-bit programmable real-time units (PRUs)</li>
+</ul>
+<p><a href="https://beagleboard.org/x15">https://beagleboard.org/x15</a></p>
+<h3 id="hoja-de-datos"><a class="header" href="#hoja-de-datos">Hoja de Datos</a></h3>
+<p><a href="https://co.mouser.com/datasheet/2/823/Precision_Technology_Inc_04112018_BeagleBoard_X15-1323484.pdf">https://co.mouser.com/datasheet/2/823/Precision_Technology_Inc_04112018_BeagleBoard_X15-1323484.pdf</a></p>
+<h3 id="distribuidores"><a class="header" href="#distribuidores">Distribuidores</a></h3>
+<p><a href="https://www.digikey.com/en/products/detail/BEAGLEBOARD%2520X15/1777-1001-ND/6834154">https://www.digikey.com/en/products/detail/BEAGLEBOARD%2520X15/1777-1001-ND/6834154</a></p>
+<p><a href="https://co.mouser.com/ProductDetail/Beagleboard-by-PTI/BeagleBoard-X15?qs=sGAEpiMZZMspCjQQiuQ1fGdkAG55gAhWDjtEoPXsYwJnKyBUUNieSw==">https://co.mouser.com/ProductDetail/Beagleboard-by-PTI/BeagleBoard-X15?qs=sGAEpiMZZMspCjQQiuQ1fGdkAG55gAhWDjtEoPXsYwJnKyBUUNieSw==</a></p>
+<p><a href="https://www.arrow.com/en/products/beagleboardx15/beagleboardorg">https://www.arrow.com/en/products/beagleboardx15/beagleboardorg</a></p>
+<h3 id="librerias--desarollo"><a class="header" href="#librerias--desarollo">Librerias / Desarollo</a></h3>
+<p><a href="https://github.com/sbarral/prusst">https://github.com/sbarral/prusst</a></p>
+<p><a href="https://www.meetingcpp.com/mcpp/slides/2018/EMBEDDED-P-006%20v1.4.pdf">https://www.meetingcpp.com/mcpp/slides/2018/EMBEDDED-P-006%20v1.4.pdf</a></p>
+<p><a href="http://ianrrees.github.io/2016/11/20/getting-started-with-beaglebone-pru-programming-the-new-way.html">http://ianrrees.github.io/2016/11/20/getting-started-with-beaglebone-pru-programming-the-new-way.html</a></p>
+<p><a href="https://elinux.org/EBC_Exercise_30_PRU_via_remoteproc_and_RPMsg">https://elinux.org/EBC_Exercise_30_PRU_via_remoteproc_and_RPMsg</a></p>
+<p><a href="http://exploringbeaglebone.com/wp-content/uploads/2014/12/Instruction-Set-Sheet-728x1024.png">http://exploringbeaglebone.com/wp-content/uploads/2014/12/Instruction-Set-Sheet-728x1024.png</a></p>
+<h1 id="jetson"><a class="header" href="#jetson">Jetson</a></h1>
+<p><img src="http://linuxgizmos.com/files/nvidia-jetson-tk1-sbc.jpg" alt="Photo" /></p>
+<p>Jetson TK1 Development Kit - 4-core single board computer (SBC) with NVIDIA Tegra K1 SOC supporting CUDA technology</p>
+<p>The Jetson TK1 is a more advanced version of Nvidia’s earlier, Tegra 3-based Jetson automotive development platform. Instead of being limited to automotive duty, however, the Jetson TK1 also is aimed at a variety of high-end embedded applications, including computer vision, robotics, medicine, and security. The 5.0 x 5.0-inch single-board computer is “the world’s first mobile supercomputer for embedded systems,” featuring 326 gigaflops of processing power, or “nearly three times more than any similar embedded platform,” claims Nvidia.</p>
+<p><a href="http://linuxgizmos.com/nvidia-jetson-tk1-most-advanced-hacker-sbc/">http://linuxgizmos.com/nvidia-jetson-tk1-most-advanced-hacker-sbc/</a></p>
+<p><a href="https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT/ref=pd_bxgy_3/135-6985386-2191602?_encoding=UTF8&amp;pd_rd_i=B084DSDDLT&amp;pd_rd_r=55946986-3c19-47f5-9e5d-eaaa4c39c33e&amp;pd_rd_w=I5TCw&amp;pd_rd_wg=khxg2&amp;pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&amp;pf_rd_r=YWVC0X2PVQ1K6MRQ1312&amp;psc=1&amp;refRID=YWVC0X2PVQ1K6MRQ1312">https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT/ref=pd_bxgy_3/135-6985386-2191602?_encoding=UTF8&amp;pd_rd_i=B084DSDDLT&amp;pd_rd_r=55946986-3c19-47f5-9e5d-eaaa4c39c33e&amp;pd_rd_w=I5TCw&amp;pd_rd_wg=khxg2&amp;pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&amp;pf_rd_r=YWVC0X2PVQ1K6MRQ1312&amp;psc=1&amp;refRID=YWVC0X2PVQ1K6MRQ1312</a></p>
+<p><a href="https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-812674024318/dp/B086874Q5R/ref=sr_1_6?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-6">https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-812674024318/dp/B086874Q5R/ref=sr_1_6?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-6</a></p>
+<p><a href="https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-32GB/dp/B083ZL3X5B/ref=sr_1_10?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-10">https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-32GB/dp/B083ZL3X5B/ref=sr_1_10?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-10</a></p>
+<p><a href="https://kamami.pl/en/komputery-nvidia-jetson/423318-jetson-tk1-development-kit-4-core-single-board-computer-sbc-with-nvidia-tegra-k1-soc-supporting-cuda-technology.html">https://kamami.pl/en/komputery-nvidia-jetson/423318-jetson-tk1-development-kit-4-core-single-board-computer-sbc-with-nvidia-tegra-k1-soc-supporting-cuda-technology.html</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="j1939-pgn.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="interfaz_usuario.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="j1939-pgn.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="interfaz_usuario.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

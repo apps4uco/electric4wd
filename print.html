@@ -1,0 +1,3057 @@
+<!DOCTYPE HTML>
+<html lang="es" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="proyecto.html"><strong aria-hidden="true">1.</strong> Proyecto</a></li><li class="chapter-item expanded "><a href="objetivos.html"><strong aria-hidden="true">2.</strong> Objetivos</a></li><li class="chapter-item expanded "><a href="cronograma.html"><strong aria-hidden="true">3.</strong> Cronograma</a></li><li class="chapter-item expanded "><a href="fase_1.html"><strong aria-hidden="true">4.</strong> Fase 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="fase_1_1.html"><strong aria-hidden="true">4.1.</strong> Fase 1.1</a></li></ol></li><li class="chapter-item expanded "><a href="fase_2.html"><strong aria-hidden="true">5.</strong> Fase 2</a></li><li class="chapter-item expanded "><a href="fase_3.html"><strong aria-hidden="true">6.</strong> Fase 3</a></li><li class="chapter-item expanded "><a href="fase_4.html"><strong aria-hidden="true">7.</strong> Fase 4</a></li><li class="chapter-item expanded "><a href="fase_5.html"><strong aria-hidden="true">8.</strong> Fase 5</a></li><li class="chapter-item expanded "><a href="fase_6.html"><strong aria-hidden="true">9.</strong> Fase 6</a></li><li class="chapter-item expanded "><a href="fase_7.html"><strong aria-hidden="true">10.</strong> Fase 7</a></li><li class="chapter-item expanded "><a href="fase_8.html"><strong aria-hidden="true">11.</strong> Fase 8</a></li><li class="chapter-item expanded "><a href="fase_9.html"><strong aria-hidden="true">12.</strong> Fase 9</a></li><li class="chapter-item expanded "><a href="fase_10.html"><strong aria-hidden="true">13.</strong> Fase 10</a></li><li class="chapter-item expanded "><a href="normatividad.html"><strong aria-hidden="true">14.</strong> Normatividad</a></li><li class="chapter-item expanded "><a href="modelos.html"><strong aria-hidden="true">15.</strong> Modelos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modelo_pruebas.html"><strong aria-hidden="true">15.1.</strong> Pruebas del Modelo</a></li><li class="chapter-item expanded "><a href="modelo_validacion.html"><strong aria-hidden="true">15.2.</strong> Validación del Modelo</a></li></ol></li><li class="chapter-item expanded "><a href="escenarios.html"><strong aria-hidden="true">16.</strong> Escenarios</a></li><li class="chapter-item expanded "><a href="obd2.html"><strong aria-hidden="true">17.</strong> OBDII</a></li><li class="chapter-item expanded "><a href="j1939.html"><strong aria-hidden="true">18.</strong> J1939</a></li><li class="chapter-item expanded "><a href="j1939-pgn.html"><strong aria-hidden="true">19.</strong> J1939 PGN</a></li><li class="chapter-item expanded "><a href="plataforma.html"><strong aria-hidden="true">20.</strong> Plataforma</a></li><li class="chapter-item expanded "><a href="interfaz_usuario.html"><strong aria-hidden="true">21.</strong> Interfaz de Usuario</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="icons.html"><strong aria-hidden="true">21.1.</strong> Icons</a></li><li class="chapter-item expanded "><a href="interfaz_usuario_libreria.html"><strong aria-hidden="true">21.2.</strong> Interfaz de Usuario Libreria</a></li></ol></li><li class="chapter-item expanded "><a href="lenguaje.html"><strong aria-hidden="true">22.</strong> Lenguaje de Programación</a></li><li class="chapter-item expanded "><a href="rtos.html"><strong aria-hidden="true">23.</strong> RTOS</a></li><li class="chapter-item expanded "><a href="dbc.html"><strong aria-hidden="true">24.</strong> DBC</a></li><li class="chapter-item expanded "><a href="mdf.html"><strong aria-hidden="true">25.</strong> MDF</a></li><li class="chapter-item expanded "><a href="simulacion_fisica.html"><strong aria-hidden="true">26.</strong> Simulación Física</a></li><li class="chapter-item expanded "><a href="actividades.html"><strong aria-hidden="true">27.</strong> Actividades</a></li><li class="chapter-item expanded "><a href="pruebas_unidad.html"><strong aria-hidden="true">28.</strong> Pruebas de Unidad</a></li><li class="chapter-item expanded "><a href="pruebas_integracion.html"><strong aria-hidden="true">29.</strong> Pruebas de Integración</a></li><li class="chapter-item expanded "><a href="pruebas_HIL.html"><strong aria-hidden="true">30.</strong> Pruebas HIL</a></li><li class="chapter-item expanded "><a href="publicaciones.html"><strong aria-hidden="true">31.</strong> Publicaciones</a></li><li class="chapter-item expanded "><a href="medicion_inercial.html"><strong aria-hidden="true">32.</strong> Medición Inercial</a></li><li class="chapter-item expanded "><a href="arquitectura.html"><strong aria-hidden="true">33.</strong> Arquitectura</a></li><li class="chapter-item expanded "><a href="secuencia.html"><strong aria-hidden="true">34.</strong> Secuencia</a></li><li class="chapter-item expanded "><a href="clases.html"><strong aria-hidden="true">35.</strong> Clases</a></li><li class="chapter-item expanded "><a href="logging.html"><strong aria-hidden="true">36.</strong> Logging</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="bpin-2017000100062-desarrollo-experimental-de-un-prototipo-de-vehÍculo-elÉctrico-en-el-sector-automotriz-del-valle-del-cauca"><a class="header" href="#bpin-2017000100062-desarrollo-experimental-de-un-prototipo-de-vehÍculo-elÉctrico-en-el-sector-automotriz-del-valle-del-cauca">BPIN: 2017000100062 &quot;DESARROLLO EXPERIMENTAL DE UN PROTOTIPO DE VEHÍCULO ELÉCTRICO EN EL SECTOR AUTOMOTRIZ DEL VALLE DEL CAUCA&quot;</a></h1>
+<h2 id="el-desarrollo-de-unidad-central-de-control-vcu-para-el-control-de-operaciÓn-del-vehiculo-integrando-la-operaciÓn-del-segundo-motor-en-la-traccion-trasera-de-un-vehículo-eléctrico-en-el-sector-automotriz-del-valle-del-cauca-tipo-suv"><a class="header" href="#el-desarrollo-de-unidad-central-de-control-vcu-para-el-control-de-operaciÓn-del-vehiculo-integrando-la-operaciÓn-del-segundo-motor-en-la-traccion-trasera-de-un-vehículo-eléctrico-en-el-sector-automotriz-del-valle-del-cauca-tipo-suv">EL DESARROLLO DE UNIDAD CENTRAL DE CONTROL VCU, PARA EL CONTROL DE OPERACIÓN DEL VEHICULO INTEGRANDO LA OPERACIÓN DEL SEGUNDO MOTOR EN LA TRACCION TRASERA de un vehículo eléctrico en el sector automotriz del Valle del Cauca tipo SUV,</a></h2>
+<p><a href="https://univallevehiculoelectrico.com/">https://univallevehiculoelectrico.com/</a></p>
+<p><a href="https://univallevehiculoelectrico.com/aliados-estrategicos/">https://univallevehiculoelectrico.com/aliados-estrategicos/</a></p>
+<p><a href="https://univallevehiculoelectrico.com/sobre-nosotros/">https://univallevehiculoelectrico.com/sobre-nosotros/</a></p>
+<p><a href="https://www.kandiamerica.com/electric-vehicle-K27/">https://www.kandiamerica.com/electric-vehicle-K27/</a></p>
+<h1 id="objetivos"><a class="header" href="#objetivos">Objetivos</a></h1>
+<h1 id="objetivo-general"><a class="header" href="#objetivo-general">Objetivo General</a></h1>
+<p>Habilitar el funcionamiento de un segundo eje de tracción</p>
+<h1 id="objetivos-específicos"><a class="header" href="#objetivos-específicos">Objetivos Específicos</a></h1>
+<ol>
+<li>Control de torque refinado a las llantas traseras según condiciones de seguridad y
+de conducción</li>
+<li>Diagnosticar funcionamiento del vehículo y optimización del uso del eje trasero</li>
+<li>Interfaz de control manual y automática de la funcionalidad</li>
+</ol>
+<h1 id="cronograma"><a class="header" href="#cronograma">Cronograma</a></h1>
+<pre><code class="language-plantuml">@startuml
+@startgantt
+scale 4
+Project starts the 2021/04/19
+[Estado del vehículo pasivo] is colored in Lavender/LightBlue and lasts 16 days
+[Posición de mandos] starts at [Estado del vehículo pasivo]'s end and lasts 16 days
+[Entrega 1: Mayo 20] happens at [Posición de mandos]'s end
+[Estado del vehículo dinámico] lasts 11 days and is colored in Coral/Green and starts at [Posición de mandos]'s end
+[Lógica de control] starts at [Estado del vehículo dinámico]'s end and lasts 8 days
+[Hardware] starts at [Lógica de control]'s end and lasts 9 days
+[Entrega 2: Junio 17] happens at [Hardware]'s end
+[Software] is colored in Coral/Green and starts at [Hardware]'s end and lasts 11 days
+[Herramienta de desarrollo] starts at [Software]'s end and lasts 10 days
+[Entrega 3: Julio 8] happens at [Herramienta de desarrollo]'s end
+[Pruebas puntuales] starts at [Herramienta de desarrollo]'s end and lasts 21 days
+[Pruebas vehiculares] starts at [Pruebas puntuales]'s end and lasts 21 days
+[Entrega 4: Agosto 19] happens at [Pruebas vehiculares]'s end
+[Informe final] starts at [Pruebas vehiculares]'s end and lasts 21 days
+[Entrega 5: Septiembre 9] happens at [Informe final]'s end
+@endgantt
+@enduml
+</code></pre>
+<h1 id="fase-1-estado-del-vehículo-pasivo"><a class="header" href="#fase-1-estado-del-vehículo-pasivo">Fase 1: Estado del vehículo pasivo</a></h1>
+<ul>
+<li>Encendido /Apagado</li>
+<li>Parqueo</li>
+<li>Puertas</li>
+<li>Estado de carga</li>
+<li>Estado de marcha</li>
+<li>Inclinación</li>
+<li>Presión de buster de freno</li>
+<li>Equipo auxiliarles
+<ul>
+<li>Estados</li>
+<li>Consumos (AC, Ventiladores, ECU, bomba
+enfriamiento, dirección, iluminación,lubricación</li>
+</ul>
+</li>
+<li>Presión de frenos</li>
+<li>Status del ABS</li>
+<li>Temperatura del motor</li>
+<li>Temperatura del controlador</li>
+<li>Temperatura baterías</li>
+<li>Estatus BMS
+<ul>
+<li>Voltajes celdas</li>
+<li>dV/dT</li>
+<li>corriente de balanceo</li>
+</ul>
+</li>
+<li>Otros</li>
+</ul>
+<h1 id="fase-11"><a class="header" href="#fase-11">Fase 1.1</a></h1>
+<h1 id="fase-2-posición-de-mandos"><a class="header" href="#fase-2-posición-de-mandos">Fase 2: Posición de mandos</a></h1>
+<ul>
+<li>Acelerador</li>
+<li>Freno de pedal</li>
+<li>Freno de mano</li>
+<li>Encoder de dirección</li>
+<li>Puertas</li>
+<li>Sensor de cinturón</li>
+<li>Palanca de cambios</li>
+<li>Encendido</li>
+<li>Sensores de airbags</li>
+<li>Sensores de cargador</li>
+<li>otro</li>
+</ul>
+<h1 id="fase-3-estado-del-vehículo-dinámico"><a class="header" href="#fase-3-estado-del-vehículo-dinámico">Fase 3: Estado del vehículo dinámico</a></h1>
+<ul>
+<li>Estado del controlador</li>
+<li>Comando de aceleración</li>
+<li>Voltaje</li>
+<li>Corriente al motor (delantero)</li>
+<li>RPM motor (delantero)</li>
+<li>Temperatura motor (delantero)</li>
+<li>Temperatura Motor Baterías</li>
+<li>Presión de frenos</li>
+<li>Status ABS</li>
+<li>RPM llanta (velocidad) del vehículo)</li>
+<li>Auxiliares status</li>
+<li>Auxiliares consumos</li>
+<li>otro</li>
+</ul>
+<h1 id="fase-4-lógica-de-control"><a class="header" href="#fase-4-lógica-de-control">Fase 4: Lógica de control</a></h1>
+<ul>
+<li>Ingeniería inversa de lógica actual</li>
+<li>DPS de escenarios</li>
+<li>Matriz de estados</li>
+<li>Lista fina del de implementación</li>
+<li>Diseño de lógica nueva</li>
+<li>Optimizar para dos motores independientes traseros</li>
+</ul>
+<h1 id="fase-5-hardware"><a class="header" href="#fase-5-hardware">Fase 5: Hardware</a></h1>
+<ul>
+<li>Definición de compacidades o I/O análogo</li>
+<li>I/O digitas</li>
+<li>Salidas</li>
+<li>Status /reboot función</li>
+<li>Alimentación</li>
+<li>Verificación de funcionalidad</li>
+<li>Análisis de confiabilidad</li>
+<li>Conectividad</li>
+<li>Black box</li>
+<li>otros</li>
+</ul>
+<h1 id="fase-6-software"><a class="header" href="#fase-6-software">Fase 6: Software</a></h1>
+<ul>
+<li>Compilación</li>
+<li>Estabilidad</li>
+<li>Control de versiones</li>
+<li>otros</li>
+</ul>
+<h1 id="fase-7-herramienta-de-desarrollo"><a class="header" href="#fase-7-herramienta-de-desarrollo">Fase 7: Herramienta de desarrollo</a></h1>
+<ul>
+<li>conectividad al vehículo • UI</li>
+<li>Graficas y tableros (por diseñar en conjunto con pruebas)</li>
+<li>otros</li>
+</ul>
+<h1 id="fase-8-pruebas-puntuales-tipo-bench-unit-test"><a class="header" href="#fase-8-pruebas-puntuales-tipo-bench-unit-test">Fase 8: Pruebas puntuales tipo “bench unit test”</a></h1>
+<ul>
+<li>Plan de ensayos</li>
+<li>“Hardware in the loop testing”</li>
+<li>Reportes</li>
+<li>0tros</li>
+</ul>
+<h1 id="fase-9-pruebas-vehiculares"><a class="header" href="#fase-9-pruebas-vehiculares">Fase 9: Pruebas vehiculares</a></h1>
+<ul>
+<li>Plan de pruebas en vehículo 
+<ul>
+<li>Estáticas</li>
+<li>Dinámicas</li>
+</ul>
+</li>
+<li>Reporte final</li>
+</ul>
+<h1 id="fase-10-informe-final"><a class="header" href="#fase-10-informe-final">Fase 10: Informe final</a></h1>
+<ul>
+<li>Plan de pruebas en vehículo 
+<ul>
+<li>Estáticas</li>
+<li>Dinámicas</li>
+</ul>
+</li>
+<li>Reporte final</li>
+</ul>
+<h1 id="normatividad"><a class="header" href="#normatividad">Normatividad</a></h1>
+<p>¿Qué leyes a nivel nacional o local aplica al proyecto?</p>
+<p>¿Qué permisos hay que solicitar?</p>
+<h1 id="modelos"><a class="header" href="#modelos">Modelos</a></h1>
+<h2 id="ecuación"><a class="header" href="#ecuación">Ecuación</a></h2>
+<h1 id="masa-puntual"><a class="header" href="#masa-puntual">Masa Puntual</a></h1>
+<p>PID </p>
+<p>\[ \int x dx = \frac{x^2}{2} + C \]</p>
+<p>\[ \mu = \frac{1}{N} \sum_{i=0} x_i \]</p>
+<h2 id="datos"><a class="header" href="#datos">Datos</a></h2>
+<h2 id="fisico-no-lineal"><a class="header" href="#fisico-no-lineal">Fisico (No Lineal)</a></h2>
+<h3 id="vehiclenonlinearequationsofmotion"><a class="header" href="#vehiclenonlinearequationsofmotion">VehicleNonlinearEquationsofMotion</a></h3>
+<p><a href="https://users.ece.cmu.edu/%7Ekoopman/ahs/ahs_objectives/AHS8.pdf">https://users.ece.cmu.edu/~koopman/ahs/ahs_objectives/AHS8.pdf</a></p>
+<h3 id="vehicle-dynamicscompendium"><a class="header" href="#vehicle-dynamicscompendium">Vehicle DynamicsCompendium</a></h3>
+<p><a href="https://core.ac.uk/download/pdf/128709302.pdf">https://core.ac.uk/download/pdf/128709302.pdf</a></p>
+<h3 id="31chapter-4vehicle-dynamics"><a class="header" href="#31chapter-4vehicle-dynamics">31Chapter 4Vehicle Dynamics</a></h3>
+<p><a href="https://vtechworks.lib.vt.edu/bitstream/handle/10919/30598/CHAP3_DOC.pdf?sequence=4">https://vtechworks.lib.vt.edu/bitstream/handle/10919/30598/CHAP3_DOC.pdf?sequence=4</a></p>
+<h2 id="3d"><a class="header" href="#3d">3D</a></h2>
+<h1 id="pruebas-del-modelo"><a class="header" href="#pruebas-del-modelo">Pruebas del Modelo</a></h1>
+<p><img src="epa.png" alt="EPA" /></p>
+<h1 id="validación-del-modelo"><a class="header" href="#validación-del-modelo">Validación del Modelo</a></h1>
+<h2 id="subcomponentes"><a class="header" href="#subcomponentes">Subcomponentes</a></h2>
+<p>Se puede validar cada subcomponente</p>
+<h2 id="prototipo"><a class="header" href="#prototipo">Prototipo</a></h2>
+<h3 id="estatico"><a class="header" href="#estatico">Estatico</a></h3>
+<h3 id="dinamico-road-test"><a class="header" href="#dinamico-road-test">Dinamico (Road Test)</a></h3>
+<h1 id="escenarios-para-detectar-y-manejar"><a class="header" href="#escenarios-para-detectar-y-manejar">Escenarios para detectar y manejar</a></h1>
+<h2 id="linea-recta-subiendo"><a class="header" href="#linea-recta-subiendo">Linea Recta Subiendo</a></h2>
+<p>Caso especial plano</p>
+<h2 id="linea-recta-descendiendo"><a class="header" href="#linea-recta-descendiendo">Linea Recta Descendiendo</a></h2>
+<h2 id="curva"><a class="header" href="#curva">Curva</a></h2>
+<h2 id="curva-y-frenado"><a class="header" href="#curva-y-frenado">Curva y Frenado</a></h2>
+<h2 id="curva-y-acceleración"><a class="header" href="#curva-y-acceleración">Curva y Acceleración</a></h2>
+<h2 id="curva-y-acceleración-1"><a class="header" href="#curva-y-acceleración-1">Curva y Acceleración</a></h2>
+<h2 id="parada-de-emergencia"><a class="header" href="#parada-de-emergencia">Parada de Emergencia</a></h2>
+<h2 id="choque-frontal"><a class="header" href="#choque-frontal">Choque Frontal</a></h2>
+<h2 id="choque-trasera"><a class="header" href="#choque-trasera">Choque Trasera</a></h2>
+<h2 id="choque-lateral"><a class="header" href="#choque-lateral">Choque Lateral</a></h2>
+<h2 id="una-llanta-frontal-patinando"><a class="header" href="#una-llanta-frontal-patinando">Una Llanta frontal patinando</a></h2>
+<h2 id="ambas-llantas-frontales-patinando"><a class="header" href="#ambas-llantas-frontales-patinando">Ambas Llantas frontales patinando</a></h2>
+<h2 id="una-llanta-trasera-patinando"><a class="header" href="#una-llanta-trasera-patinando">Una Llanta trasera patinando</a></h2>
+<h2 id="ambas-llantas-traseras-patinando"><a class="header" href="#ambas-llantas-traseras-patinando">Ambas Llantas traseras patinando</a></h2>
+<h1 id="obdii"><a class="header" href="#obdii">OBDII</a></h1>
+<p><a href="https://docs.openvehicles.com/en/latest/userguide/ecu.html">https://docs.openvehicles.com/en/latest/userguide/ecu.html</a></p>
+<p>During operation, an OBDII device, for example, a Head-Up Display (HUD) or OBDII Diagnostic module, will make periodic requests, usually a few times per second, for a set of parameters. The OVMSv3 module will reply to those parameters with the metric if configured to do so, on an individual basis. These parameters can be common items such as vehicle speed, engine RPM, and engine coolant temperature, but because of the differences between ICE and EV vehicles, many of the parameters do not have equivalent values in an EV. Speed and engine (motor) RPM can be directly mapped, but there is typically no “engine coolant”. That parameter (in fact, most parameters) can be mapped to some other value of interest. </p>
+<p><a href="https://www.csselectronics.com/screen/product/obd2-dbc-file/language/en">https://www.csselectronics.com/screen/product/obd2-dbc-file/language/en</a></p>
+<h2 id="definicion-en-formato-dbc"><a class="header" href="#definicion-en-formato-dbc">Definicion en formato DBC</a></h2>
+<p><a href="https://canlogger1000.csselectronics.com/files/guides/mdf-intro/OBD2-DBC-MDF4.zip">https://canlogger1000.csselectronics.com/files/guides/mdf-intro/OBD2-DBC-MDF4.zip</a></p>
+<h2 id="ev"><a class="header" href="#ev">EV</a></h2>
+<table><thead><tr><th>PID (Dec)</th><th>PID (Hex)</th><th>Requested Parameter</th><th>Mapped Metric Value</th><th>Metric Name</th></tr></thead><tbody>
+<tr><td>4</td><td>0x04</td><td>Engine Load</td><td>Battery SOC</td><td>v.b.soc</td></tr>
+<tr><td>5</td><td>0x05</td><td>Coolant Temp</td><td>Motor Temp</td><td>v.m.temp</td></tr>
+<tr><td>12</td><td>0x0c</td><td>Motor RPM</td><td>Motor RPM</td><td>v.m.rpm</td></tr>
+<tr><td>13</td><td>0x0d</td><td>Vehicle Speed</td><td>Vehicle Speed</td><td>v.p.speed</td></tr>
+<tr><td>16</td><td>0x10</td><td>MAF Air Flow</td><td>12v Battery</td><td>v.b.12v.voltage</td></tr>
+</tbody></table>
+<p>PID 0x5B HYBRID_BATT_PCT</p>
+<pre><code>
+#define PID_0_20            0x00    //PID 0 - 20 supported
+#define PID_0_20_DESC               &quot;PID 0x00 - 0x20 Supported&quot;
+#define STATUS_DTC          0x01    ///
+#define STATUS_DTC_DESC             &quot;Status since DTC Cleared&quot;
+#define FREEZE_DTC          0x02    ///
+#define FREEZE_DTC_DESC             &quot;Freeze Diagnostic Trouble Code&quot;
+#define FUEL_SYS_STATUS     0x03    ///
+#define FUEL_SYS_STATUS_DESC        &quot;Fuel System Status&quot;
+#define ENGINE_LOAD         0x04    //
+#define ENGINE_LOAD_DESC            &quot;Calculated Engine Load&quot;
+#define ENGINE_COOLANT_TEMP 0x05
+#define ENGINE_COOLANT_TEMP_DESC    &quot;Engine Coolant Temperature&quot;
+#define ST_FUEL_TRIM_1      0x06    ///
+#define ST_FUEL_TRIM_1_DESC         &quot;Short Term Fuel % Trim - Bank 1&quot;
+#define LT_FUEL_TRIM_1      0x07    ///
+#define LT_FUEL_TRIM_1_DESC         &quot;Long Term Fuel % Trim - Bank 1&quot;
+#define ST_FUEL_TRIM_2      0x08    ///
+#define ST_FUEL_TRIM_2_DESC         &quot;Short Term Fuel % Trim - Bank 2&quot;
+#define LT_FUEL_TRIM_2      0x09    ///
+#define LT_FUEL_TRIM_2_DESC         &quot;Long Term Fuel % Trim - Bank 2&quot;
+#define FUEL_PRESSURE       0x0A    //
+#define FUEL_PRESSURE_DESC          &quot;Fuel Pressure&quot;
+#define INTAKE_PRESSURE     0x0B    //
+#define INTAKE_PRESSURE_DESC        &quot;Intake Manifold Absolute Pressure&quot;
+#define ENGINE_RPM          0x0C
+#define ENGINE_RPM_DESC             &quot;Engine RPM&quot;
+#define VEHICLE_SPEED       0x0D
+#define VEHICLE_SPEED_DESC          &quot;Vehicle Speed&quot;
+#define TIMING_ADVANCE      0x0E    //
+#define TIMING_ADVANCE_DESC         &quot;Timing Advance&quot;
+#define INTAKE_TEMP         0x0F    //
+#define INTAKE_TEMP_DESC            &quot;Intake Air Temperature&quot;
+#define MAF_SENSOR          0x10
+#define MAF_SENSOR_DESC             &quot;MAF Sensor Air Flow Rate&quot;
+#define THROTTLE            0x11
+#define THROTTLE_DESC               &quot;Throttle Position&quot;
+#define COMMANDED_SEC_AIR   0x12    ///
+#define COMMANDED_SEC_AIR_DESC      &quot;Commanded Secondary Air Status&quot;
+#define O2_SENS_PRES        0x13    ///
+#define O2_SENS_PRES_DESC           &quot;Detected O2 Sensors&quot;
+#define O2_B1S1_VOLTAGE     0x14    ///
+#define O2_B1S1_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 1 Sensor 1&quot;
+#define O2_B1S2_VOLTAGE     0x15    ///
+#define O2_B1S2_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 1 Sensor 2&quot;
+#define O2_B1S3_VOLTAGE     0x16    ///
+#define O2_B1S3_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 1 Sensor 3&quot;
+#define O2_B1S4_VOLTAGE     0x17    ///
+#define O2_B1S4_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 1 Sensor 4&quot;
+#define O2_B2S1_VOLTAGE     0x18    ///
+#define O2_B2S1_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 2 Sensor 1&quot;
+#define O2_B2S2_VOLTAGE     0x19    ///
+#define O2_B2S2_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 2 Sensor 2&quot;
+#define O2_B2S3_VOLTAGE     0x1A    ///
+#define O2_B2S3_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 2 Sensor 3&quot;
+#define O2_B2S4_VOLTAGE     0x1B    ///
+#define O2_B2S4_VOLTAGE_DESC        &quot;O2 Sensor Voltage - Bank 2 Sensor 4&quot;
+#define OBDII_STANDARDS     0x1C    //List of OBDII Standars the car conforms to
+#define OBDII_STANDARDS_DESC        &quot;Supported OBDII Standards&quot;
+#define O2_SENS_PRES_ALT    0x1D    ///
+#define O2_SENS_PRES_ALT_DESC       &quot;Detected O2 Sensors - Alternate Grouping&quot;
+#define AUX_IN_STATUS       0x1E    ///
+#define AUX_IN_STATUS_DESC          &quot;Auxiliary Input Status&quot;
+#define ENGINE_RUNTIME      0x1F    //
+#define ENGINE_RUNTIME_DESC         &quot;Run Time Since Engine Started&quot;
+#define PID_21_40           0x20    //PID 21-40 supported
+#define PID_21_40_DESC              &quot;PID 0x21 - 0x40 Supported&quot;
+#define DIST_TRAVELED_MIL   0x21    ///
+#define DIST_TRAVELED_MIL_DESC      &quot;Distance Traveled with MIL On&quot;
+#define FUEL_RAIL_PRESSURE  0x22    //
+#define FUEL_RAIL_PRESSURE_DESC     &quot;Fuel Rail Pressure Relative to Manifold&quot;
+#define FUEL_RAIL_PRES_ALT  0x23    ///
+#define FUEL_RAIL_PRES_ALT_DESC     &quot;MPI/Diesel Fuel Rail Pressure&quot;
+#define O2S1_WR_LAMBDA_V    0x24    ///
+#define O2S1_WR_LAMBDA_V_DESC       &quot;O2 Sensor 1 Equivalence Ratio Voltage&quot;
+#define O2S2_WR_LAMBDA_V    0x25    ///
+#define O2S2_WR_LAMBDA_V_DESC       &quot;O2 Sensor 2 Equivalence Ratio Voltage&quot;
+#define O2S3_WR_LAMBDA_V    0x26    ///
+#define O2S3_WR_LAMBDA_V_DESC       &quot;O2 Sensor 3 Equivalence Ratio Voltage&quot;
+#define O2S4_WR_LAMBDA_V    0x27    ///
+#define O2S4_WR_LAMBDA_V_DESC       &quot;O2 Sensor 4 Equivalence Ratio Voltage&quot;
+#define O2S5_WR_LAMBDA_V    0x28    ///
+#define O2S5_WR_LAMBDA_V_DESC       &quot;O2 Sensor 5 Equivalence Ratio Voltage&quot;
+#define O2S6_WR_LAMBDA_V    0x29    ///
+#define O2S6_WR_LAMBDA_V_DESC       &quot;O2 Sensor 6 Equivalence Ratio Voltage&quot;
+#define O2S7_WR_LAMBDA_V    0x2A    ///
+#define O2S7_WR_LAMBDA_V_DESC       &quot;O2 Sensor 7 Equivalence Ratio Voltage&quot;
+#define O2S8_WR_LAMBDA_V    0x2B    ///
+#define O2S8_WR_LAMBDA_V_DESC       &quot;O2 Sensor 8 Equivalence Ratio Voltage&quot;
+#define COMMANDED_EGR       0x2C    //
+#define COMMANDED_EGR_DESC          &quot;Commanded EGR&quot;
+#define EGR_ERROR           0x2D    //
+#define EGR_ERROR_DESC              &quot;EGR Error&quot;
+#define COMMANDED_EVAP_P    0x2E    ///
+#define COMMANDED_EVAP_P_DESC       &quot;Commanded Evaporative Purge&quot;
+#define FUEL_LEVEL          0x2F    //
+#define FUEL_LEVEL_DESC             &quot;Fuel Level Input&quot;
+#define WARMUPS_SINCE_CLR   0x30    ///
+#define WARMUPS_SINCE_CLR_DESC      &quot;Number of Warmups since DTC Cleared&quot;
+#define DIST_SINCE_CLR      0x31    ///
+#define DIST_SINCE_CLR_DESC         &quot;Distance Traveled Since DTC Cleared&quot;
+#define EVAP_PRESSURE       0x32    //
+#define EVAP_PRESSURE_DESC          &quot;Evap. System Vapor Pressure&quot;
+#define BAROMETRIC_PRESSURE 0x33    //
+#define BAROMETRIC_PRESSURE_DESC    &quot;Barometric Pressure&quot;
+#define O2S1_WR_LAMBDA_I    0x34    ///
+#define O2S1_WR_LAMBDA_I_DESC       &quot;O2 Sensor 1 Equivalence Ratio Current&quot;
+#define O2S2_WR_LAMBDA_I    0x35    ///
+#define O2S2_WR_LAMBDA_I_DESC       &quot;O2 Sensor 2 Equivalence Ratio Current&quot;
+#define O2S3_WR_LAMBDA_I    0x36    ///
+#define O2S3_WR_LAMBDA_I_DESC       &quot;O2 Sensor 3 Equivalence Ratio Current&quot;
+#define O2S4_WR_LAMBDA_I    0x37    ///
+#define O2S4_WR_LAMBDA_I_DESC       &quot;O2 Sensor 4 Equivalence Ratio Current&quot;
+#define O2S5_WR_LAMBDA_I    0x38    ///
+#define O2S5_WR_LAMBDA_I_DESC       &quot;O2 Sensor 5 Equivalence Ratio Current&quot;
+#define O2S6_WR_LAMBDA_I    0x39    ///
+#define O2S6_WR_LAMBDA_I_DESC       &quot;O2 Sensor 6 Equivalence Ratio Current&quot;
+#define O2S7_WR_LAMBDA_I    0x3A    ///
+#define O2S7_WR_LAMBDA_I_DESC       &quot;O2 Sensor 7 Equivalence Ratio Current&quot;
+#define O2S8_WR_LAMBDA_I    0x3B    ///
+#define O2S8_WR_LAMBDA_I_DESC       &quot;O2 Sensor 8 Equivalence Ratio Current&quot;
+#define CAT_TEMP_B1S1       0x3C    ///
+#define CAT_TEMP_B1S1_DESC          &quot;Catalyst Temperature Bank 1 Sensor 1&quot;
+#define CAT_TEMP_B1S2       0x3E    ///
+#define CAT_TEMP_B1S2_DESC          &quot;Catalyst Temperature Bank 1 Sensor 2&quot;
+#define CAT_TEMP_B2S1       0x3D    ///
+#define CAT_TEMP_B2S1_DESC          &quot;Catalyst Temperature Bank 2 Sensor 1&quot;
+#define CAT_TEMP_B2S2       0x3F    ///
+#define CAT_TEMP_B2S2_DESC          &quot;Catalyst Temperature Bank 2 Sensor 2&quot;
+#define PID_41_60           0x40    //PID 41-60 supported
+#define PID_41_60_DESC              &quot;PID 0x41 - 0x60 Supported&quot;
+#define MONITOR_STATUS      0x41    ///
+#define MONITOR_STATUS_DESC         &quot;Monitor Status This Drive Cycle&quot;
+#define ECU_VOLTAGE         0x42    //
+#define ECU_VOLTAGE_DESC            &quot;Control Module Voltage&quot;
+#define ABSOLUTE_LOAD       0x43    //
+#define ABSOLUTE_LOAD_DESC          &quot;Absolute Load Value&quot;
+#define COMMANDED_EQUIV_R   0x44    ///
+#define COMMANDED_EQUIV_R_DESC      &quot;Commanded Equivalence Ratio&quot;
+#define REL_THROTTLE_POS    0x45    ///
+#define REL_THROTTLE_POS_DESC       &quot;Relative Throttle Position&quot;
+#define AMB_AIR_TEMP        0x46    ///
+#define AMB_AIR_TEMP_DESC           &quot;Ambient Air Temperature&quot;
+#define ABS_THROTTLE_POS_B  0x47    ///
+#define ABS_THROTTLE_POS_B_DESC     &quot;Absolute Throttle Position B&quot;
+#define ABS_THROTTLE_POS_C  0x48    ///
+#define ABS_THROTTLE_POS_C_DESC     &quot;Absolute Throttle Position C&quot;
+#define ACCEL_POS_D         0x49    ///
+#define ACCEL_POS_D_DESC            &quot;Accelerator Pedal Position D&quot;
+#define ACCEL_POS_E         0x4A    ///
+#define ACCEL_POS_E_DESC            &quot;Accelerator Pedal Position E&quot;
+#define ACCEL_POS_F         0x4B    ///
+#define ACCEL_POS_F_DESC            &quot;Accelerator Pedal Position F&quot;
+#define COMMANDED_THROTTLE  0x4C    ///
+#define COMMANDED_THROTTLE_DESC     &quot;Commanded Throttle Actuator&quot;
+#define TIME_RUN_WITH_MIL   0x4D    ///
+#define TIME_RUN_WITH_MIL_DESC      &quot;Time Run with MIL on&quot;
+#define TIME_SINCE_CLR      0x4E    ///
+#define TIME_SINCE_CLR_DESC         &quot;Time Since DTC Cleared&quot;
+#define MAX_R_O2_VI_PRES    0x4F    ///
+#define MAX_R_O2_VI_PRES_DESC       &quot;Maximum Value - Equivalence ratio, O2 Voltage, O2 Current, Intake Manifold Pressure&quot;
+#define MAX_AIRFLOW_MAF     0x50    ///
+#define MAX_AIRFLOW_MAF_DESC        &quot;Maximum MAF Airflow Value&quot;
+#define FUEL_TYPE           0x51    //
+#define FUEL_TYPE_DESC              &quot;Fuel Type&quot;
+#define ETHANOL_PERCENT     0x52    //
+#define ETHANOL_PERCENT_DESC        &quot;Ethanol fuel %&quot;
+#define ABS_EVAP_SYS_PRES   0x53    ///
+#define ABS_EVAP_SYS_PRES_DESC      &quot;absolute Evap. System Vapor Pressure&quot;
+#define EVAP_SYS_PRES       0x54    ///
+#define EVAP_SYS_PRES_DESC          &quot;Evap. System Vapor Pressure&quot;
+#define ST_O2_TRIM_B1B3     0x55    ///
+#define ST_O2_TRIM_B1B3_DESC        &quot;Short Term Secondary O2 Sensor Trim - Bank 1 and 3&quot;
+#define LT_O2_TRIM_B1B3     0x56    ///
+#define LT_O2_TRIM_B1B3_DESC        &quot;Long Term Secondary O2 Sensor Trim - Bank 1 and 3&quot;
+#define ST_02_TRIM_B2B4     0x57    ///
+#define ST_O2_TRIM_B2B4_DESC        &quot;Short Term Secondary O2 Sensor Trim - Bank 2 and 4&quot;
+#define LT_O2_TRIM_B2B4     0x58    ///
+#define LT_O2_TRIM_B2B4_DESC        &quot;Long Term Secondary O2 Sensor Trim - Bank 2 and 4&quot;
+#define ABS_FUEL_RAIL_PRES  0x59    ///
+#define ABS_FUEL_RAIL_PRES_DESC     &quot;Absolute Fuel Rail Pressure&quot;
+#define REL_ACCEL_POS       0x5A    ///
+#define REL_ACCEL_POS_DESC          &quot;Relative Accelerator Pedal Position&quot;
+#define HYBRID_BATT_PCT     0x5B    ///
+#define HYBRID_BATT_PCT_DESC        &quot;Hybrid Battery Pack Charge Percent&quot;
+#define ENGINE_OIL_TEMP     0x5C    ///
+#define ENGINE_OIL_TEMP_DESC        &quot;Engine Oil Temperature&quot;
+#define FUEL_TIMING         0x5D    //
+#define FUEL_TIMING_DESC            &quot;Fuel Injection Timing&quot;
+#define FUEL_RATE           0x5E    //
+#define FUEL_RATE_DESC              &quot;Engine Fuel Rate&quot;
+#define EMISSIONS_STANDARD  0x5F    ///
+#define EMISSIONS_STANDARD_DESC     &quot;Emmissions Requirements&quot;
+#define DEMANDED_TORQUE     0x61    ///
+#define DEMANDED_TORQUE_DESC        &quot;Driver's Demanded Torque - Percent&quot;
+#define ACTUAL_TORQUE       0x62    ///
+#define ACTUAL_TORQUE_DESC          &quot;Actual Engine Torque - Percent&quot;
+#define REFERENCE_TORQUE    0x63    //
+#define REFERENCE_TORQUE_DESC       &quot;Engine Reference Torque&quot;
+#define ENGINE_PCT_TORQUE   0x64    ///
+#define ENGINE_PCT_TORQUE_DESC      &quot;Engine Percent Torque&quot;
+#define AUX_IO_SUPPORTED    0x65    ///
+#define AUX_IO_SUPPORTED_DESC       &quot;Auxiliary Input/Output Supported&quot;
+#define P_MAF_SENSOR        0x66    ///
+#define P_ENGINE_COOLANT_T  0x67    ///
+#define P_INTAKE_TEMP       0x68    ///
+#define P_COMMANDED_EGR     0x69    ///
+#define P_COMMANDED_INTAKE  0x6A    ///
+#define P_EGR_TEMP          0x6B    ///
+#define P_COMMANDED_THROT   0x6C    ///
+#define P_FUEL_PRESSURE     0x6D    ///
+#define P_FUEL_INJ_PRES     0x6E    ///
+#define P_TURBO_PRESSURE    0x6F    ///
+#define P_BOOST_PRES_CONT   0x70    ///
+#define P_VGT_CONTROL       0x71    ///
+#define P_WASTEGATE_CONT    0x72    ///
+#define P_EXHAUST_PRESSURE  0x73    ///
+#define P_TURBO_RPM         0x74    ///
+#define P_TURBO_TEMP1       0x75    ///
+#define P_TURBO_TEMP2       0x76    ///
+#define P_CACT              0x77    ///
+#define P_EGT_B1            0x78    ///
+#define P_EGT_B2            0x79    ///
+#define P_DPF1              0x7A    ///
+#define P_DPF2              0x7B    ///
+#define P_DPF_TEMP          0x7C    ///
+#define P_NOX_NTE_STATUS    0x7D    ///
+#define P_PM_NTE_STATUS     0x7E    ///
+#define P_ENGINE_RUNTUME    0x7F    ///
+#define P_ENGINE_AECD_1     0x81    ///
+#define P_ENGINE_AECD_2     0x82    ///
+#define P_NOX_SENSOR        0x83    ///
+#define P_MANIFOLD_TEMP     0x84    ///
+#define P_NOX_SYSTEM        0x85    ///
+#define P_PM_SENSOR         0x86    ///
+#define P_IN_MANIF_TEMP     0x87    ///
+ 
+#define PID_REQUEST         0x7DF
+#define PID_REPLY           0x7E8
+</code></pre>
+<h1 id="j1939"><a class="header" href="#j1939">j1939</a></h1>
+<p>&quot;The SAE J1939 communications network is developed for use in heavy-duty environments and suitable for horizontally integrated vehicle in-dustries.  The  SAE  J1939  communications  network  is  applicable  for  light-duty, medium-duty, and heavy- duty vehicles used on-road or off-road, and for appropriate stationary applications which use vehicle de-rived  components  (e.g.,  generator  sets).&quot;</p>
+<p>Fuente <a href="http://www.microcontrol.net/download/manual/hb_j1939_v3r00_en.pdf">http://www.microcontrol.net/download/manual/hb_j1939_v3r00_en.pdf</a></p>
+<h2 id="dbc"><a class="header" href="#dbc">DBC</a></h2>
+<p>DBC Definition de J1939 500 Euros</p>
+<pre><code>
+0	Torque/Speed Control 1
+256	Transmission Control 1
+512	Electronic Brake System #1/1
+768	Electronic Brake System #2/1
+1024	External Brake Request
+1280	CANopen Application Message #1/1
+1536	CANopen Application Message #2/1
+1792	General Purpose Valve Pressure
+2048	Auxiliary Input/Output Status 5
+2304	Static Roll Angle Sensor Information
+2560	Cruise Control / Vehicle Speed 2
+2816	Advanced Emergency Braking System 2
+3072	Electronic Engine Controller 16
+3328	Transmission Control 2
+3584	Safety Header Message
+6912	High Voltage Energy Storage System Control 1
+7168	Transmission Control 3
+7424	Engine Ignition Controller
+7680	Alternator Control
+8960	Tractor Implement Management (TIM) Server to TIM Client
+9216	Tractor Implement Management (TIM) Client to TIM Server
+9472	CiA 602-2 Multi-PDU
+9728	Motor/Generator 1 Inverter Control
+9984	Motor/Generator 2 Inverter Control
+10240	Motor/Generator 1 Inverter Rate Limits Request 1
+10496	Motor/Generator 2 Inverter Rate Limits Request 1
+10752	High Voltage Energy Storage Pack 1 Control 1
+11008	High Voltage Energy Storage Pack 2 Control 1
+11264	High Voltage Energy Storage Pack 3 Control 1
+11520	High Voltage Energy Storage Pack 4 Control 1
+11776	High Voltage Energy Storage Pack 5 Control 1
+12032	High Voltage Energy Storage Pack 6 Control 1
+21248	EVSE 1 Control 1
+21504	Winch Information 3
+21760	Air Suspension Control 8
+22016	Motor/Generator 2 Inverter Control 2
+22272	Motor/Generator 1 Inverter Control 2
+22528	Hoist Command Information
+22784	Motor/Generator 2 Inverter Isolation Integrity Request
+23040	Motor/Generator 1 Inverter Isolation Integrity Request
+23296	Motor/Generator 2 Inverter Limits Request Power
+23552	Motor/Generator 2 Inverter Limits Request Mechanical
+23808	Motor/Generator 2 Inverter Limits Request DC Side
+24064	Motor/Generator 1 Inverter Limits Request DC Side
+24320	Motor/Generator 1 Inverter Limits Request Mechanical
+24576	Motor/Generator 1 Inverter Limits Request Power
+24832	Personnel Detect Interlock
+25088	Engine Cylinder Combustion Configuration Feedback
+25344	Engine Cylinder Combustion Configuration
+25600	Engine Cylinder Pressure Timing Feedback
+25856	Engine Cylinder Pressure Timing Configuration
+26112	Electrified Accessory Generator Coolant Pump Command 
+26368	Electrified Accessory Generator Coolant Fan Command 
+26624	On Board Programming 1
+26880	Marine Control Information Configuration 1
+27136	Marine Control Information 2
+27392	Well Stimulation Pump Sensor Calibration Command
+27648	CiA 602-2 XCP
+27904	Well Stimulation Pump System Configuration Command
+28160	Configurable Receive SPNs Command
+28416	Authentication Client to Authentication Server
+28672	Authentication Server to Authentication Client
+28928	Configurable Transmit PGNs Command
+29184	Oil Debris Monitor Configuration Command
+29440	Electrified Accessory Propulsion Motor Coolant Fan 3 Command
+29696	Electrified Accessory Propulsion Motor Coolant Fan 2 Command
+29952	Electrified Accessory Propulsion Motor Coolant Fan 1 Command
+30208	Electrified Accessory Power Electronics Coolant Fan 3 Command
+30464	Electrified Accessory Power Electronics Coolant Fan 2 Command
+30720	Electrified Accessory Power Electronics Coolant Fan 1 Command
+30976	Electrified Accessory Propulsion Motor Oil Pump Command
+31232	Electrified Accessory Propulsion Motor Coolant Pump Command
+31488	Electrified Accessory Power Electronics Coolant Pump Command
+32000	Electrified Accessory Motor Command
+32256	Engine Speed Ramp Rate Boundary Request
+32512	Tire Sensor Identification Command
+32768	Hybrid System Control 1
+33024	Aftertreatment System Control
+33280	Tire Configuration Command Information
+33536	Payload Calibration Information Command
+33792	Aftertreatment 1 Particulate Sensor Control
+34048	Cab Message 2
+34304	Switched Power Outputs Command
+34560	Engine State Requests
+34816	Radio Beacon Request
+35072	Running Gear Equipment #2/4
+35328	Running Gear Equipment #1/2
+35584	CCP Data Transmission Object
+35840	CCP Command Receive Object
+36096	Sequence Control Client-to-Sequence Control Master
+36352	Sequence Control Master-to-Sequence Control Client
+36608	Engine Configuration Commands
+36864	Supplemental Fan Command
+37120	Vehicle/Chassis Lubrication System 1
+37376	Aftertreatment 1 Hydrocarbon Doser Information 1
+37632	NAME Management Message
+37888	Aftertreatment 1 Diesel Particulate Filter Soot Sensor Calibration
+38144	Aftertreatment 2 Diesel Particulate Filter Soot Sensor Calibration
+38400	Low Voltage Disconnect Set Operating Mode
+38656	Noise Control Status
+38912	Noise Control 1
+39168	Joystick Lamp Command Message
+39424	General Purpose Message #1/8
+39680	Proprietary Method Identification
+39936	Auxiliary Input/Output Status 7
+40192	Auxiliary Input/Output Status 6
+40448	DTC Counts
+40704	Immediate Fault Status
+40960	NTE Status
+41216	Emission Increasing Auxiliary Emission Control Device Active Time
+41472	Regulated Exhaust Emission Level Exceedance
+41728	DTC To Lamp Association
+41984	Scaled Test Results
+42240	Auxiliary Input/Output Status 4
+42496	Auxiliary Input/Output Status 3
+42752	Auxiliary Input/Output Status 2
+43008	Text Display
+43264	Forward Lane Image Command
+43520	Client (ECU) to File Server message
+43776	File Server to Client (ECU) message
+44032	Agricultural Guidance Machine Info
+44288	Agricultural Guidance System Command
+44544	Tire Pressure Reference Setting
+44800	Parameter Locate Message
+45056	Configuration Identification Message
+45312	Proprietarily Configurable Message #1
+45568	Proprietarily Configurable Message #2
+45824	Proprietarily Configurable Message #3
+46080	Proprietarily Configurable Message #4
+46336	Proprietarily Configurable Message #5
+46592	Proprietarily Configurable Message #6
+46848	Proprietarily Configurable Message #7
+47104	Proprietarily Configurable Message #8
+47360	Proprietarily Configurable Message #9
+47616	Proprietarily Configurable Message #10
+47872	Proprietarily Configurable Message #11
+48128	Proprietarily Configurable Message #12
+48384	Proprietarily Configurable Message #13
+48640	Proprietarily Configurable Message #14
+48896	Proprietarily Configurable Message #15
+49152	Proprietarily Configurable Message #16
+49408	Diagnostic Readiness 2
+49664	Monitor Performance Ratio
+49920	Individual Clear/Reset Of Active And Previously Active DTC
+50176	General Purpose Valve Command
+50432	General Purpose Valve Measured Flow
+50688	General Purpose Valve Estimated Flow
+50944	Extended Transport Protocol - Data Transfer
+51200	Extended Transport Protocol - Connection Management
+51456	Request 2
+51712	Transfer
+51968	Process Data Message
+52224	Request for Repetition Rate
+52480	Reserved for ISO 15765-2
+52736	Reserved for ISO 15765-2
+52992	Continuous Torque &amp; Speed Limit Request
+53248	Cab Illumination Message
+53504	Air Suspension Control 6
+53760	Air Suspension Control 2
+54016	Calibration Information
+54272	Data Security
+54528	Time/Date Adjust
+54784	Boot Load Data
+55040	Binary Data Transfer
+55296	Memory Access Response
+55552	Memory Access Request
+55808	Reserved for ISO 15765-2
+56064	Reserved for ISO 15765-2
+56320	Anti-theft Status
+56576	Anti-theft Request
+56832	Reset
+57088	Stop Start Broadcast
+57344	Cab Message 1
+57600	General Purpose Message #2/1
+57856	General Purpose Message #1/1
+58112	Command Non-continuously Monitored Test
+58368	Running Gear Equipment #1/1
+58624	Running Gear Equipment #2/1
+58880	Virtual Terminal-to-Node
+59136	Node-to-Virtual Terminal
+59392	Acknowledgment Message
+59904	Request
+60160	Transport Protocol - Data Transfer
+60416	Transport Protocol - Connection Mgmt
+60672	Network Layer
+60928	Address Claimed
+61184	Proprietary A
+61440	Electronic Retarder Controller 1
+61441	Electronic Brake Controller 1
+61442	Electronic Transmission Controller 1
+61443	Electronic Engine Controller 2
+61444	Electronic Engine Controller 1
+61445	Electronic Transmission Controller 2
+61446	Electronic Axle Controller 1
+61447	Forward Lane Image 1
+61448	Hydraulic Pressure Governor Info
+61449	Vehicle Dynamic Stability Control 2
+61450	Engine Gas Flow Rate
+61451	Electronic Steering Control
+61452	Electronic Transmission Controller #8
+61453	Land Leveling System Operational Information
+61454	Aftertreatment 1 Intake Gas 1
+61455	Aftertreatment 1 Outlet Gas 1
+61456	Aftertreatment 2 Intake Gas 1
+61457	Aftertreatment 2 Outlet Gas 1
+61458	Fifth Wheel Smart Systems 1
+61459	Slope Sensor Information
+61460	Blade Information
+61461	Requested Generator Total AC Reactive Power
+61462	Cylinder Combustion Status
+61463	Engine Knock Level #1
+61464	Engine Knock Level #2
+61465	Engine Knock Level #3
+61466	Engine Throttle / Fuel Actuator Control Command
+61467	General Purpose Message #1/7
+61468	Requested Generator Average Basic AC Quantities
+61469	Steering Angle Sensor Information
+61470	Generator Control 2
+61471	Electronic Brake System #2/6
+61472	Electronic Brake System #2/5
+61473	Engine Speed Sensor Information 1
+61474	Machine Selected Speed
+61475	Aftertreatment 1 SCR Dosing System Information 1
+61476	Aftertreatment 1 SCR Dosing System Requests 1
+61477	Aftertreatment 1 SCR Ammonia Information
+61478	Aftertreatment 2 SCR Dosing System Information 1
+61479	Aftertreatment 2 SCR Dosing System Requests 1
+61480	Aftertreatment 2 SCR Ammonia Information
+61481	Slope Sensor Information 2
+61482	Angular Rate Information
+61483	Crash Notification
+61484	Magnet Status Information 2
+61485	Acceleration Sensor
+61486	Engine Turbocharger Control
+61487	Advanced Emergency Braking System 1
+61488	Wireless Status
+61489	Wand Sensor
+61490	Linear Displacement Sensor
+61491	Aftertreatment 1 SCR Ammonia Information 2
+61492	Aftertreatment 2 SCR Ammonia Information 2
+61494	High Voltage Energy Storage System Status 2
+61495	Engine Turbocharger Blowoff Actuator 1
+61496	Engine Torque / Fuel Request
+61497	Engine Air System Information
+61498	Engine Cylinder 1 Combustion Information
+61499	Engine Cylinder 2 Combustion Information
+61500	Engine Cylinder 3 Combustion Information
+61501	Engine Cylinder 4 Combustion Information
+61502	Engine Cylinder 5 Combustion Information
+61503	Engine Cylinder 6 Combustion Information
+61504	Engine Cylinder 7 Combustion Information
+61505	Engine Cylinder 8 Combustion Information
+61506	Engine Cylinder 9 Combustion Information
+61507	Engine Cylinder 10 Combustion Information
+61508	Engine Cylinder 11 Combustion Information
+61509	Engine Cylinder 12 Combustion Information
+61510	Engine Cylinder 13 Combustion Information
+61511	Engine Cylinder 14 Combustion Information
+61512	Engine Cylinder 15 Combustion Information
+61513	Engine Cylinder 16 Combustion Information
+61514	Engine Cylinder 17 Combustion Information
+61515	Engine Cylinder 18 Combustion Information
+61516	Engine Cylinder 19 Combustion Information
+61517	Engine Cylinder 20 Combustion Information
+61518	Engine Cylinder 1 Combustion Average Information
+61519	Engine Cylinder 2 Combustion Average Information
+61520	Engine Cylinder 3 Combustion Average Information
+61521	Engine Cylinder 4 Combustion Average Information
+61522	Engine Cylinder 5 Combustion Average Information
+61523	Engine Cylinder 6 Combustion Average Information
+61524	Engine Cylinder 7 Combustion Average Information
+61525	Engine Cylinder 8 Combustion Average Information
+61526	Engine Cylinder 9 Combustion Average Information
+61527	Engine Cylinder 10 Combustion Average Information
+61528	Engine Cylinder 11 Combustion Average Information
+61529	Engine Cylinder 12 Combustion Average Information
+61530	Engine Cylinder 13 Combustion Average Information
+61531	Engine Cylinder 14 Combustion Average Information
+61532	Engine Cylinder 15 Combustion Average Information
+61533	Engine Cylinder 16 Combustion Average Information
+61534	Engine Cylinder 17 Combustion Average Information
+61535	Engine Cylinder 18 Combustion Average Information
+61536	Engine Cylinder 19 Combustion Average Information
+61537	Engine Cylinder 20 Combustion Average Information
+61538	Electronic Transmission Controller #12
+61539	Fuel Information 5 (Gaseous)
+61540	Engine Gaseous Fuel Valve Duration Command 1
+61541	Engine Gaseous Fuel Valve Duration Command 2
+61542	Engine Gaseous Fuel Valve Duration Command 3
+61543	Engine Gaseous Fuel Valve Duration Command 4
+61544	Engine Gaseous Fuel Valve Duration Command 5
+61545	Engine Gaseous Fuel Valve Start of Actuation Command 1
+61546	Engine Gaseous Fuel Valve Start of Actuation Command 2
+61547	Engine Gaseous Fuel Valve Start of Actuation Command 3
+61548	Engine Gaseous Fuel Valve Start of Actuation Command 4
+61549	Engine Gaseous Fuel Valve Start of Actuation Command 5
+61550	Fuel Pump Actuator Control Command
+61584	High Voltage Energy Storage System Data 1
+61585	High Voltage Energy Storage System Data 2
+61586	High Voltage Energy Storage System Data 3
+61587	High Voltage Energy Storage System Data 4
+61588	High Voltage Energy Storage System Data 5
+61589	High Voltage Energy Storage System 1 Data 6
+61590	High Voltage Energy Storage System Status 1
+61600	High Voltage Energy Storage System Data 7
+61640	DC/AC Accessory Inverter 1 Status 2
+61641	DC/AC Accessory Inverter 1 Voltage
+61642	DC/AC Accessory Inverter 1 Feedback 2
+61643	DC/AC Accessory Inverter 2 Status 2
+61644	DC/AC Accessory Inverter 2 Voltage
+61645	DC/AC Accessory Inverter 2 Feedback 2
+61648	Engine Cylinder Combustion Request
+61649	Engine Cylinder Head Bypass Actuator 1
+61650	Engine Electronic Controller 18
+61651	Predictive Cruise Control 1
+61654	DC/AC Accessory Inverter 1 Command
+61655	DC/AC Accessory Inverter 1 Feedback
+61658	DC/AC Accessory Inverter 2 Command
+61659	DC/AC Accessory Inverter 2 Feedback
+61662	DC/AC Accessory Inverter 3 Command
+61663	DC/AC Accessory Inverter 3 Feedback
+61666	DC/AC Accessory Inverter 4 Command
+61667	DC/AC Accessory Inverter 4 Feedback
+61668	Heartbeat message
+61669	Engine Ignition Timing Offset 1
+61670	Engine Ignition Timing Offset 2
+61671	Engine Ignition Timing Offset 3
+61672	Engine Throttle / Fuel Actuator Control Command 2
+61673	Aftertreatment 1 Intake Gas 3
+61674	Aftertreatment 1 Outlet Gas 3
+61675	Aftertreatment 2 Intake Gas Sensor 2
+61676	Aftertreatment 2 Outlet Gas Sensor 2
+61677	Engine Start Control
+61685	Engine Start Arbitrator
+61686	Advanced Driver Assistance Systems Interface Specification 1
+61687	Advanced Driver Assistance Systems Interface Specification 2
+61688	Advanced Driver Assistance Systems Interface Specification 3
+61689	Engine Valve Controller
+61690	Electronic Transmission Controller 13
+61691	Aftertreatment 1 SCR Dosing System Requests 3
+61692	Aftertreatment 2 SCR Dosing System Requests 3
+61693	Aftertreatment 1 SCR Dosing System Information 4
+61694	Aftertreatment 2 SCR Dosing System Information 4
+61695	Secondary or Front Hitch Roll and Pitch
+61696	Secondary or Front Hitch Roll and Pitch Command
+61697	Primary or Rear Hitch Roll and Pitch
+61698	Primary or Rear Hitch Roll and Pitch Command
+61699	Generator Trip Energy
+61700	Engine Speed Sensor Information 2
+61701	Hydraulic Pressure Displacement
+61702	Well Stimulation Pump System 1
+61703	Well Stimulation Pump System 2
+61704	High Voltage Energy Storage System Module Status 1
+61705	High Voltage Energy Storage System Thermal Management System Status 1
+61706	High Voltage Energy Storage System Data 8
+61707	High Voltage Energy Storage System Data 9
+61708	High Voltage Energy Storage System Data 10
+61709	Fuel Information 6 (Gaseous)
+61710	Dump Truck Body Information
+61711	Engine Operating Information 2
+61712	Brakes 2
+61713	Gaseous Fuel Pressure 3
+61714	DC/DC Converter 1 Control
+61715	DC/DC Converter 1 Operating Status
+61716	DC/DC Converter 1 Voltage and Current
+61717	DC/DC Converter 1 SLI Battery Status
+61718	Well Stimulation Pump System 3
+61719	DC/DC Converter 1 Status 2
+61720	DC/DC Converter 2 Control
+61721	DC/DC Converter 2 Operating Status
+61722	DC/DC Converter 2 Voltage and Current
+61723	DC/DC Converter 2 SLI Battery Status
+61724	DC/DC Converter 2 Status 2
+61725	DC/DC Converter 3 Control
+61726	DC/DC Converter 3 Operating Status
+61727	DC/DC Converter 3 Voltage and Current
+61728	DC/DC Converter 3 SLI Battery Status
+61729	DC/DC Converter 3 Status 2
+61730	DC/DC Converter 4 Control
+61731	DC/DC Converter 4 Operating Status
+61732	DC/DC Converter 4 Voltage and Current
+61733	DC/DC Converter 4 SLI Battery Status
+61734	DC/DC Converter 4 Status 2
+61735	Slope Sensor Information 3
+61736	DC/AC Accessory Inverter 3 Status 2
+61737	DC/AC Accessory Inverter 3 Voltage
+61738	DC/AC Accessory Inverter 3 Feedback 2
+61739	DC/AC Accessory Inverter 4 Status 2
+61740	DC/AC Accessory Inverter 4 Voltage
+61741	DC/AC Accessory Inverter 4 Feedback 2
+61742	DC/AC Accessory Inverter 5 Command
+61743	DC/AC Accessory Inverter 5 Feedback
+61744	DC/AC Accessory Inverter 5 Status 2
+61745	DC/AC Accessory Inverter 5 Voltage
+61746	DC/AC Accessory Inverter 5 Feedback 2
+61747	Engine Pre-Chamber Fuel Valve Duration Command 1
+61748	Engine Pre-Chamber Fuel Valve Duration Command 2
+61749	Engine Pre-Chamber Fuel Valve Duration Command 3
+61750	Engine Pre-Chamber Fuel Valve Duration Command 4
+61751	Engine Pre-Chamber Fuel Valve Duration Command 5
+61752	Engine Pre-Chamber Fuel Valve Start of Actuation Command 1
+61753	Engine Pre-Chamber Fuel Valve Start of Actuation Command 2
+61754	Engine Pre-Chamber Fuel Valve Start of Actuation Command 3
+61755	Engine Pre-Chamber Fuel Valve Start of Actuation Command 4
+61756	Engine Pre-Chamber Fuel Valve Start of Actuation Command 5
+61757	Active Steering System Controls 1
+61758	Secondary or Front Hitch Yaw Command
+61759	Primary or Rear Hitch Yaw Command
+61760	Stationary Inverter Average Basic AC Quantities
+61761	Stationary Inverter Total AC Reactive Power
+61762	Stationary Inverter Total AC Power
+61763	Stationary Inverter Control
+61764	Stationary Inverter to Bus Sync Check Status
+61765	Engine Cylinder 1 Combustion Pressures
+61766	Engine Cylinder 2 Combustion Pressures
+61767	Engine Cylinder 3 Combustion Pressures
+61768	Engine Cylinder 4 Combustion Pressures
+61769	Engine Cylinder 5 Combustion Pressures
+61770	Engine Cylinder 6 Combustion Pressures
+61771	Engine Cylinder 7 Combustion Pressures
+61772	Engine Cylinder 8 Combustion Pressures
+61773	Engine Cylinder 9 Combustion Pressures
+61774	Engine Cylinder 10 Combustion Pressures
+61775	Engine Cylinder 11 Combustion Pressures
+61776	Engine Cylinder 12 Combustion Pressures
+61777	Engine Cylinder 13 Combustion Pressures
+61778	Engine Cylinder 14 Combustion Pressures
+61779	Engine Cylinder 15 Combustion Pressures
+61780	Engine Cylinder 16 Combustion Pressures
+61781	Engine Cylinder 17 Combustion Pressures
+61782	Engine Cylinder 18 Combustion Pressures
+61783	Engine Cylinder 19 Combustion Pressures
+61784	Engine Cylinder 20 Combustion Pressures
+61785	Engine Cylinder 1 Combustion Timing
+61786	Engine Cylinder 2 Combustion Timing
+61787	Engine Cylinder 3 Combustion Timing
+61788	Engine Cylinder 4 Combustion Timing
+61789	Engine Cylinder 5 Combustion Timing
+61790	Engine Cylinder 6 Combustion Timing
+61791	Engine Cylinder 7 Combustion Timing
+61792	Engine Cylinder 8 Combustion Timing
+61793	Engine Cylinder 9 Combustion Timing
+61794	Engine Cylinder 10 Combustion Timing
+61795	Engine Cylinder 11 Combustion Timing
+61796	Engine Cylinder 12 Combustion Timing
+61797	Engine Cylinder 13 Combustion Timing
+61798	Engine Cylinder 14 Combustion Timing
+61799	Engine Cylinder 15 Combustion Timing
+61800	Engine Cylinder 16 Combustion Timing
+61801	Engine Cylinder 17 Combustion Timing
+61802	Engine Cylinder 18 Combustion Timing
+61803	Engine Cylinder 19 Combustion Timing
+61804	Engine Cylinder 20 Combustion Timing
+61805	Engine Cylinder 1 Combustion Metrics
+61806	Engine Cylinder 2 Combustion Metrics
+61807	Engine Cylinder 3 Combustion Metrics
+61808	Engine Cylinder 4 Combustion Metrics
+61809	Engine Cylinder 5 Combustion Metrics
+61810	Engine Cylinder 6 Combustion Metrics
+61811	Engine Cylinder 7 Combustion Metrics
+61812	Engine Cylinder 8 Combustion Metrics
+61813	Engine Cylinder 9 Combustion Metrics
+61814	Engine Cylinder 10 Combustion Metrics
+61815	Engine Cylinder 11 Combustion Metrics
+61816	Engine Cylinder 12 Combustion Metrics
+61817	Engine Cylinder 13 Combustion Metrics
+61818	Engine Cylinder 14 Combustion Metrics
+61819	Engine Cylinder 15 Combustion Metrics
+61820	Engine Cylinder 16 Combustion Metrics
+61821	Engine Cylinder 17 Combustion Metrics
+61822	Engine Cylinder 18 Combustion Metrics
+61823	Engine Cylinder 19 Combustion Metrics
+61824	Engine Cylinder 20 Combustion Metrics
+61825	Motor/Generator 1 Inverter Mode Feedback 1
+61826	Motor/Generator 1 Inverter Limits Active Power
+61827	Motor/Generator 1 Inverter Limits Active Mechanical
+61828	Motor/Generator 1 Inverter Limits Active DC Side
+61829	Motor/Generator 1 Inverter Low Voltage
+61830	Motor/Generator 2 Inverter Mode Feedback 1
+61831	Motor/Generator 2 Inverter Limits Active Power
+61832	Motor/Generator 2 Inverter Limits Active Mechanical
+61833	Motor/Generator 2 Inverter Limits Active DC Side
+61834	Motor/Generator 2 Inverter Low Voltage
+61835	Motor/Generator 1 Inverter Status 2
+61836	Motor/Generator 1 Inverter Rate Limits Active 1
+61837	Motor/Generator 2 Inverter Status 2
+61838	Motor/Generator 2 Inverter Rate Limits Active 1
+61839	Impostor PG Alert
+61840	High Voltage Energy Storage Pack 1 Status 2
+61841	High Voltage Energy Storage Pack 1 Data 1
+61842	High Voltage Energy Storage Pack 1 Data 2
+61843	High Voltage Energy Storage Pack 1 Data 3
+61844	High Voltage Energy Storage Pack 1 Data 4
+61845	High Voltage Energy Storage Pack 1 Data 5
+61846	High Voltage Energy Storage Pack 1 Data 6
+61847	High Voltage Energy Storage Pack 1 Status 1
+61848	High Voltage Energy Storage Pack 1 Data 7
+61849	High Voltage Energy Storage Pack 1 Module Status 1
+61850	High Voltage Energy Storage Pack 1 Thermal Management System Status 1
+61851	High Voltage Energy Storage Pack 1 Data 8
+61852	High Voltage Energy Storage Pack 1 Data 9
+61853	High Voltage Energy Storage Pack 1 Data 10
+61854	High Voltage Energy Storage Pack 1 Data 11
+61855	High Voltage Energy Storage Pack 2 Status 2
+61856	High Voltage Energy Storage Pack 2 Data 1
+61857	High Voltage Energy Storage Pack 2 Data 2
+61858	High Voltage Energy Storage Pack 2 Data 3
+61859	High Voltage Energy Storage Pack 2 Data 4
+61860	High Voltage Energy Storage Pack 2 Data 5
+61861	High Voltage Energy Storage Pack 2 Data 6
+61862	High Voltage Energy Storage Pack 2 Status 1
+61863	High Voltage Energy Storage Pack 2 Data 7
+61864	High Voltage Energy Storage Pack 2 Module Status 1
+61865	High Voltage Energy Storage Pack 2 Thermal Management System Status 1
+61866	High Voltage Energy Storage Pack 2 Data 8
+61867	High Voltage Energy Storage Pack 2 Data 9
+61868	High Voltage Energy Storage Pack 2 Data 10
+61869	High Voltage Energy Storage Pack 2 Data 11
+61870	High Voltage Energy Storage Pack 3 Status 2
+61871	High Voltage Energy Storage Pack 3 Data 1
+61872	High Voltage Energy Storage Pack 3 Data 2
+61873	High Voltage Energy Storage Pack 3 Data 3
+61874	High Voltage Energy Storage Pack 3 Data 4
+61875	High Voltage Energy Storage Pack 3 Data 5
+61876	High Voltage Energy Storage Pack 3 Data 6
+61877	High Voltage Energy Storage Pack 3 Status 1
+61878	High Voltage Energy Storage Pack 3 Data 7
+61879	High Voltage Energy Storage Pack 3 Module Status 1
+61880	High Voltage Energy Storage Pack 3 Thermal Management System Status 1
+61881	High Voltage Energy Storage Pack 3 Data 8
+61882	High Voltage Energy Storage Pack 3 Data 9
+61883	High Voltage Energy Storage Pack 3 Data 10
+61884	High Voltage Energy Storage Pack 3 Data 11
+61885	High Voltage Energy Storage Pack 4 Status 2
+61886	High Voltage Energy Storage Pack 4 Data 1
+61887	High Voltage Energy Storage Pack 4 Data 2
+61888	High Voltage Energy Storage Pack 4 Data 3
+61889	High Voltage Energy Storage Pack 4 Data 4
+61890	High Voltage Energy Storage Pack 4 Data 5
+61891	High Voltage Energy Storage Pack 4 Data 6
+61892	High Voltage Energy Storage Pack 4 Status 1
+61893	High Voltage Energy Storage Pack 4 Data 7
+61894	High Voltage Energy Storage Pack 4 Module Status 1
+61895	High Voltage Energy Storage Pack 4 Thermal Management System Status 1
+61896	High Voltage Energy Storage Pack 4 Data 8
+61897	High Voltage Energy Storage Pack 4 Data 9
+61898	High Voltage Energy Storage Pack 4 Data 10
+61899	High Voltage Energy Storage Pack 4 Data 11
+61900	High Voltage Energy Storage Pack 5 Status 2
+61901	High Voltage Energy Storage Pack 5 Data 1
+61902	High Voltage Energy Storage Pack 5 Data 2
+61903	High Voltage Energy Storage Pack 5 Data 3
+61904	High Voltage Energy Storage Pack 5 Data 4
+61905	High Voltage Energy Storage Pack 5 Data 5
+61906	High Voltage Energy Storage Pack 5 Data 6
+61907	High Voltage Energy Storage Pack 5 Status 1
+61908	High Voltage Energy Storage Pack 5 Data 7
+61909	High Voltage Energy Storage Pack 5 Module Status 1
+61910	High Voltage Energy Storage Pack 5 Thermal Management System Status 1
+61911	High Voltage Energy Storage Pack 5 Data 8
+61912	High Voltage Energy Storage Pack 5 Data 9
+61913	High Voltage Energy Storage Pack 5 Data 10
+61914	High Voltage Energy Storage Pack 5 Data 11
+61915	High Voltage Energy Storage Pack 6 Status 2
+61916	High Voltage Energy Storage Pack 6 Data 1
+61917	High Voltage Energy Storage Pack 6 Data 2
+61918	High Voltage Energy Storage Pack 6 Data 3
+61919	High Voltage Energy Storage Pack 6 Data 4
+61920	High Voltage Energy Storage Pack 6 Data 5
+61921	High Voltage Energy Storage Pack 6 Data 6
+61922	High Voltage Energy Storage Pack 6 Status 1
+61923	High Voltage Energy Storage Pack 6 Data 7
+61924	High Voltage Energy Storage Pack 6 Module Status 1
+61925	High Voltage Energy Storage Pack 6 Thermal Management System Status 1
+61926	High Voltage Energy Storage Pack 6 Data 8
+61927	High Voltage Energy Storage Pack 6 Data 9
+61928	High Voltage Energy Storage Pack 6 Data 10
+61929	High Voltage Energy Storage Pack 6 Data 11
+61930	Motor/Generator 3 Inverter Mode Feedback 1
+61931	Motor/Generator 3 Inverter Limits Active Power
+61932	Motor/Generator 3 Inverter Limits Active Mechanical
+61933	Motor/Generator 3 Inverter Limits Active DC Side
+61934	Motor/Generator 3 Inverter Low Voltage
+61935	Motor/Generator 3 Inverter Status 2
+61936	Motor/Generator 3 Inverter Rate Limits Active 1
+61937	Motor/Generator 4 Inverter Mode Feedback 1
+61938	Motor/Generator 4 Inverter Limits Active Power
+61939	Motor/Generator 4 Inverter Limits Active Mechanical
+61940	Motor/Generator 4 Inverter Limits Active DC Side
+61941	Motor/Generator 4 Inverter Low Voltage
+61942	Motor/Generator 4 Inverter Status 2
+61943	Motor/Generator 4 Inverter Rate Limits Active 1
+61944	Motor/Generator 5 Inverter Mode Feedback 1
+61945	Motor/Generator 5 Inverter Limits Active Power
+61946	Motor/Generator 5 Inverter Limits Active Mechanical
+61947	Motor/Generator 5 Inverter Limits Active DC Side
+61948	Motor/Generator 5 Inverter Low Voltage
+61949	Motor/Generator 5 Inverter Status 2
+61950	Motor/Generator 5 Inverter Rate Limits Active 1
+61951	Motor/Generator 6 Inverter Mode Feedback 1
+61952	Motor/Generator 6 Inverter Limits Active Power
+61953	Motor/Generator 6 Inverter Limits Active Mechanical
+61954	Motor/Generator 6 Inverter Limits Active DC Side
+61955	Motor/Generator 6 Inverter Low Voltage
+61956	Motor/Generator 6 Inverter Status 2
+61957	Motor/Generator 6 Inverter Rate Limits Active 1
+61958	Blind Spot Detection 1
+61959	Winch Information 1
+61960	Motor/Generator 3 Inverter Control
+61961	Motor/Generator 3 Inverter Rate Limits Request 1
+61962	Motor/Generator 4 Inverter Control
+61963	Motor/Generator 4 Inverter Rate Limits Request 1
+61964	Motor/Generator 5 Inverter Control
+61965	Motor/Generator 5 Inverter Rate Limits Request 1
+61966	Motor/Generator 6 Inverter Control
+61967	Motor/Generator 6 Inverter Rate Limits Request 1
+64207	EVCC1 Diagnostic Data 1
+64208	Cab Door Control 2
+64209	Engine Average Information 2
+64210	Turbocharger Information 8
+64211	Automated Driving System Control
+64212	EVSE 1 AC Status 2
+64213	EVSE 1 AC Status 1
+64214	EVSE 1 Status 1
+64215	Object Detection Message #1/1
+64216	Object Detection Message #2/1
+64217	Object Detection Message #2/2
+64218	Object Detection Message #2/3
+64219	Object Detection Message #2/4
+64220	Object Detection Message #2/5
+64221	Object Detection Message #2/6
+64222	Object Detection Message #2/7
+64223	Object Detection Message #2/8
+64224	Object Detection Message #2/9
+64225	Object Detection Message #2/10
+64226	Object Detection Message #2/11
+64227	Object Detection Message #2/12
+64228	Object Detection Message #2/13
+64229	Object Detection Message #2/14
+64230	Object Detection Message #2/15
+64231	Object Detection Message #2/16
+64232	Object Detection Message #2/17
+64233	Object Detection Message #2/18
+64234	Object Detection Message #2/19
+64235	Object Detection Message #2/20
+64236	Object Detection Message #2/21
+64237	Temperature Sensing Module 1
+64238	Temperature Sensing Module 2
+64239	Aftertreatment 2 SCR Service Information 3
+64240	Aftertreatment 1 SCR Service Information 3
+64241	PSA Times Lifetime Hours
+64242	PSA Times Stored 100 Hours
+64243	PSA Times Active 100 Hours
+64244	Hybrid Charge Depleting or Increasing Operation Lifetime Hours
+64245	Hybrid Charge Depleting or Increasing Operation Stored 100 Hours
+64246	Hybrid Charge Depleting or Increasing Operation Active 100 Hours
+64247	Aftertreatment 1 Historical Information 3
+64249	Aftertreatment 1 SCR 2 NOx Mass and NH3 Storage
+64250	Aftertreatment 1 SCR 1 NOx Mass and NH3 Storage
+64251	Evaporative System Pressure and Control
+64252	GHG Tracking Lifetime Array Data
+64253	GHG Tracking Stored 100 Hour Array Data
+64254	GHG Tracking Active 100 Hour Array Data
+64255	Green House Gas Stored 100 Hour Active Technology Tracking 
+64256	Green House Gas Active 100 Hour Active Technology Tracking 
+64257	Green House Gas Lifetime Active Technology Tracking 
+64258	NOx Tracking Engine Activity Lifetime Fuel Consumption Bins 
+64259	NOx Tracking Engine Activity Lifetime Engine Run Time Bins 
+64260	NOx Tracking Engine Activity Lifetime Vehicle Distance Bins 
+64261	NOx Tracking Engine Activity Lifetime Engine Output Energy Bins 
+64262	NOx Tracking Valid NOx Lifetime Fuel Consumption Bins 
+64263	NOx Tracking Valid NOx Lifetime Engine Run Time Bins 
+64264	NOx Tracking Valid NOx Lifetime Vehicle Distance Bins 
+64265	NOx Tracking Valid NOx Lifetime Engine Output Energy Bins 
+64266	NOx Tracking Valid NOx Lifetime Engine Out NOx Mass Bins 
+64267	NOx Tracking Valid NOx Lifetime System Out NOx Mass Bins 
+64268	NOx Tracking Stored 100 Hour Fuel Consumption Bins 
+64269	NOx Tracking Stored 100 Hour Engine Run Time Bins 
+64270	NOx Tracking Stored 100 Hour Vehicle Distance Bins 
+64271	NOx Tracking Stored 100 Hour Engine Output Energy Bins 
+64272	NOx Tracking Stored 100 Hour Engine Out NOx Mass Bins 
+64273	NOx Tracking Stored 100 Hour System Out NOx Mass Bins 
+64274	NOx Tracking Active 100 Hour Fuel Consumption Bins 
+64275	NOx Tracking Active 100 Hour Engine Run Time Bins 
+64276	NOx Tracking Active 100 Hour Vehicle Distance Bins 
+64277	NOx Tracking Active 100 Hour Engine Output Energy Bins 
+64278	NOx Tracking Active 100 Hour Engine Out NOx Mass Bins 
+64279	NOx Tracking Active 100 Hour System Out NOx Mass Bins 
+64280	Motor/Generator 6 Inverter Control 2
+64281	Motor/Generator 6 Inverter Limits Request Power
+64282	Motor/Generator 6 Inverter Limits Request Mechanical
+64283	Motor/Generator 6 Inverter Limits Request DC Side
+64284	Motor/Generator 6 Inverter Isolation Integrity Request
+64285	Motor/Generator 5 Inverter Control 2
+64286	Motor/Generator 5 Inverter Limits Request Power
+64287	Motor/Generator 5 Inverter Limits Request Mechanical
+64288	Motor/Generator 5 Inverter Limits Request DC Side
+64289	Motor/Generator 5 Inverter Isolation Integrity Request
+64290	Motor/Generator 4 Inverter Control 2
+64291	Motor/Generator 4 Inverter Limits Request Power
+64292	Motor/Generator 4 Inverter Limits Request Mechanical
+64293	Motor/Generator 4 Inverter Limits Request DC Side
+64294	Motor/Generator 4 Inverter Isolation Integrity Request
+64295	Motor/Generator 3 Inverter Control 2
+64296	Motor/Generator 3 Inverter Limits Request Power
+64297	Motor/Generator 3 Inverter Limits Request Mechanical
+64298	Motor/Generator 3 Inverter Limits Request DC Side
+64299	Motor/Generator 3 Inverter Isolation Integrity Request
+64300	Diagnostic Readiness 4
+64301	Turbocharger Information 8
+64302	Winch Information 2
+64303	Motor/Generator 6 Inverter Reference 1
+64304	Motor/Generator 6 Inverter Status 1
+64305	Motor/Generator 6 Inverter Reference 2
+64306	Motor/Generator 6 Inverter Temperature
+64307	Motor/Generator 6 Inverter Motor Temperature
+64308	Motor/Generator 6 Inverter Isolation Integrity
+64309	Motor/Generator 6 Inverter Active Power Limits
+64310	Motor/Generator 5 Inverter Reference 1
+64311	Motor/Generator 5 Inverter Status 1
+64312	Motor/Generator 5 Inverter Reference 2
+64313	Motor/Generator 5 Inverter Temperature
+64314	Motor/Generator 5 Inverter Motor Temperature
+64315	Motor/Generator 5 Inverter Isolation Integrity
+64316	Motor/Generator 5 Inverter Active Power Limits
+64317	Motor/Generator 4 Inverter Reference 1
+64318	Motor/Generator 4 Inverter Status 1
+64319	Motor/Generator 4 Inverter Reference 2
+64320	Motor/Generator 4 Inverter Temperature
+64321	Motor/Generator 4 Inverter Motor Temperature
+64322	Motor/Generator 4 Inverter Isolation Integrity
+64323	Motor/Generator 4 Inverter Active Power Limits
+64324	Motor/Generator 3 Inverter Reference 1
+64325	Motor/Generator 3 Inverter Status 1
+64326	Motor/Generator 3 Inverter Reference 2
+64327	Motor/Generator 3 Inverter Temperature
+64328	Motor/Generator 3 Inverter Motor Temperature
+64329	Motor/Generator 3 Inverter Isolation Integrity
+64330	Motor/Generator 3 Inverter Active Power Limits
+64331	Automated Driving System Feedback
+64332	Cab Climate System Information 2
+64333	Maintenance Information
+64334	Hoist Control Information
+64335	High Voltage Energy Storage Pack 6 History
+64336	High Voltage Energy Storage Pack 6 Configuration
+64337	High Voltage Energy Storage Pack 5 History
+64338	High Voltage Energy Storage Pack 5 Configuration
+64339	High Voltage Energy Storage Pack 4 History
+64340	High Voltage Energy Storage Pack 4 Configuration
+64341	High Voltage Energy Storage Pack 3 History
+64342	High Voltage Energy Storage Pack 3 Configuration
+64343	High Voltage Energy Storage Pack 2 History
+64344	High Voltage Energy Storage Pack 2 Configuration
+64345	High Voltage Energy Storage Pack 1 History
+64346	High Voltage Energy Storage Pack 1 Configuration
+64347	Vehicle Fire Suppression System Module 1 Detector Data
+64348	Vehicle Fire Suppression System Module 2 Detector Data
+64349	Vehicle Fire Suppression System Module 3 Detector Data
+64350	Vehicle Fire Suppression System Module 4 Detector Data
+64351	Vehicle Fire Suppression System Module 1 Auxilliary Data
+64352	Vehicle Fire Suppression System Module 2 Auxilliary Data
+64353	Vehicle Fire Suppression System Module 3 Auxilliary Data
+64354	Vehicle Fire Suppression System Module 4 Auxilliary Data
+64355	Vehicle Fire Suppression System Module 1 Names
+64356	Vehicle Fire Suppression System Module 2 Names
+64357	Vehicle Fire Suppression System Module 3 Names
+64358	Vehicle Fire Suppression System Module 4 Names
+64359	Motor/Generator 2 Inverter Active Power Limits
+64360	Motor/Generator 2 Inverter Isolation Integrity
+64361	Motor/Generator 1 Inverter Active Power Limits
+64362	Motor/Generator 1 Inverter Isolation Integrity
+64363	High Voltage Bus Information
+64364	Motor/Generator 2 Inverter Reference 1
+64365	Motor/Generator 2 Inverter Status 1
+64366	Motor/Generator 2 Inverter Reference 2
+64367	Motor/Generator 2 Inverter Temperature
+64368	Motor/Generator 2 Inverter Motor Temperature
+64369	Motor/Generator 1 Inverter Motor Temperature
+64370	Motor/Generator 1 Inverter Temperature
+64371	Motor/Generator 1 Inverter Reference 2
+64372	Motor/Generator 1 Inverter Status 1
+64373	Motor/Generator 1 Inverter Reference 1
+64374	Personnel Detect Status
+64375	Engine Cylinder Pressure Gamma 1
+64376	Engine Cylinder Pressure Gamma 2
+64377	Engine Cylinder Pressure Gamma 3
+64378	Engine Cylinder Pressure Gamma 4
+64379	Engine Cylinder Pressure Gamma 5
+64380	Reserved for Network Operation Mode
+64381	Electrified Accessory Generator Coolant Pump Status
+64382	Electrified Accessory Generator Coolant Fan Status
+64383	Well Stimulation Pump System Filter Information
+64384	PTO Governor Configuration
+64385	On Board Programming 2
+64386	Primary or Rear Hitch Yaw
+64387	Secondary or Front Hitch Yaw
+64388	Operator Status
+64389	Engine Idle Management Information
+64390	Alcohol Interlock To Vehicle
+64391	Vehicle To Alcohol Interlock
+64392	Marine Control Information 3
+64393	Engine Fluid Level/Pressure 13
+64394	High Voltage Energy Storage System  Data 11
+64395	Economy Mode Inactive Hours
+64396	Economy Mode Estimated Instantaneous Fuel Savings Rate
+64397	Economy Mode Active Hours
+64398	Economy Mode Fuel Used
+64399	Economy Mode Estimated Fuel Savings
+64400	DC/DC Converter 4 Voltage
+64401	DC/DC Converter 3 Voltage
+64402	DC/DC Converter 2 Voltage
+64403	DC/DC Converter 1 Voltage
+64404	Electronic Engine Controller 22
+64405	Engine Hours 2
+64406	Engine Information 3
+64407	Vehicle Electrical Power 15
+64408	Exhaust Oxygen 2
+64409	DC/AC Accessory Inverter 1 Temperatures
+64410	DC/AC Accessory Inverter 1 DC Side Limits 
+64411	DC/AC Accessory Inverter 1 AC Side Limits 
+64412	DC/AC Accessory Inverter 1 Configuration 1
+64413	DC/AC Accessory Inverter 1 Lifetime Data
+64414	DC/AC Accessory Inverter 2 Temperatures
+64415	DC/AC Accessory Inverter 2 DC Side Limits 
+64416	DC/AC Accessory Inverter 2 AC Side Limits 
+64417	DC/AC Accessory Inverter 2 Configuration 1
+64418	DC/AC Accessory Inverter 2 Lifetime Data
+64419	DC/AC Accessory Inverter 3 Temperatures
+64420	DC/AC Accessory Inverter 3 DC Side Limits 
+64421	DC/AC Accessory Inverter 3 AC Side Limits 
+64422	DC/AC Accessory Inverter 3 Configuration 1
+64423	DC/AC Accessory Inverter 3 Lifetime Data
+64424	DC/AC Accessory Inverter 4 Temperatures
+64425	DC/AC Accessory Inverter 4 DC Side Limits 
+64426	DC/AC Accessory Inverter 4 AC Side Limits 
+64427	DC/AC Accessory Inverter 4 Configuration 1
+64428	DC/AC Accessory Inverter 4 Lifetime Data
+64429	DC/AC Accessory Inverter 5 Temperatures
+64430	DC/AC Accessory Inverter 5 DC Side Limits 
+64431	DC/AC Accessory Inverter 5 AC Side Limits 
+64432	DC/AC Accessory Inverter 5 Configuration 1
+64433	DC/AC Accessory Inverter 5 Lifetime Data
+64434	Well Stimulation Pump Sensor Calibration Status
+64435	Well Stimulation Pump Fluid Volume
+64436	Well Stimulation Pump Serial Number
+64437	Well Stimulation Pump Trip Hours
+64438	Aftertreatment 1 Outlet Gas 4
+64439	Aftertreatment 1 Intake Gas 4
+64440	DC/DC Converter 4 Lifetime Data
+64441	DC/DC Converter 4 Configuration 1
+64442	DC/DC Converter 4 SLI Battery Limits
+64443	DC/DC Converter 4 Temperatures
+64444	DC/DC Converter 4 Low Side Limits
+64445	DC/DC Converter 4 High Side Limits
+64446	DC/DC Converter 3 Lifetime Data
+64447	DC/DC Converter 3 Configuration 1
+64448	DC/DC Converter 3 SLI Battery Limits
+64449	DC/DC Converter 3 Temperatures
+64450	DC/DC Converter 3 Low Side Limits
+64451	DC/DC Converter 3 High Side Limits
+64452	DC/DC Converter 2 Lifetime Data
+64453	DC/DC Converter 2 Configuration 1
+64454	DC/DC Converter 2 SLI Battery Limits
+64455	DC/DC Converter 2 Temperatures
+64456	DC/DC Converter 2 Low Side Limits
+64457	DC/DC Converter 2 High Side Limits
+64458	CiA 602-2 AUTOSAR CAN-NM
+64459	Engine Exhaust Particulate Control System Info
+64460	Well Stimulation Pump Hours
+64461	Well Stimulation Pump System Configuration Status
+64462	Configurable Receive SPNs Status
+64463	DC/DC Converter 1 Lifetime Data
+64464	DC/DC Converter 1 Configuration 1
+64465	DC/DC Converter 1 SLI Battery Limits
+64466	Pump Oil Message
+64467	Well Stimulation Pump System Lifetime Totals
+64468	Well Stimulation Pump System Configuration
+64469	Aftercooler and Oil Cooler Fluids 2
+64470	Electronic Engine Controller 21
+64471	Configurable Transmit PGNs Status
+64472	DC/DC Converter 1 Temperatures
+64473	DC/DC Converter 1 Low Side Limits
+64474	DC/DC Converter 1 High Side Limits
+64475	Reserved for Diagnostic Message
+64476	Door Control 4
+64477	Door Control 3
+64478	Engine Temperature 6
+64479	Intake/Exhaust Conditions 3
+64480	Aftercooler and Oil Cooler Fluids 1
+64481	Diode Temperature 2
+64482	Diode Temperature 1
+64483	Alternator Temperature 2
+64484	Fuel Information 7 (Gaseous)
+64485	High Voltage Energy Storage System Fan Status
+64486	High Voltage Energy Storage System Fan Commands
+64487	SCR Operator Inducement Information 5
+64488	Aftertreatment System Information 2
+64489	Ethernet 1 Connection Information 2
+64490	Ethernet 1 Connection Information 1
+64491	Oil Debris Monitor Counts Ferrous Bins 1 &amp; 2
+64492	Oil Debris Monitor Counts Ferrous Bins 3 &amp; 4
+64493	Oil Debris Monitor Counts Ferrous Bins 5 &amp; 6
+64494	Oil Debris Monitor Counts Non-Ferrous Bins 1 &amp; 2
+64495	Oil Debris Monitor Counts Non-Ferrous Bins 3 &amp; 4
+64496	Oil Debris Monitor Counts Non-Ferrous Bins 5 &amp; 6
+64497	Oil Debris Monitoring System Status
+64499	Cruise Control / Vehicle Speed 5
+64500	Aftertreatment 2 Diesel Oxidation Catalyst 2
+64501	Aftertreatment 1 Diesel Oxidation Catalyst 2
+64502	Vehicle Position 2
+64503	Electrified Accessory Propulsion Motor Coolant Fan 3 Status
+64504	Electrified Accessory Propulsion Motor Coolant Fan 2 Status
+64505	Electrified Accessory Propulsion Motor Coolant Fan 1 Status
+64506	Electrified Accessory Power Electronics Coolant Fan 3 Status
+64507	Electrified Accessory Power Electronics Coolant Fan 2 Status
+64508	Electrified Accessory Power Electronics Coolant Fan 1 Status
+64509	Electrified Accessory Propulsion Motor Oil Pump Status
+64510	Electrified Accessory Propulsion Motor Coolant Pump Status
+64511	Electrified Accessory Power Electronics Coolant Pump Status
+64513	Electrified Accessory Motor Status
+64514	SCR System Information
+64515	Vehicle Electrical Power 14
+64516	Vehicle Electrical Power 13
+64517	Vehicle Electrical Power 12
+64518	Vehicle Electrical Power 11
+64519	Vehicle Electrical Power 10
+64520	Vehicle Electrical Power 9
+64521	Vehicle Electrical Power 8
+64522	Vehicle Electrical Power 7
+64523	Electronic Engine Controller 20
+64524	Evaporative Systems
+64525	Fire Pump Statistics 1
+64526	Primary or Rear Hitch Roll and Pitch Sensitivity
+64527	Secondary or Front Hitch Roll and Pitch Sensitivity
+64528	Ambient Conditions 3
+64529	Total Gaseous Fuel Information
+64530	Cab Door Control 1
+64531	Door Latch Status
+64532	Vehicle Electrical Power 3 (obsolete, use PGN 65106)
+64533	Vehicle Electrical Power 6
+64534	Payload Temperature 2
+64535	Payload Temperature 1
+64536	Payload System Totals 2
+64537	Payload System Totals 1
+64546	Electronic Engine Controller 19
+64547	Fuel Consumption (Liquid) 2
+64548	Aftertreatment 2 Diesel Exhaust Fluid Tank 1 Information 2
+64549	Aftertreatment 1 Diesel Exhaust Fluid Tank 1 Information 2
+64550	Aftertreatment 2 Diesel Exhaust Fluid Information 2
+64551	Aftertreatment 1 Diesel Exhaust Fluid Information 2
+64553	Forward Lane Image 3
+64554	Operator Inducement Information
+64555	Cruise Control / Vehicle Speed 4
+64556	Brake Caliper Lining Clearance
+64557	Alternate Fuel 5
+64558	Engine Turbocharger Control 3
+64559	Fire Suppression Agent Status
+64560	SCR Operator Inducement Information 4
+64561	Aftertreatment System Information 1
+64562	Aftertreatment 1 Particulate Sensor Information 3
+64563	Engine Fuel Injector Metering Rail Pressure Information 3
+64564	Engine Fuel Injector Metering Rail Pressure Information 2
+64565	Aftertreatment 2 Diesel Exhaust Fluid Pump 1 Information
+64566	Gaseous Fuel Supply Valve Information
+64567	Engine Oil Mist Detection Information 2
+64568	Engine Oil Mist Detection Information 1
+64569	Gaseous Fuel Supply Pressure 2
+64570	Gaseous Fuel Supply Pressure 1
+64571	Engine End Bearing Temperature 3
+64572	Engine End Bearing Temperature 2
+64573	Engine End Bearing Temperature 1
+64574	Heat Exchanger Debris Purge Information
+64575	Engine Turbocharger Control 2
+64576	Engine Hydraulic Fuel 2 Pump Status
+64577	Alternate Fuel 4
+64578	Tire Condition Message 2
+64579	Tire Configuration Status Information
+64581	Tire Wireless Signal Strength Indicator
+64582	Tire Sensor Identification Status
+64583	Monitored Tire Information
+64584	Aftertreatment 2 Historical Information 2
+64585	Aftertreatment 1 Historical Information 2
+64586	SCR System Cleaning
+64587	Electronic Engine Controller 17
+64588	SCR Operator Inducement Information 3
+64589	Aftertreatment 2 SCR Dosing System Information 3
+64590	Aftertreatment 1 SCR Dosing System Information 3
+64591	Payload Weight Sensor Information
+64592	Payload System Status
+64593	Air Suspension Control 7
+64594	Bin Weight and Lift Count
+64595	Engine Gaseous Leakage Information
+64596	Driving and Rest Times Driver 2
+64597	Driving and Rest Times Driver 1
+64598	SCR Operator Inducement Information 2
+64599	SCR Operator Inducement Information 1
+64600	Turbocharger Information 7
+64601	Engine Load Sharing Information
+64605	High Voltage Energy Storage System Configuration
+64606	High Voltage Energy Storage System History
+64651	Aftertreatment 1 Particulate Sensor Information 2
+64652	Aftertreatment 1 Particulate Sensor Information 1
+64653	Product Identification Information
+64654	Control Function Functionalities
+64655	Alternate Fuel 3
+64656	Engine Fuel Injector Metering Rail Pressure Information 1
+64657	Engine Exhaust NOx
+64658	Air Fuel Ratio
+64659	Gaseous Fuel Pressure 2
+64660	Aftertreatment System Abuse Information
+64661	Engine Cylinder Pressure Monitor Status Information
+64662	Engine Information 2
+64663	Electronic Steering Control 2
+64664	Vehicle Speed Limiter
+64665	Assembly Unit Identification
+64666	Joystick 3 Lamp Status
+64667	Joystick 2 Lamp Status
+64668	Joystick 1 Lamp Status
+64669	Engine Timing Actuator Position Command
+64670	Engine Timing Actuator Position
+64671	Dash Display 2
+64672	Multi-fuel Engine Hours
+64673	Engine Spark Misfire Rate 3
+64674	Engine Spark Misfire Rate 2
+64675	Engine Spark Misfire Rate 1
+64676	Engine Spark Maximum Voltage 6
+64677	Engine Spark Maximum Voltage 5
+64678	Engine Spark Maximum Voltage 4
+64679	Engine Spark Maximum Voltage 3
+64680	Engine Spark Maximum Voltage 2
+64681	Engine Spark Maximum Voltage 1
+64682	Engine Spark Minimum Voltage 6
+64683	Engine Spark Minimum Voltage 5
+64684	Engine Spark Minimum Voltage 4
+64685	Engine Spark Minimum Voltage 3
+64686	Engine Spark Minimum Voltage 2
+64687	Engine Spark Minimum Voltage 1
+64688	Engine Ignition Controller Maintenance Hours
+64689	Engine Ignition Control Module Status
+64690	Switched Power Output Current
+64691	Fused Power Output Current
+64692	Switched Power Output Status
+64693	Fused Power Output Status
+64694	Vehicle Electrical Power 5
+64695	Hybrid System Status 2
+64696	Aftertreatment 2 Service 2
+64697	Aftertreatment 1 Service 2
+64698	Aftertreatment 2 SCR Electronic Control Module Information
+64699	Aftertreatment 1 SCR Electronic Control Module Information
+64700	Aftertreatment 2 SCR Service Information 2
+64701	Aftertreatment 1 SCR Service Information 2
+64702	Electronic Transmission Controller #9
+64703	Electronic Transmission Controller #10
+64704	Electronic Transmission Controller #11
+64705	Transmission Fluids 3
+64706	Hybrid System Status 1
+64707	Fuel Information 4 (Gaseous)
+64708	Aftertreatment 2 SCR Exhaust Gas Temperature 2
+64709	Aftertreatment 1 SCR Exhaust Gas Temperature 2
+64710	OBD Information
+64711	Model Year and Certification Engine Family
+64712	Electronic Engine Controller 13
+64713	Engine Fuel/Throttle Valve Information 2
+64714	Engine Exhaust Gas Recirculation 2 Actuator
+64715	Engine Exhaust Gas Recirculation 1 Actuator
+64716	Electronic Engine Controller 12
+64717	Drive Strategy Status
+64718	Drive Strategy Command
+64719	NOx Sensor Self-Diagnosis Request
+64720	Engine Particulate Sensor Information
+64721	Active Service Only DTCs
+64722	Previously Active Service Only DTCs
+64723	Diagnostic Data Clear/Reset for All Service Only DTCs
+64724	XCP Get Slave ID
+64725	Aftertreatment 1 Diesel Exhaust Fluid Pump 1 Information
+64726	Aftertreatment 1 Diesel Particulate Filter 2 Soot 5
+64727	Aftertreatment 1 Diesel Particulate Filter 2 Soot 4
+64728	Aftertreatment 1 Diesel Particulate Filter 2 Soot 3
+64729	Aftertreatment 1 Diesel Particulate Filter 1 Soot 5
+64730	Aftertreatment 1 Diesel Particulate Filter 1 Soot 4
+64731	Aftertreatment 1 Diesel Particulate Filter 1 Soot 3
+64732	Cruise Control / Vehicle Speed 3
+64733	Aftertreatment 2 Air Control 3
+64734	Aftertreatment 1 Air Control 3
+64735	Engine Fluid Level/Pressure 12
+64736	Diesel Particulate Filter Control 2
+64737	Fuel Economy 2 (Liquid)
+64738	Supplemental Fan Status
+64739	Engine Exhaust Brake Control
+64740	Engine Fuel Properties
+64741	Hydraulic Oil Properties
+64742	Vehicle/Chassis Lubrication System 2
+64743	Engine Configuration 3
+64744	Intake Valve Actuation Control
+64745	Armrest Switch Matrix Commands
+64746	Vehicle Electrical Power 4 (obsolete, use PGN 64695)
+64747	Aftertreatment 2 NOx Adsorber Information
+64748	Aftertreatment 1 NOx Adsorber Information
+64749	Aftertreatment 2 Warm Up Diesel Oxidation Catalyst Information
+64750	Land Leveling System Reference Elevation Data
+64751	Engine Fluid Level/Pressure 11
+64752	Engine Fuel/Lube  Systems 2
+64753	Engine Turbocharger Wastegate Actuator and Exhaust Back Pressure Regulator Information
+64754	Engine Fuel/Throttle Valve Information 1
+64755	Engine Turbocharger Compressor Bypass Information
+64756	Charge Air Cooler 2
+64757	Charge Air Cooler 2 Precooler
+64758	Charge Air Cooler 1
+64759	Charge Air Cooler 1 Precooler
+64760	Diesel Particulate Filter 2 Soot 2
+64761	Diesel Particulate Filter 1 Soot 2
+64762	Electronic Engine Controller 11
+64763	Engine Manifold Actuator Position
+64764	Engine Manifold Actuator Control
+64765	Electronic Engine Controller 9
+64766	Electronic Engine Controller 10
+64767	Engine Temperature 5
+64768	Engine Fluid Level/Pressure 10
+64769	Low Voltage Disconnect  Status
+64770	All Implements Stop Operations Switch State
+64771	Implement Operating State Command
+64772	Direct Lamp Control Data 2
+64773	Direct Lamp Control Data 1
+64774	Direct Lamp Control Command 2
+64775	Direct Lamp Control Command 1
+64776	Engine oil message
+64777	High Resolution Fuel Consumption (Liquid)
+64778	Aftertreatment 2 Outlet Gas NOx Sensor Correction Data 2
+64779	Aftertreatment 2 Outlet Gas NOx Sensor Correction Data 1
+64780	Aftertreatment 2 Intake Gas NOx Sensor Correction Data 2
+64781	Aftertreatment 2 Intake Gas NOx Sensor Correction Data 1
+64782	Aftertreatment 1 Outlet Gas NOx Sensor Correction Data 2
+64783	Aftertreatment 1 Outlet Gas NOx Sensor Correction Data 1
+64784	Aftertreatment 1 Intake Gas NOx Sensor Correction Data 2
+64785	Aftertreatment 1 Intake Gas NOx Sensor Correction Data 1
+64786	Magnet Status Information 1
+64787	Magnet System Configuration Information
+64788	Battery Charger 2
+64789	Battery Charger 1
+64790	Occupant Classification System Information
+64791	Beltlock and Airbag Deactivation Switch Information
+64792	Collision Sensor Information
+64793	Ignitor Loop Information
+64794	Aftertreatment 1 Warm Up Diesel Oxidation Catalyst Information
+64795	Diesel Particulate Filter 2 Soot
+64796	Diesel Particulate Filter 1 Soot
+64797	Aftertreatment Differential Temperature 2 
+64798	Aftertreatment Differential Temperature 1 
+64799	Aftertreatment 2 Diesel Oxidation Catalyst 1
+64800	Aftertreatment 1 Diesel Oxidation Catalyst 1
+64801	Aftertreatment 2 Gas Oxidation Catalyst
+64802	Aftertreatment 1 Gas Oxidation Catalyst
+64803	Extended Joystick Message 10
+64804	Basic Joystick Message 10
+64805	Extended Joystick Message 9
+64806	Basic Joystick Message 9
+64807	Extended Joystick Message 8
+64808	Basic Joystick Message 8
+64809	Extended Joystick Message 7
+64810	Basic Joystick Message 7
+64811	Extended Joystick Message 6
+64812	Basic Joystick Message 6
+64813	Extended Joystick Message 5
+64814	Basic Joystick Message 5
+64815	Extended Joystick Message 4
+64816	Basic Joystick Message 4
+64817	Fan Drive #2
+64818	ECU diagnostic protocol
+64819	Aftertreatment 2 Diesel Exhaust Fluid Supply Information
+64820	Aftertreatment 2 SCR Reagant Tank 2 Information
+64821	Aftertreatment 2 Diesel Exhaust Fluid Tank 1 Information 1
+64822	Aftertreatment 2 Diesel Exhaust Fluid Information 1
+64823	Aftertreatment 2 SCR Service Information 1
+64824	Aftertreatment 2 SCR Exhaust Gas Temperature 1
+64825	Aftertreatment 2 SCR Exhaust Gas Pressures
+64826	Aftertreatment 2 SCR Dosing System Requests 2
+64827	Aftertreatment 2 SCR Dosing System Information 2
+64828	Aftertreatment 1 Diesel Exhaust Fluid Supply Information
+64829	Aftertreatment 1 SCR Reagant Tank 2 Information
+64830	Aftertreatment 1 SCR Exhaust Gas Temperature 1
+64831	Aftertreatment 1 SCR Exhaust Gas Pressures
+64832	Aftertreatment 1 SCR Dosing System Requests 2
+64833	Aftertreatment 1 SCR Dosing System Information 2
+64834	ISOBUS compliance certification
+64835	Machine Selected Speed Command
+64836	Aftertreatment 2 Fuel Control 2
+64837	Aftertreatment 2 Three Way Catalyst
+64838	Aftertreatment 1 Three Way Catalyst
+64839	Transmission Mode Labels
+64840	Engine Exhaust Bank 2 O2 Fuel Trim
+64841	Engine Exhaust Bank 1 O2 Fuel Trim
+64842	General Purpose Message #2/11
+64843	General Purpose Message #2/10
+64844	General Purpose Message #2/9
+64845	General Purpose Message #2/8
+64846	General Purpose Message #2/7
+64847	General Purpose Message #2/6
+64848	General Purpose Message #1/9
+64849	Aftercooler Coolant Control Valve Command
+64850	Engine Coolant Control Valve Command
+64851	Engine Average Information
+64852	DTCs - C, Previously Active
+64853	DTCs - C, Confirmed and Active
+64854	DTCs - C, Pending
+64855	DTCs - B2, Previously Active
+64856	DTCs - B2, Confirmed and Active
+64857	DTCs - B2, Pending
+64858	DTCs - B1, Previously Active
+64859	DTCs - B1, Confirmed and Active
+64860	DTCs - B1, Pending
+64861	DTCs - A, Previously Active
+64862	DTCs - A, Confirmed and Active
+64863	DTCs - A, Pending
+64864	Harmonized B1 Failure Counts
+64865	Harmonized Cumulative Continuous Malfunction Indicator – System
+64866	Harmonized Global Regulation Description
+64867	Harmonized Roadworthiness – System
+64868	Harmonized Roadworthiness - Vehicle
+64869	Aftertreatment 1 Fuel Control 2
+64870	Engine Temperature 4
+64871	Zero Net Vehicle Weight Change
+64872	Gross Combination Vehicle Weight
+64873	Axle Group Calibration Weights
+64874	Axle Group Weight
+64875	Available Axle Group Weights
+64876	Aftertreatment 2 Air Control 2
+64877	Aftertreatment 1 Air Control 2
+64878	Aftertreatment 1 SCR Service Information 1
+64879	Electronic Engine Controller 8
+64880	Door ramp control
+64881	Brake actuator stroke status
+64882	Engine Spark Voltage 6
+64883	Engine Spark Voltage 5
+64884	Engine Spark Voltage 4
+64885	Engine Spark Voltage 3
+64886	Engine Spark Voltage 2
+64887	Engine Spark Voltage 1
+64888	Aftertreatment 2 Trip Information
+64889	Aftertreatment 1 Trip Information
+64890	Aftertreatment 2 Service 1
+64891	Aftertreatment 1 Service 1
+64892	Diesel Particulate Filter Control 1
+64893	Reserved for FMS Telltale status
+64894	Adaptive Front-Lighting System Status
+64895	Engine Configuration 2
+64896	Emission-Related Permanent Diagnostic Trouble Codes
+64897	EGR Cooler Bypass
+64898	All Pending DTCs
+64899	Transfer Case Information
+64900	Engine Fluid Level/Pressure 9
+64901	Engine Fluid Level/Pressure 8
+64902	Engine Fluid Level/Pressure 7
+64903	Engine Fluid Level/Pressure 6
+64904	Engine Fluid Level/Pressure 5
+64905	Vehicle Direction/Speed 2
+64906	SAE J2012 DTC Display
+64907	Aftertreatment 2 Gas Parameters
+64908	Aftertreatment 1 Gas Parameters
+64909	Utility Total AC Reactive Energy
+64910	Generator Total AC Reactive Energy
+64911	Generator Total AC Percent Power
+64912	Advertised Engine Torque Curve
+64913	AC Switching Device Status
+64914	Engine Operating Information
+64915	Generator Control 1
+64916	Electronic Engine Controller 7
+64917	Transmission Fluids 2
+64918	Fuel Information 2 (Liquid)
+64919	Fuel Information 3 (Liquid)
+64920	Aftertreatment 1 Historical Information 1
+64921	Aftertreatment 2 Historical information 1
+64922	Electronic Brake System #2/4
+64923	Aftertreatment 1 Diesel Exhaust Fluid Information 1
+64924	Sensor Electrical Power #2
+64925	Sensor Electrical Power #1
+64926	Aftertreatment 2 Air Control 1
+64927	Aftertreatment 1 Air Control 1
+64928	Aftertreatment 2 Fuel Control 1
+64929	Aftertreatment 1 Fuel Control 1
+64930	Fuel Information 3 (Gaseous)
+64931	Electronic Engine Controller 6
+64932	PTO Drive Engagement
+64933	Door Control 2
+64934	Voltage Regulator Excitation Status
+64935	Voltage Regulator Operating Mode
+64936	Wireless Communications Message 2
+64937	Wireless Communications Message 1
+64938	Engine Fluid Level/Pressure 4
+64939	Request For Complete Configurable Message Set (no longer used)
+64940	Engine Fuel Information
+64941	Request For Complete Configurable Message Set
+64942	Fifth Wheel Smart Systems 2
+64943	Aftertreatment 2 Intermediate Gas
+64944	Aftertreatment 2 Outlet Gas 2
+64945	Aftertreatment 2 Intake Gas 2
+64946	Aftertreatment 1 Intermediate Gas
+64947	Aftertreatment 1 Outlet Gas 2
+64948	Aftertreatment 1 Intake Gas 2
+64949	Emission-Related Previously MIL-On Diagnostic Trouble Codes
+64950	SPN Support
+64951	Expanded Freeze Frame
+64952	Diagnostic Readiness 3
+64953	Tire Pressure Reference Information
+64954	Farebox Status
+64955	Farebox Point of Sale
+64956	Farebox Service Detail
+64957	Signal Preemption
+64958	Transit Route
+64959	Transit Milepost
+64960	Passenger Counter
+64961	Engine Fluid Level/Pressure 3
+64962	Electronic Engine Controller 14
+64963	Electronic Engine Controller 15
+64964	Electronic Brake Controller 5
+64965	ECU Identification Information
+64966	Cold Start Aids
+64967	Off-Highway Engine Control Selection States
+64968	Operator Primary Intermediate Speed Control state
+64969	Electronic Control Module Information
+64970	Intermediate Speed Control
+64971	Off-Highway Engine Control Selection
+64972	Operators External Light Controls Message
+64973	Operator Wiper and Washer Controls Message
+64974	Working Set Member Message (Obsolete - See PGN 65088)
+64975	Working Set Master Message  (Obsolete - See PGN 65089)
+64976	Intake/Exhaust Conditions 2
+64977	FMS-standard Interface Identity/Capabilities
+64978	ECU Performance
+64979	Turbocharger Information 6
+64980	Cab Message 3
+64981	Electronic Engine Controller 5
+64982	Basic Joystick Message 1
+64983	Extended Joystick Message 1
+64984	Basic Joystick Message 2
+64985	Extended Joystick Message 2
+64986	Basic Joystick Message 3
+64987	Extended Joystick Message 3
+64988	Marine Control Information
+64989	Military Application Message #1/1
+64990	Military Application Message #2/1
+64991	Front Wheel Drive Status
+64992	Ambient Conditions 2
+64993	Cab Climate System Information 1
+64994	Supply Pressure Demand
+64995	Equipment Operation and Control
+64996	Equipment Performance Data
+64997	Maximum Vehicle Speed Limit Status
+64998	Hydraulic Braking System
+64999	Bus #1/Utility Sync Check Status
+65000	Bus #1/Generator Sync Check Status
+65001	Bus #1 Phase C  Basic AC Quantities
+65002	Bus #1 Phase B  Basic AC Quantities
+65003	Bus #1 Phase A  Basic AC Quantities
+65004	Bus #1 Average Basic AC Quantities
+65005	Utility Total AC Energy
+65006	Utility Phase C AC Reactive Power
+65007	Utility Phase C AC Power
+65008	Utility Phase C AC Basic Quantities
+65009	Utility Phase B AC Reactive Power
+65010	Utility Phase B AC Power
+65011	Utility Phase B AC Basic Quantities
+65012	Utility Phase A AC Reactive Power
+65013	Utility Phase A AC Power
+65014	Utility Phase A Basic AC Quantities
+65015	Utility Total AC Reactive Power
+65016	Utility Total AC Power
+65017	Utility Average Basic AC Quantities
+65018	Generator Total AC Energy
+65019	Generator Phase C AC Reactive Power
+65020	Generator Phase C AC Power
+65021	Generator Phase C Basic AC Quantities
+65022	Generator Phase B AC Reactive Power
+65023	Generator Phase B AC Power
+65024	Generator Phase B Basic AC Quantities
+65025	Generator Phase A AC Reactive Power
+65026	Generator Phase A AC Power
+65027	Generator Phase A Basic AC Quantities
+65028	Generator Total AC Reactive Power
+65029	Generator Total AC Power
+65030	Generator Average Basic AC Quantities
+65031	Exhaust Temperature
+65032	Required Tractor Facilities message
+65033	Tractor Facilities response message
+65034	Implement Remote Control Command Tractor Response
+65035	Implement Remote Control Command
+65036	Working Set Member
+65037	Working Set Master
+65038	Response for Repetition Rate (Obsolete)
+65039	Language Command
+65040	Auxiliary Valve Number 0 Estimated Flow
+65041	Auxiliary Valve Number 1 Estimated Flow
+65042	Auxiliary Valve Number 2 Estimated Flow
+65043	Auxiliary Valve Number 3 Estimated Flow
+65044	Auxiliary Valve Number 4 Estimated Flow
+65045	Auxiliary Valve Number 5 Estimated Flow
+65046	Auxiliary Valve Number 6 Estimated Flow
+65047	Auxiliary Valve Number 7 Estimated Flow
+65048	Auxiliary Valve Number 8 Estimated Flow
+65049	Auxiliary Valve Number 9 Estimated Flow
+65050	Auxiliary Valve Number 10 Estimated Flow
+65051	Auxiliary Valve Number 11 Estimated Flow
+65052	Auxiliary Valve Number 12 Estimated Flow
+65053	Auxiliary Valve Number 13 Estimated Flow
+65054	Auxiliary Valve Number 14 Estimated Flow
+65055	Auxiliary Valve Number 15 Estimated Flow
+65056	Auxiliary Valve Number 0 Measured Flow
+65057	Auxiliary Valve Number 1 Measured Flow
+65058	Auxiliary Valve Number 2 Measured Flow
+65059	Auxiliary Valve Number 3 Measured Flow
+65060	Auxiliary Valve Number 4 Measured Flow
+65061	Auxiliary Valve Number 5 Measured Flow
+65062	Auxiliary Valve Number 6 Measured Flow
+65063	Auxiliary Valve Number 7 Measured Flow
+65064	Auxiliary Valve Number 8 Measured Flow
+65065	Auxiliary Valve Number 9 Measured Flow
+65066	Auxiliary Valve Number 10 Measured Flow
+65067	Auxiliary Valve Number 11 Measured Flow
+65068	Auxiliary Valve Number 12 Measured Flow
+65069	Auxiliary Valve Number 13 Measured Flow
+65070	Auxiliary Valve Number 14 Measured Flow
+65071	Auxiliary Valve Number 15 Measured Flow
+65072	Auxiliary Valve Number 0 Command
+65073	Auxiliary Valve Number 1 Command
+65074	Auxiliary Valve Number 2 Command
+65075	Auxiliary Valve Number 3 Command
+65076	Auxiliary Valve Number 4 Command
+65077	Auxiliary Valve Number 5 Command
+65078	Auxiliary Valve Number 6 Command
+65079	Auxiliary Valve Number 7 Command
+65080	Auxiliary Valve Number 8 Command
+65081	Auxiliary Valve Number 9 Command
+65082	Auxiliary Valve Number 10 Command
+65083	Auxiliary Valve Number 11 Command
+65084	Auxiliary Valve Number 12 Command
+65085	Auxiliary Valve Number 13 Command
+65086	Auxiliary Valve Number 14 Command
+65087	Auxiliary Valve Number 15 Command
+65088	Lighting Data
+65089	Lighting Command
+65090	Hitch and PTO Commands
+65091	Primary or Rear Power Take off Output Shaft
+65092	Secondary or Front Power Take off Output Shaft
+65093	Primary or Rear Hitch Status
+65094	Secondary or Front Hitch Status
+65095	Maintain Power
+65096	Wheel-based Speed and Distance
+65097	Ground-based Speed and Distance
+65098	Electronic Transmission Controller 7
+65099	Transmission Configuration 2
+65100	Military Lighting Command
+65101	Total Averaged Information
+65102	Door Control 1
+65103	Vehicle Dynamic Stability Control 1
+65104	Battery Temperature
+65105	Adaptive Cruise Control, Operator Input
+65106	Vehicle Electrical Power 3
+65107	Retarder Continuous Torque &amp; Speed Limit
+65108	Engine Continuous Torque &amp; Speed Limit
+65109	Gaseous Fuel Properties
+65110	Aftertreatment 1 Diesel Exhaust Fluid Tank 1 Information 1
+65111	Air Suspension Control 5
+65112	Air Suspension Control 4
+65113	Air Suspension Control 3
+65114	Air Suspension Control 1
+65115	Forward Lane Image 2
+65116	Running Gear Equipment #2/2
+65117	General Purpose Message #1/2
+65118	Running Gear Equipment #2/3
+65119	General Purpose Message #1/3
+65120	General Purpose Message #2/3
+65121	General Purpose Message #1/4
+65122	General Purpose Message #2/4
+65123	General Purpose Message #1/5
+65124	General Purpose Message #2/5
+65125	General Purpose Message #1/6
+65126	Battery Main Switch Information
+65127	Climate Control Configuration
+65128	Vehicle Fluids
+65129	Engine Temperature 3
+65130	Engine Fuel/Lube Systems
+65131	Driver's Identification
+65132	Tachograph
+65133	Heater Information
+65134	High Resolution Wheel Speed
+65135	Adaptive Cruise Control 1
+65136	Combination Vehicle Weight
+65137	Laser Tracer Position
+65138	Laser Leveling System Blade Control
+65139	Laser Receiver Mast Position
+65140	Modify Leveling System Control Set Point
+65141	Laser Leveling System Vertical Deviation
+65142	Laser Leveling System Vertical Position Display Data
+65143	Auxiliary Pressures
+65144	Tire Pressure Control Unit Mode and Status
+65145	Tire Pressure Control Unit Target Pressures
+65146	Tire Pressure Control Unit Current Pressures
+65147	Combustion Time 1
+65148	Combustion Time 2
+65149	Combustion Time 3
+65150	Combustion Time 4
+65151	Combustion Time 5
+65152	Combustion Time 6
+65153	Fuel Information 2 (Gaseous)
+65154	Ignition Timing 1
+65155	Ignition Timing 2
+65156	Ignition Timing 3
+65157	Ignition Timing 4
+65158	Ignition Timing 5
+65159	Ignition Timing 6
+65160	Ignition Transformer Secondary Output 1
+65161	Ignition Transformer Secondary Output 2
+65162	Ignition Transformer Secondary Output 3
+65163	Gaseous Fuel Pressure 1
+65164	Auxiliary Analog Information
+65165	Vehicle Electrical Power 2
+65166	Service 2
+65167	Supply Pressure 2
+65168	Engine Torque History
+65169	Fuel Leakage
+65170	Engine Information 1
+65171	Engine Electrical System/Module Information
+65172	Engine Auxiliary Coolant
+65173	Rebuild Information
+65174	Turbocharger Wastegate
+65175	Turbocharger Information 5
+65176	Turbocharger Information 4
+65177	Turbocharger Information 3
+65178	Turbocharger Information 2
+65179	Turbocharger Information 1
+65180	Main Bearing Temperature 3
+65181	Main Bearing Temperature 2
+65182	Main Bearing Temperature 1
+65183	Exhaust Port Temperature 5
+65184	Exhaust Port Temperature 4
+65185	Exhaust Port Temperature 3
+65186	Exhaust Port Temperature 2
+65187	Exhaust Port Temperature 1
+65188	Engine Temperature 2
+65189	Intake Manifold Information 2
+65190	Intake Manifold Information 1
+65191	Alternator Temperature 1
+65192	Articulation Control
+65193	Exhaust Oxygen 1
+65194	Alternate Fuel 2
+65195	Electronic Transmission Controller 6
+65196	Wheel Brake Lining Remaining Information
+65197	Wheel Application Pressure High Range Information
+65198	Air Supply Pressure
+65199	Fuel Consumption (Gaseous)
+65200	Trip Time Information 2
+65201	ECU History
+65202	Fuel Information 1 (Gaseous)
+65203	Fuel Information 1 (Liquid)
+65204	Trip Time Information 1
+65205	Trip Shutdown Information
+65206	Trip Vehicle Speed/Cruise Distance Information
+65207	Engine Speed/Load Factor Information
+65208	Trip Fuel Information (Gaseous)
+65209	Trip Fuel Information (Liquid)
+65210	Trip Distance Information
+65211	Trip Fan Information
+65212	Compression/Service Brake Information
+65213	Fan Drive #1
+65214	Electronic Engine Controller 4
+65215	Wheel Speed Information
+65216	Service Information
+65217	High Resolution Vehicle Distance
+65218	Electronic Retarder Controller 2
+65219	Electronic Transmission Controller 5
+65220	Electronic Brake System #2/2
+65221	Electronic Transmission Controller 4
+65222	Electronic Brake System #2/3
+65223	Electronic Transmission Controller 3
+65224	General Purpose Message #2/2
+65225	Electronic Brake System #1/2
+65226	Active Diagnostic Trouble Codes
+65227	Previously Active Diagnostic Trouble Codes
+65228	Diagnostic Data Clear/Reset for Previously Active DTCs
+65229	Freeze Frame Parameters
+65230	Diagnostic Readiness 1
+65231	Emission-Related Pending Diagnostic Trouble Codes
+65232	Test Results for Non-continuously Monitored Systems
+65233	Oxygen Sensor Test Results
+65234	Non-Continuously Monitored Systems Test Identifiers Support
+65235	Diagnostic Data Clear/Reset for Active DTCs
+65236	Emission-Related MIL-On Diagnostic Trouble Codes
+65237	Alternator Information
+65238	Hybrid System Inputs 1
+65240	Commanded Address
+65241	Auxiliary Input/Output Status 1
+65242	Software Identification
+65243	Engine Fluid Level/Pressure 2
+65244	Idle Operation
+65245	Turbocharger
+65246	Engine Air Start Pressure
+65247	Electronic Engine Controller 3
+65248	Vehicle Distance
+65249	Retarder Configuration
+65250	Transmission Configuration
+65251	Engine Configuration 1
+65252	Shutdown
+65253	Engine Hours, Revolutions
+65254	Time/Date
+65255	Vehicle Hours
+65256	Vehicle Direction/Speed
+65257	Fuel Consumption (Liquid) 1
+65258	Vehicle Weight
+65259	Component Identification
+65260	Vehicle Identification
+65261	Cruise Control/Vehicle Speed Setup
+65262	Engine Temperature 1
+65263	Engine Fluid Level/Pressure 1
+65264	Power Takeoff Information
+65265	Cruise Control/Vehicle Speed 1
+65266	Fuel Economy (Liquid)
+65267	Vehicle Position 1
+65268	Tire Condition Message 1
+65269	Ambient Conditions
+65270	Intake/Exhaust Conditions 1
+65271	Vehicle Electrical Power 1
+65272	Transmission Fluids 1
+65273	Axle Information
+65274	Brakes 1
+65275	Retarder fluids
+65276	Dash Display 1
+65277	Alternate Fuel 1
+65278	Auxiliary Water Pump Pressure
+65279	Operator indicators
+65280	Proprietary B (first entry)
+...
+65535	Proprietary B (last entry)
+126208	NMEA - Request/Command/Acknowledge group function
+126464	PGN List - Transmit/Receive PGN's group function
+126720	Proprietary A2
+126983	Alert
+126984	Alert Response
+126985	Alert Text
+126986	Alert Configuration
+126987	Alert Threshold
+126988	Alert Value
+126992	System Time
+126996	Product Information
+126998	Configuration Information
+127237	Heading/Track Control
+127245	Rudder
+127250	Vessel Heading
+127251	Rate of Turn
+127257	Attitude
+127258	Magnetic Variation
+127488	Engine Parameters, Rapid Update
+127489	Engine Parameters, Dynamic
+127493	Transmission Parameters, Dynamic
+127496	Trip Parameters, Vessel
+127497	Trip Parameters, Small Craft
+127498	Engine Parameters, Static
+127501	Binary Switch Bank Status
+127502	Switch Bank Control
+127503	AC Input Status
+127504	AC Output Status
+127505	Fluid Level
+127506	DC Detailed Status
+127507	Charger Status
+127508	Battery Status
+127509	Inverter Status
+127510	Charger Configuration Status
+127511	Inverter Configuration Status
+127512	AGS Configuration Status
+127513	Battery Configuration Status
+127514	AGS Status
+128259	Speed
+128267	Water Depth
+128275	Distance Log
+128520	Tracked Target Data
+129025	Position, Rapid Update
+129026	COG &amp; SOG, Rapid Update
+129027	Position Delta, High Precision Rapid Update
+129028	Altitude Delta, High Precision Rapid Update
+129029	GNSS Position Data
+129033	Time &amp; Date
+129038	AIS Class A Position Report
+129039	AIS Class B Position Report
+129040	AIS Class B Extended Position Report
+129044	Datum
+129045	User Datum Settings
+129283	Cross Track Error
+129284	Navigation Data
+129285	Navigation - Route/WP information
+129291	Set &amp; Drift, Rapid Update
+129301	Time to/from Mark
+129302	Bearing and Distance between two Marks
+129538	GNSS Control Status
+129539	GNSS DOPs
+129540	GNSS Sats in View
+129541	GPS Almanac Data
+129542	GNSS Pseudorange Noise Statistics
+129545	GNSS RAIM Output
+129546	GNSS RAIM Settings
+129547	GNSS Pseudorange Error Statistics
+129549	DGNSS Corrections
+129550	GNSS Differential Correction Receiver Interface
+129551	GNSS Differential Correction Receiver Signal
+129556	GLONASS Almanac Data
+129792	AIS DGNSS Broadcast Binary Message
+129793	AIS UTC and Date Report
+129794	AIS Class A Static and Voyage Related Data
+129795	AIS Addressed Binary Message
+129796	AIS Acknowledge
+129797	AIS Binary Broadcast Message
+129798	AIS SAR Aircraft Position Report
+129799	Radio Frequency/Mode/Power
+129800	AIS UTC/Date Inquiry
+129801	AIS Addressed Safety Related Message
+129802	AIS Safety Related Broadcast Message
+129803	AIS Interrogation
+129804	AIS Assignment Mode Command
+129805	AIS Data Link Management Message
+129806	AIS Channel Management
+129807	AIS Class B Group Assignment
+129808	DSC Call Information
+129809	AIS Class B &quot;CS&quot; Static Data Report, Part A
+129810	AIS Class B &quot;CS&quot; Static Data Report, Part B
+130052	Loran-C TD Data
+130053	Loran-C Range Data
+130054	Loran-C Signal Data
+130060	Label
+130061	Channel Source Configuration
+130064	Route and WP Service - Database List
+130065	Route and WP Service - Route List
+130066	Route and WP Service - Route/WP-List Attributes
+130067	Route and WP Service - Route - WP Name &amp; Position
+130068	Route and WP Service - Route - WP Name
+130069	Route and WP Service - XTE Limit &amp; Navigation Method
+130070	Route and WP Service - WP Comment
+130071	Route and WP Service - Route Comment
+130072	Route and WP Service - Database Comment
+130073	Route and WP Service - Radius of Turn
+130074	Route and WP Service - WP List - WP Name &amp; Position
+130306	Wind Data
+130310	Environmental Parameters
+130311	Environmental Parameters
+130312	Temperature
+130313	Humidity
+130314	Actual Pressure
+130315	Set Pressure
+130316	Temperature- Extended Range
+130320	Tide Station Data
+130321	Salinity Station Data
+130322	Current Station Data
+130323	Meteorological Station Data
+130324	Moored Buoy Station Data
+130560	Payload Mass
+130576	Small Craft Status
+130577	Direction Data
+130578	Vessel Speed Components
+130816	Proprietary B - Page 1 (first entry)
+....
+131071	Proprietary B - Page 1 (last entry)
+</code></pre>
+<h1 id="plataforma"><a class="header" href="#plataforma">Plataforma</a></h1>
+<p>Analizamos 2 SBCs (Single Board Computers)</p>
+<h2 id="raspberry-pi"><a class="header" href="#raspberry-pi">Raspberry Pi</a></h2>
+<p><img src="https://www.raspberrypi.org/app/uploads/2019/06/HERO-ALT.jpg" alt="Photo" /></p>
+<h3 id="ficha-técnica"><a class="header" href="#ficha-técnica">Ficha Técnica</a></h3>
+<ul>
+<li>A 1.5GHz quad-core 64-bit ARM Cortex-A72 CPU</li>
+<li>1GB, 2GB, or 4GB of LPDDR4 SDRAM</li>
+<li>Full-throughput Gigabit Ethernet</li>
+<li>Dual-band 802.11ac wireless networking</li>
+<li>Bluetooth 5.0</li>
+<li>Two USB 3.0 and two USB 2.0 ports</li>
+<li>Dual monitor support, at resolutions up to 4K</li>
+<li>VideoCore VI graphics, supporting OpenGL ES 3.x</li>
+<li>4Kp60 hardware decode of HEVC video</li>
+<li>Complete compatibility with earlier Raspberry Pi products</li>
+</ul>
+<h3 id="stm32"><a class="header" href="#stm32">Stm32</a></h3>
+<p>Black Pill (Blue Pill) </p>
+<p><a href="https://hackaday.com/2021/01/20/blue-pill-vs-black-pill-transitioning-from-stm32f103-to-stm32f411/">https://hackaday.com/2021/01/20/blue-pill-vs-black-pill-transitioning-from-stm32f103-to-stm32f411/</a></p>
+<h2 id="beagleboard-x15"><a class="header" href="#beagleboard-x15">Beagleboard x15</a></h2>
+<p><img src="https://beagleboard.org/static/images/BeagleBoard-X15.png" alt="Photo" /></p>
+<h3 id="ficha-técnica-1"><a class="header" href="#ficha-técnica-1">Ficha Técnica</a></h3>
+<p>El Beagleboard X15 tiene 10 cores:</p>
+<ul>
+<li>Processor: TI AM5728 2×1.5-GHz ARM® Cortex-A15 
+<ul>
+<li><a href="https://www.ti.com/lit/ds/symlink/am5728.pdf">https://www.ti.com/lit/ds/symlink/am5728.pdf</a></li>
+</ul>
+</li>
+<li>2GB DDR3 RAM</li>
+<li>4GB 8-bit eMMC on-board flash storage</li>
+<li>2D/3D graphics and video accelerators (GPUs)</li>
+<li>2×700-MHz C66 digital signal processors (DSPs)</li>
+<li>2×ARM Cortex-M4 microcontrollers (MCUs)</li>
+<li>4×32-bit programmable real-time units (PRUs)</li>
+</ul>
+<p><a href="https://beagleboard.org/x15">https://beagleboard.org/x15</a></p>
+<h3 id="hoja-de-datos"><a class="header" href="#hoja-de-datos">Hoja de Datos</a></h3>
+<p><a href="https://co.mouser.com/datasheet/2/823/Precision_Technology_Inc_04112018_BeagleBoard_X15-1323484.pdf">https://co.mouser.com/datasheet/2/823/Precision_Technology_Inc_04112018_BeagleBoard_X15-1323484.pdf</a></p>
+<h3 id="distribuidores"><a class="header" href="#distribuidores">Distribuidores</a></h3>
+<p><a href="https://www.digikey.com/en/products/detail/BEAGLEBOARD%2520X15/1777-1001-ND/6834154">https://www.digikey.com/en/products/detail/BEAGLEBOARD%2520X15/1777-1001-ND/6834154</a></p>
+<p><a href="https://co.mouser.com/ProductDetail/Beagleboard-by-PTI/BeagleBoard-X15?qs=sGAEpiMZZMspCjQQiuQ1fGdkAG55gAhWDjtEoPXsYwJnKyBUUNieSw==">https://co.mouser.com/ProductDetail/Beagleboard-by-PTI/BeagleBoard-X15?qs=sGAEpiMZZMspCjQQiuQ1fGdkAG55gAhWDjtEoPXsYwJnKyBUUNieSw==</a></p>
+<p><a href="https://www.arrow.com/en/products/beagleboardx15/beagleboardorg">https://www.arrow.com/en/products/beagleboardx15/beagleboardorg</a></p>
+<h3 id="librerias--desarollo"><a class="header" href="#librerias--desarollo">Librerias / Desarollo</a></h3>
+<p><a href="https://github.com/sbarral/prusst">https://github.com/sbarral/prusst</a></p>
+<p><a href="https://www.meetingcpp.com/mcpp/slides/2018/EMBEDDED-P-006%20v1.4.pdf">https://www.meetingcpp.com/mcpp/slides/2018/EMBEDDED-P-006%20v1.4.pdf</a></p>
+<p><a href="http://ianrrees.github.io/2016/11/20/getting-started-with-beaglebone-pru-programming-the-new-way.html">http://ianrrees.github.io/2016/11/20/getting-started-with-beaglebone-pru-programming-the-new-way.html</a></p>
+<p><a href="https://elinux.org/EBC_Exercise_30_PRU_via_remoteproc_and_RPMsg">https://elinux.org/EBC_Exercise_30_PRU_via_remoteproc_and_RPMsg</a></p>
+<p><a href="http://exploringbeaglebone.com/wp-content/uploads/2014/12/Instruction-Set-Sheet-728x1024.png">http://exploringbeaglebone.com/wp-content/uploads/2014/12/Instruction-Set-Sheet-728x1024.png</a></p>
+<h1 id="jetson"><a class="header" href="#jetson">Jetson</a></h1>
+<p><img src="http://linuxgizmos.com/files/nvidia-jetson-tk1-sbc.jpg" alt="Photo" /></p>
+<p>Jetson TK1 Development Kit - 4-core single board computer (SBC) with NVIDIA Tegra K1 SOC supporting CUDA technology</p>
+<p>The Jetson TK1 is a more advanced version of Nvidia’s earlier, Tegra 3-based Jetson automotive development platform. Instead of being limited to automotive duty, however, the Jetson TK1 also is aimed at a variety of high-end embedded applications, including computer vision, robotics, medicine, and security. The 5.0 x 5.0-inch single-board computer is “the world’s first mobile supercomputer for embedded systems,” featuring 326 gigaflops of processing power, or “nearly three times more than any similar embedded platform,” claims Nvidia.</p>
+<p><a href="http://linuxgizmos.com/nvidia-jetson-tk1-most-advanced-hacker-sbc/">http://linuxgizmos.com/nvidia-jetson-tk1-most-advanced-hacker-sbc/</a></p>
+<p><a href="https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT/ref=pd_bxgy_3/135-6985386-2191602?_encoding=UTF8&amp;pd_rd_i=B084DSDDLT&amp;pd_rd_r=55946986-3c19-47f5-9e5d-eaaa4c39c33e&amp;pd_rd_w=I5TCw&amp;pd_rd_wg=khxg2&amp;pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&amp;pf_rd_r=YWVC0X2PVQ1K6MRQ1312&amp;psc=1&amp;refRID=YWVC0X2PVQ1K6MRQ1312">https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT/ref=pd_bxgy_3/135-6985386-2191602?_encoding=UTF8&amp;pd_rd_i=B084DSDDLT&amp;pd_rd_r=55946986-3c19-47f5-9e5d-eaaa4c39c33e&amp;pd_rd_w=I5TCw&amp;pd_rd_wg=khxg2&amp;pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&amp;pf_rd_r=YWVC0X2PVQ1K6MRQ1312&amp;psc=1&amp;refRID=YWVC0X2PVQ1K6MRQ1312</a></p>
+<p><a href="https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-812674024318/dp/B086874Q5R/ref=sr_1_6?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-6">https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-812674024318/dp/B086874Q5R/ref=sr_1_6?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-6</a></p>
+<p><a href="https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-32GB/dp/B083ZL3X5B/ref=sr_1_10?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-10">https://www.amazon.com/NVIDIA-Jetson-Xavier-Developer-32GB/dp/B083ZL3X5B/ref=sr_1_10?dchild=1&amp;keywords=NVIDIA+Tegra&amp;qid=1619452998&amp;sr=8-10</a></p>
+<p><a href="https://kamami.pl/en/komputery-nvidia-jetson/423318-jetson-tk1-development-kit-4-core-single-board-computer-sbc-with-nvidia-tegra-k1-soc-supporting-cuda-technology.html">https://kamami.pl/en/komputery-nvidia-jetson/423318-jetson-tk1-development-kit-4-core-single-board-computer-sbc-with-nvidia-tegra-k1-soc-supporting-cuda-technology.html</a></p>
+<h1 id="interfaz-de-usuario"><a class="header" href="#interfaz-de-usuario">Interfaz de Usuario</a></h1>
+<p><a href="https://plantuml.com/salt">https://plantuml.com/salt</a></p>
+<pre><code class="language-plantuml">@startsalt
+{+
+{/ &lt;b&gt;General | Fullscreen | Behavior | Saving }
+{
+Just plain text
+  [This is my button]
+  ()  Unchecked radio
+  (X) Checked radio
+  []  Unchecked box
+  [X] Checked box
+  &quot;Enter text here   &quot;
+  ^This is a droplist^
+}
+[Close]
+}
+@endsalt
+</code></pre>
+<h1 id="iconos-para-los-interfaz-de-usuario"><a class="header" href="#iconos-para-los-interfaz-de-usuario">Iconos para los interfaz de usuario</a></h1>
+<h2 id="iso-2575-road-vehicles--symbols-for-controls-indicators-and-tell-tales"><a class="header" href="#iso-2575-road-vehicles--symbols-for-controls-indicators-and-tell-tales">ISO 2575 Road vehicles — Symbols for controls, indicators and tell-tales</a></h2>
+<p>Son estandar, verificar propiedad intelectual antes de utilizar.</p>
+<h2 id="iconos-que-pueden-ser-relevantes"><a class="header" href="#iconos-que-pueden-ser-relevantes">Iconos que pueden ser relevantes</a></h2>
+<p>Park
+<img src="icons/icon-167.png" alt="Park" /></p>
+<p>Reverse
+<img src="icons/icon-168.png" alt="Reverse" /></p>
+<p>Neutral
+<img src="icons/icon-169.png" alt="Neutral" /></p>
+<p>Drive
+<img src="icons/icon-170.png" alt="Drive" /></p>
+<p>Transmission failure
+<img src="icons/icon-171.png" alt="Transmission failure" /></p>
+<p>Transmission
+<img src="icons/icon-177.png" alt="Transmission" /></p>
+<p>Automatic
+<img src="icons/icon-181.png" alt="Automatic" /></p>
+<p>Manual mode
+<img src="icons/icon-182.png" alt="Manual mode" /></p>
+<p>All-wheel drive 4x4
+<img src="icons/icon-183.png" alt="All-wheel drive 4x4" /></p>
+<p>Rear-axle drive 4x4
+<img src="icons/icon-184.png" alt="Rear-axle drive 4x4" /></p>
+<p>Front-axle drive 4x4
+<img src="icons/icon-185.png" alt="Front-axle drive 4x4" /></p>
+<p>Differential lock, rear axle 4x4
+<img src="icons/icon-190.png" alt="Differential lock, rear axle 4x4" /></p>
+<p>Differential lock, transfer case 4x4
+<img src="icons/icon-191.png" alt="Differential lock, transfer case 4x4" /></p>
+<p>Differential lock, front axle 4x4
+<img src="icons/icon-192.png" alt="Differential lock, front axle 4x4" /></p>
+<p>Inter-axle lock
+<img src="icons/icon-193.png" alt="Inter-axle lock" /></p>
+<p>Traction control
+<img src="icons/icon-218.png" alt="Traction control" /></p>
+<p>Traction control off or not available
+<img src="icons/icon-219.png" alt="Traction control off or not available" /></p>
+<p>Cruise control
+<img src="icons/icon-220.png" alt="Cruise control" /></p>
+<p>Adaptive cruise control
+<img src="icons/icon-221.png" alt="Adaptive cruise control" /></p>
+<p>Adaptive cruise control failure
+<img src="icons/icon-222.png" alt="Adaptive cruise control failure" /></p>
+<p>Traction control failure
+<img src="icons/icon-224.png" alt="Traction control failure" /></p>
+<p>Battery charging condition
+<img src="icons/icon-276.png" alt="Battery charging condition" /></p>
+<p>Battery failure
+<img src="icons/icon-277.png" alt="Battery failure" /></p>
+<p>Battery fluid level
+<img src="icons/icon-278.png" alt="Battery fluid level" /></p>
+<p>Battery shut-off
+<img src="icons/icon-279.png" alt="Battery shut-off" /></p>
+<p>Fuse box access
+<img src="icons/icon-280.png" alt="Fuse box access" /></p>
+<p>High-voltage warning, risk of electric shock
+<img src="icons/icon-281.png" alt="High-voltage warning, risk of electric shock" /></p>
+<p>State of charge propulsion battery
+<img src="icons/icon-282.png" alt="State of charge propulsion battery" /></p>
+<p>Propulsion battery failure
+<img src="icons/icon-283.png" alt="Propulsion battery failure" /></p>
+<p>Electric motor failure
+<img src="icons/icon-284.png" alt="Electric motor failure" /></p>
+<p>External cord connect
+<img src="icons/icon-285.png" alt="External cord connect" /></p>
+<p>Electric motor enabled
+<img src="icons/icon-286.png" alt="Electric motor enabled" /></p>
+<p>North indicator
+<img src="icons/icon-292.png" alt="North indicator" /></p>
+<p>Power on/off
+<img src="icons/icon-311.png" alt="Power on/off" /></p>
+<p>Service, call for maintenance
+<img src="icons/icon-315.png" alt="Service, call for maintenance" /></p>
+<p>Failure
+<img src="icons/icon-316.png" alt="Failure" /></p>
+<p>OFF
+<img src="icons/icon-317.png" alt="OFF" /></p>
+<p>Automatic function
+<img src="icons/icon-318.png" alt="Automatic function" /></p>
+<p>ON
+<img src="icons/icon-319.png" alt="ON" /></p>
+<p>START
+<img src="icons/icon-320.png" alt="START" /></p>
+<p>STOP
+<img src="icons/icon-321.png" alt="STOP" /></p>
+<h1 id="interfaz-de-usuario-1"><a class="header" href="#interfaz-de-usuario-1">Interfaz de Usuario</a></h1>
+<p><a href="https://plantuml.com/salt">https://plantuml.com/salt</a></p>
+<pre><code class="language-plantuml">@startsalt
+{+
+{/ &lt;b&gt;General | Fullscreen | Behavior | Saving }
+{
+{ Open image in: | ^Smart Mode^ }
+[X] Smooth images when zoomed
+[X] Confirm image deletion
+[ ] Show hidden images
+}
+[Close]
+}
+@endsalt
+</code></pre>
+<h1 id="light-and-versatile-graphics-library-lvgl"><a class="header" href="#light-and-versatile-graphics-library-lvgl">Light and Versatile Graphics Library (LVGL)</a></h1>
+<p><img src="https://raw.githubusercontent.com/rafaelcaricio/lvgl-rs/master/lv_demo.png" alt="Ejemplo" /></p>
+<p>LVGL is an open-source graphics library providing everything you need to create embedded GUI with easy-to-use graphical elements, beautiful visual effects and low memory footprint.</p>
+<p><a href="https://docs.lvgl.io/latest/en/html/index.html">https://docs.lvgl.io/latest/en/html/index.html</a></p>
+<h2 id="open-source-free-c"><a class="header" href="#open-source-free-c">Open source, free, C</a></h2>
+<p>LVGL is hosted on GitHub with MIT license. It's really free to use. </p>
+<h2 id="any-platform"><a class="header" href="#any-platform">Any platform</a></h2>
+<p>Use LVGL on any platforms, such as NXP LPC or iMX, STM32, PIC, Arduino, ESP32, Raspberry and so on. </p>
+<h2 id="small-fooprint"><a class="header" href="#small-fooprint">Small fooprint</a></h2>
+<p>64 kB flash and 8 kB RAM is enough for a simple user inteface.</p>
+<h2 id="any-display"><a class="header" href="#any-display">Any display</a></h2>
+<p>Drive monochrom, OLED, TFT displays, monitors or any other displays. </p>
+<p>Fuente <a href="https://lvgl.io/">https://lvgl.io/</a></p>
+<h1 id="rust-library"><a class="header" href="#rust-library">Rust Library</a></h1>
+<p><a href="https://crates.io/crates/lvgl">https://crates.io/crates/lvgl</a></p>
+<p><a href="https://docs.rs/lvgl/0.5.2">https://docs.rs/lvgl/0.5.2</a></p>
+<h1 id="embedded-graphics-rust"><a class="header" href="#embedded-graphics-rust">Embedded Graphics (Rust)</a></h1>
+<p><a href="https://crates.io/crates/embedded-graphics">https://crates.io/crates/embedded-graphics</a></p>
+<p>A core goal of embedded-graphics is to draw graphics without using any buffers; the crate is no_std compatible and works without a dynamic memory allocator, and without pre-allocating large chunks of memory. To achieve this, it takes an Iterator based approach, where pixel values and positions are calculated on the fly, with the minimum of saved state. This allows the consuming application to use far less RAM at little to no performance penalty.</p>
+<h1 id="lenguaje-de-programación"><a class="header" href="#lenguaje-de-programación">Lenguaje de Programación</a></h1>
+<h2 id="c--c"><a class="header" href="#c--c">C / C++</a></h2>
+<p>C fue inventado en 1970 y es uno de los lenguajes más comunes en sistemas operativos, y actualmente la mayoria de firmware para sistemas embebidas esta escrito en C.</p>
+<!-- muchos otros lenguajes de programación estan implementados en C. -->
+<p>Más del 70% de los parches para Windows son por errores de seguridad en la memoria.
+<a href="https://vandal.elespanol.com/noticia/w3123/mas-del-70-de-los-parches-para-windows-son-por-errores-de-seguridad-en-la-memoria">Fuente</a></p>
+<p>Aproximadamente el 70% de todos los errores de seguridad graves en la base del código de Chrome son errores de administración de memoria, según dijeron los ingenieros de Google esta semana.
+<a href="https://unaaldia.hispasec.com/2020/05/chrome-alrededor-del-70-de-los-errores-graves-son-problemas-de-seguridad-relacionados-con-la-administracion-de-la-memoria.html">Fuente</a></p>
+<p>Problemas de memoria incluyen:</p>
+<ul>
+<li>Null Pointer</li>
+<li>Wild Pointer</li>
+<li>Dangling Pointer</li>
+<li>Double Free</li>
+<li>Use after free</li>
+<li>Using Uninitialized Memory</li>
+<li>Buffer Overflow</li>
+<li>Memory Leaks</li>
+<li>Data Races</li>
+</ul>
+<h2 id="rust"><a class="header" href="#rust">Rust</a></h2>
+<p>Un lenguaje que empodera a todos
+para construir software fiable y eficiente. </p>
+<p>fast, reliable, productive: pick thre</p>
+<h3 id="por-qué-rust"><a class="header" href="#por-qué-rust">¿Por qué Rust?</a></h3>
+<p>Rust fue diseñado para evitar los problemas de memoria que C y C++ tienen, mencionados anteriormente, y al mismo tiempo tener el mismo rendimiento.</p>
+<p><a href="https://www.rust-lang.org/es/">https://www.rust-lang.org/es/</a></p>
+<p><a href="https://www.rust-lang.org/es/what/embedded">https://www.rust-lang.org/es/what/embedded</a></p>
+<h3 id="rendimiento"><a class="header" href="#rendimiento">Rendimiento</a></h3>
+<p>Rust es rápido como el rayo y eficiente con la memoria: sin runtime ni colector de basura, puede sustentar servicios de rendimiento crítico, ejecutarse en dispositivos embebidos, e integrarse con otros lenguajes fácilmente.</p>
+<h3 id="fiabilidad"><a class="header" href="#fiabilidad">Fiabilidad</a></h3>
+<p>El rico sistema de tipos de Rust y su modelo de propiedad (ownership) garantizan seguridad de memoria y seguridad de hilos, y te permiten eliminar muchas clases de bugs en tiempo de compilación.</p>
+<h3 id="productividad"><a class="header" href="#productividad">Productividad</a></h3>
+<p>Rust tiene una documentación genial, un compilador accesible con mensajes de error útiles, y herramientas de primera: gestor de paquetes y de proyecto integrado, soporte avanzado multi-editor con autocompletado e inspecciones de tipos, auto-formateador, etc.</p>
+<h2 id="rust-en-sistemas-embebidas"><a class="header" href="#rust-en-sistemas-embebidas">Rust en Sistemas Embebidas</a></h2>
+<p>Aunque todavia no es común encontrar firmware escrito en Rust, tiene ventajas de seguridad y facilidad de desarrollo.</p>
+<h3 id="análisis-estático-potente"><a class="header" href="#análisis-estático-potente">Análisis estático potente</a></h3>
+<p>Aplica la configuración de pins y periféricos en tiempo de compilación. Garantiza que los recursos no son usados accidentalmente por otras partes de tu aplicación. </p>
+<h3 id="memoria-flexible"><a class="header" href="#memoria-flexible">Memoria flexible</a></h3>
+<p>La gestión dinámica de memoria es opcional. Usa un gestor de memoria global y estructuras de datos dinámicas. O prescinde del heap y asigna espacio para todo estáticamente. </p>
+<h3 id="concurrencia-sin-miedo"><a class="header" href="#concurrencia-sin-miedo">Concurrencia sin miedo</a></h3>
+<p>Rust previene el estado compartido accidentalmente entre hilos. Usa concurrencia con el enfoque que desees, y siempre tendrás las fuertes garantías de Rust. </p>
+<h3 id="interoperabilidad"><a class="header" href="#interoperabilidad">Interoperabilidad</a></h3>
+<p>Integra Rust en tu código C ya existente o aprovecha uno de los SDKs disponibles para escribir una aplicación en Rust. </p>
+<h3 id="portabilidad"><a class="header" href="#portabilidad">Portabilidad</a></h3>
+<p>Escribe una biblioteca o driver una sola vez, y úsala en múltiples sistemas, desde pequeños microcontroladores hasta potentes placas integradas. </p>
+<h3 id="impulsado-por-la-comunidad"><a class="header" href="#impulsado-por-la-comunidad">Impulsado por la comunidad</a></h3>
+<p>Como parte del proyecto open source Rust, el soporte para sistemas embebidos está respaldado por una comunidad open source ejemplar, con apoyo de socios comerciales. </p>
+<blockquote>
+<p>Rust nos permite desplegar software más correcto y más rápidamente de lo que imaginábamos. Gracias a Rust podemos dar la seguridad de memoria por sentada, mientras que otros beneficios de un lenguaje de coste cero con un sistema de tipos sofisticado nos ayudan a desarrollar software mantenible. Rust hace felices a nuestros clientes, así como a nuestros ingenieros.</p>
+</blockquote>
+<p>Marc Brinkmann, CEO, 49nord</p>
+<h3 id="empresas-utilizando-rust-en-produción"><a class="header" href="#empresas-utilizando-rust-en-produción">Empresas utilizando Rust en Produción</a></h3>
+<p>Mozilla Firefox </p>
+<p><a href="https://www.rust-lang.org/production/users">https://www.rust-lang.org/production/users</a></p>
+<h1 id="rtos"><a class="header" href="#rtos">RTOS</a></h1>
+<h1 id="freertos-c"><a class="header" href="#freertos-c">FreeRTOS (C)</a></h1>
+<p>Real-time operating system for microcontrollers</p>
+<p>Developed in partnership with the world’s leading chip companies over a 15-year period, and now downloaded every 170 seconds, FreeRTOS is a market-leading real-time operating system (RTOS) for microcontrollers and small microprocessors. Distributed freely under the MIT open source license, FreeRTOS includes a kernel and a growing set of IoT libraries suitable for use across all industry sectors. FreeRTOS is built with an emphasis on reliability and ease of use.</p>
+<p><a href="https://www.freertos.org/">https://www.freertos.org/</a></p>
+<p><a href="https://www.freertos.org/Documentation/RTOS_book.html">https://www.freertos.org/Documentation/RTOS_book.html</a></p>
+<p>AWS compatible.</p>
+<h1 id="mbed"><a class="header" href="#mbed">Mbed</a></h1>
+<p><a href="https://os.mbed.com/mbed-os/">https://os.mbed.com/mbed-os/</a></p>
+<p>RTOS core based on the widely used open-source CMSIS-RTOS RTX.</p>
+<p><a href="https://os.mbed.com/docs/mbed-os/v6.10/introduction/index.html">https://os.mbed.com/docs/mbed-os/v6.10/introduction/index.html</a></p>
+<h1 id="full-profile"><a class="header" href="#full-profile">Full Profile</a></h1>
+<p>The full profile of Mbed OS is an RTOS (it includes an RTX and all RTOS APIs), so it supports deterministic, multithreaded, real-time software execution. The RTOS primitives are always available, allowing drivers and applications to rely on threads, semaphores, mutexes and other RTOS features. It also includes all APIs by default, although you can remove unused ones at build time.</p>
+<h2 id="bare-metal-profile"><a class="header" href="#bare-metal-profile">Bare Metal Profile</a></h2>
+<p>The bare metal profile doesn't include an RTX and is therefore not an RTOS - it is designed for applications that do not require complex thread management. It is also designed for constrained devices, and therefore focuses on minimising the size of the final application: by default, it includes only the smallest possible set of APIs, to which you can manually add APIs your application requires. The bare metal profile can use the small C libraries (which are not thread safe) to further minimise the size of the application. Mbed 2 users who want to move to Mbed OS 6 should use the bare metal profile.</p>
+<h2 id="licensing"><a class="header" href="#licensing">Licensing</a></h2>
+<p>We release Mbed OS under an Apache 2.0 license, so you can confidently use it in commercial and personal projects.</p>
+<h1 id="real-time-interrupt-driven-concurrency-rtic-framework-rust"><a class="header" href="#real-time-interrupt-driven-concurrency-rtic-framework-rust">Real-Time Interrupt-driven Concurrency (RTIC) framework (Rust)</a></h1>
+<p>A concurrency framework for building real-time systems.</p>
+<p>Formerly known as Real-Time For the Masses.</p>
+<p><a href="https://docs.rs/rtic-core/0.3.1/rtic_core/">https://docs.rs/rtic-core/0.3.1/rtic_core/</a></p>
+<p><a href="https://rtic.rs/0.5/book/en/">https://rtic.rs/0.5/book/en/</a></p>
+<p>Embedded Rust</p>
+<p><a href="https://docs.rust-embedded.org/book/intro/index.html">https://docs.rust-embedded.org/book/intro/index.html</a></p>
+<p>Embedded Rust Details</p>
+<p><a href="https://docs.rust-embedded.org/embedonomicon/">https://docs.rust-embedded.org/embedonomicon/</a></p>
+<h1 id="license"><a class="header" href="#license">License</a></h1>
+<p>All source code (including code snippets) is licensed under either of</p>
+<ul>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0 LICENSE-APACHE</a></li>
+<li><a href="https://opensource.org/licenses/MIT">MIT license LICENSE-MIT</a></li>
+</ul>
+<p>at your option.</p>
+<h1 id="tasks"><a class="header" href="#tasks">Tasks</a></h1>
+<p>as the unit of concurrency <sup class="footnote-reference"><a href="#1">1</a></sup>. Tasks can be event triggered (fired in response to asynchronous stimuli) or spawned by the application on demand.</p>
+<h1 id="message-passing"><a class="header" href="#message-passing">Message passing</a></h1>
+<p>MP between tasks. Specifically, messages can be passed to software tasks at spawn time.</p>
+<h1 id="a-timer-queue"><a class="header" href="#a-timer-queue">A timer queue</a></h1>
+<p>Software tasks can be scheduled to run at some time in the future. This feature can be used to implement periodic tasks.</p>
+<h1 id="preemptive-multitasking"><a class="header" href="#preemptive-multitasking">preemptive multitasking</a></h1>
+<p>Support for prioritization of tasks and, thus, preemptive multitasking.</p>
+<h1 id="efficient-and-data-race-free-memory-sharing"><a class="header" href="#efficient-and-data-race-free-memory-sharing">Efficient and data race free memory sharing</a></h1>
+<p>through fine grained priority based critical sections.</p>
+<h1 id="deadlock-free-execution"><a class="header" href="#deadlock-free-execution">Deadlock free execution</a></h1>
+<p>guaranteed at compile time. This is an stronger guarantee than what's provided by the standard Mutex abstraction.</p>
+<h1 id="minimal-scheduling-overhead"><a class="header" href="#minimal-scheduling-overhead">Minimal scheduling overhead.</a></h1>
+<p>The task scheduler has minimal software footprint; the hardware does the bulk of the scheduling.</p>
+<h1 id="highly-efficient-memory-usage"><a class="header" href="#highly-efficient-memory-usage">Highly efficient memory usage</a></h1>
+<p>All the tasks share a single call stack and there's no hard dependency on a dynamic memory allocator.</p>
+<h1 id="all-cortex-m-devices-are-fully-supported"><a class="header" href="#all-cortex-m-devices-are-fully-supported">All Cortex-M devices are fully supported.</a></h1>
+<h1 id="worst-case-execution-time-wcet"><a class="header" href="#worst-case-execution-time-wcet">Worst Case Execution Time WCET</a></h1>
+<p>This task model is amenable to known WCET (Worst Case Execution Time) analysis and scheduling analysis techniques. (Though we haven't yet developed Rust friendly tooling for that.)</p>
+<h1 id="resumen"><a class="header" href="#resumen">Resumen</a></h1>
+<p>The future of rust RTOS' is much more promising than the future of C RTOS', there is so much room for innovation; take a look at r3 for example, which leverages unstable rust features. Unfortunately the reality is C RTOS' are much more mature.</p>
+<!-- https://docs.rs/r3/0.1.1/r3/ -->
+<h1 id="dbc-1"><a class="header" href="#dbc-1">DBC</a></h1>
+<p>DBC file is a proprietary format that describes the data over a CAN bus. </p>
+<p><a href="http://socialledge.com/sjsu/index.php/DBC_Format">http://socialledge.com/sjsu/index.php/DBC_Format</a></p>
+<p><a href="https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/dbc-primer.html">https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/dbc-primer.html</a></p>
+<p><a href="https://www.csselectronics.com/screen/page/can-dbc-file-database-intro/language/en">https://www.csselectronics.com/screen/page/can-dbc-file-database-intro/language/en</a></p>
+<p><a href="http://read.pudn.com/downloads766/ebook/3041455/DBC_File_Format_Documentation.pdf">http://read.pudn.com/downloads766/ebook/3041455/DBC_File_Format_Documentation.pdf</a></p>
+<p>ej.</p>
+<pre><code>VERSION &quot;DBC Example 1.0&quot;
+
+BS_: 500000 : 0,0
+
+BO_ 500 IO_DEBUG: 4 IO
+ SG_ IO_DEBUG_test_unsigned : 0|8@1+ (1,0) [0|0] &quot;&quot; DBG
+ SG_ IO_DEBUG_test_signed : 8|8@1- (1,-128) [0|0] &quot;&quot; DBG
+ SG_ IO_DEBUG_test_float1 : 16|8@1+ (0.1,0) [0|0] &quot;&quot; DBG
+ SG_ IO_DEBUG_test_float2 : 24|12@1+ (0.01,-20.48) [-20.48|20.47] &quot;&quot; DBG
+ 
+ 
+BO_ 500 IO_DEBUG: 4 IO
+ SG_ IO_DEBUG_test_enum : 8|8@1+ (1,0) [0|0] &quot;&quot; DBG
+
+BA_ &quot;FieldType&quot; SG_ 500 IO_DEBUG_test_enum &quot;IO_DEBUG_test_enum&quot;;
+
+VAL_ 500 IO_DEBUG_test_enum 2 &quot;IO_DEBUG_test2_enum_two&quot; 1 &quot;IO_DEBUG_test2_enum_one&quot; ; 
+</code></pre>
+<h2 id="j1939-1"><a class="header" href="#j1939-1">J1939</a></h2>
+<p>DBC Definition de J1939 500 Euros</p>
+<p><a href="https://github.com/commaai/opendbc.git">https://github.com/commaai/opendbc.git</a></p>
+<p><a href="https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/dbc-primer.html">https://docs.openvehicles.com/en/latest/components/vehicle_dbc/docs/dbc-primer.html</a></p>
+<h1 id="librerias"><a class="header" href="#librerias">Librerias</a></h1>
+<h2 id="dbcc"><a class="header" href="#dbcc">DBCC</a></h2>
+<p>dbcc can translate data base CAN files into Rust code. The generated code allows interacting with CAN signals in a type safe manner by e.g. matching against signal value enum types.</p>
+<p>Fuente <a href="https://crates.io/crates/dbcc/2.0.0">https://crates.io/crates/dbcc/2.0.0</a></p>
+<h2 id="canparse"><a class="header" href="#canparse">CanParse</a></h2>
+<p>A CAN signal and definition parser, written in Rust.</p>
+<p>The goal of canparse is to provide a means of converting CAN frames into pre-defined signals, via CANdb definition input (DBC). One common application is the J1939 spec, which defines a set of common parameters for heavy-duty trucks and other vehicles. PgnLibrary is also included as an application of DBC, to give first-class support for the PGN/SPN schema.</p>
+<p>Fuente <a href="https://crates.io/crates/canparse">https://crates.io/crates/canparse</a></p>
+<p><a href="https://docs.rs/canparse/0.1.4/canparse/">https://docs.rs/canparse/0.1.4/canparse/</a></p>
+<h2 id="dbc-codegen"><a class="header" href="#dbc-codegen">DBC Codegen</a></h2>
+<p><a href="https://crates.io/crates/dbc-codegen-cli">https://crates.io/crates/dbc-codegen-cli</a></p>
+<p><a href="https://crates.io/crates/dbc-codegen">https://crates.io/crates/dbc-codegen</a></p>
+<h2 id="can-dbc"><a class="header" href="#can-dbc">CAN DBC</a></h2>
+<p><a href="https://crates.io/crates/can-dbc/3.0.2">https://crates.io/crates/can-dbc/3.0.2</a></p>
+<h1 id="mdf"><a class="header" href="#mdf">MDF</a></h1>
+<p>MDF (Measurement Data Format) is a binary file format to store recorded or calculated data for post-measurement processing, off-line evaluation or long-term storage. The format has become a de-facto standard for measurement &amp; calibration systems (MC-systems), but is also used in many other application areas.</p>
+<p>4.2.0 free for ASAM members </p>
+<p><a href="https://www.asam.net/standards/detail/mdf/">https://www.asam.net/standards/detail/mdf/</a></p>
+<p>MDF 3.3.1 free of charge, email required</p>
+<p><a href="https://www.vector.com/int/en/download/?tx_vectorproducts_productdownloaddetail%5Bdownload%5D=22555&amp;tx_vectorproducts_productdownloaddetail%5Baction%5D=show&amp;tx_vectorproducts_productdownloaddetail%5Bcontroller%5D=Productdownload&amp;cHash=a3c4c1a2badec7159b691262e4d740d7">https://www.vector.com/int/en/download/?tx_vectorproducts_productdownloaddetail%5Bdownload%5D=22555&amp;tx_vectorproducts_productdownloaddetail%5Baction%5D=show&amp;tx_vectorproducts_productdownloaddetail%5Bcontroller%5D=Productdownload&amp;cHash=a3c4c1a2badec7159b691262e4d740d7</a></p>
+<p>Python Package</p>
+<p><a href="https://asammdf.readthedocs.io/en/latest/">https://asammdf.readthedocs.io/en/latest/</a></p>
+<p><a href="https://pypi.org/project/asammdf/">https://pypi.org/project/asammdf/</a></p>
+<h1 id="simulación-fisica"><a class="header" href="#simulación-fisica">Simulación Fisica</a></h1>
+<p>Se propone realizar una --</p>
+<h1 id="nvidia-physx"><a class="header" href="#nvidia-physx">Nvidia Physx</a></h1>
+<h1 id="rapier3d"><a class="header" href="#rapier3d">rapier3d</a></h1>
+<h1 id="actividades"><a class="header" href="#actividades">Actividades</a></h1>
+<pre><code class="language-plantuml">@startuml
+
+(*) --&gt; &quot;Planeación&quot;
+--&gt; ===P1===
+
+=== E1 === --&gt; &quot;Pruebas de Vehiculo en Pista&quot;
+--&gt; &quot;Informe Final&quot;
+--&gt; (*)
+
+
+partition &quot;Modelo y Simulación&quot; {
+  ===P1=== --&gt; &quot;Determinar Requerimientos&quot;
+  --&gt; &quot;Desarrollar Modelo Matemático&quot; 
+  note left: &quot;Masa puntual&quot;
+  --&gt; &quot;Realizar Simulación&quot;
+  note left: &quot;EPA DriveCycle&quot;
+  --&gt; &quot;Validar Simulación&quot;
+  --&gt;[Iterar] &quot;Desarrollar Modelo Matemático&quot;
+  &quot;Validar Simulación&quot; --&gt;  &quot;Determinar Escenarios&quot;
+  note left: &quot;Curva, Parada Emergencia, Choque&quot;
+  --&gt; &quot;Modelar Escenarios&quot;
+  --&gt; &quot;Simular Escenarios&quot;
+  --&gt; ===E1===
+}
+
+
+partition &quot;Interfaz de Usuario&quot; {
+  ===P1=== --&gt; &quot;Desarrollar Prototipo en PC&quot;
+  --&gt; &quot;Probar Prototipo de UI&quot;
+  --&gt; &quot;Portar Software a Hardware&quot;
+  --&gt; &quot;Probar UI sobre Hardware&quot;
+  note right: Cali
+  --&gt; ===E1===
+}
+
+partition &quot;Sistema Control&quot; {
+ ===P1=== --&gt;  &quot;Determinar información disponible por CAN&quot;
+  note right: Cali (OBD2 y Propietario)
+  --&gt; &quot;Realizar Ingeniería Inversa&quot;
+  --&gt; if &quot;Hay Información Necesaria&quot; then
+  --&gt;[Si] &quot;Conectar OBD2&quot;
+  --&gt; ===CAN===
+  else
+  --&gt;[No] &quot;Conseguir Sensores&quot;
+  --&gt; &quot;Instalar Sensores&quot;
+  note right: Cali
+  --&gt; &quot;Instalar 2° Red CAN&quot;
+  note right: Cali	
+  endif 	
+  --&gt; ===CAN===	
+  --&gt; &quot;Determinar Formato de Datos CAN y Mensajes&quot;
+  --&gt; &quot;Desarrollar Software en PC&quot;
+  --&gt; &quot;Probar Software con datos de Simulación&quot;
+  --&gt; &quot;Desarrollar Firmware&quot;
+  note right: &quot;Portar Software&quot;
+  --&gt; &quot;Probar ECU Estatica&quot;
+  note right: Cali
+  --&gt; &quot;Probar ECU Dinamica&quot;
+  note right: Cali
+  --&gt; ===E1===
+}
+
+
+@enduml
+</code></pre>
+<h1 id="pruebas-de-unidad"><a class="header" href="#pruebas-de-unidad">Pruebas de Unidad</a></h1>
+<p><a href="https://doc.rust-lang.org/beta/rust-by-example/testing/unit_testing.html">https://doc.rust-lang.org/beta/rust-by-example/testing/unit_testing.html</a></p>
+<p><a href="https://github.com/utkarshkukreti/speculate.rs">https://github.com/utkarshkukreti/speculate.rs</a></p>
+<h1 id="pruebas-de-documentación"><a class="header" href="#pruebas-de-documentación">Pruebas de Documentación</a></h1>
+<p><a href="https://doc.rust-lang.org/beta/rust-by-example/testing/doc_testing.html">https://doc.rust-lang.org/beta/rust-by-example/testing/doc_testing.html</a></p>
+<h1 id="pruebas-de-integración"><a class="header" href="#pruebas-de-integración">Pruebas de Integración</a></h1>
+<p><a href="https://doc.rust-lang.org/beta/rust-by-example/testing/integration_testing.html">https://doc.rust-lang.org/beta/rust-by-example/testing/integration_testing.html</a></p>
+<h1 id="pruebas-hil-hardware-in-the-loop"><a class="header" href="#pruebas-hil-hardware-in-the-loop">Pruebas HIL (Hardware in the Loop)</a></h1>
+<h1 id="existentes-publicaciones"><a class="header" href="#existentes-publicaciones">Existentes Publicaciones</a></h1>
+<p>Using Rust as a Complement to C for Embedded Systems Software Development
+https://lup.lub.lu.se/student-papers/search/publication/8938297</p>
+<p>Safe Systems Programming in Rust:The Promise and the Challenge
+https://people.mpi-sws.org/~dreyer/papers/safe-sysprog-rust/paper.pdf</p>
+<p>Understanding Memory and Thread Safety Practicesand Issues in Real-World Rust Programs
+https://songlh.github.io/paper/rust-study.pdf</p>
+<p>Future Programming Paradigms in the Automotive Industry
+https://www.vda.de/dam/vda/publications/2016/FAT/FAT-Schriftenreihe_287.pdf</p>
+<h2 id="web"><a class="header" href="#web">Web</a></h2>
+<p>plan to qualify the Rust language and compiler for use in the mission and safety-critical domains.
+https://ferrous-systems.com/blog/sealed-rust-the-pitch/</p>
+<p>The case for using Rust for Automotive software
+https://medium.com/@sojan.james/the-case-for-using-rust-for-automotive-software-19400779f126</p>
+<h2 id="charlas"><a class="header" href="#charlas">Charlas</a></h2>
+<p>Rust for Safety Critical Systems
+https://oxidizeconf.com/sessions/safety-panel/</p>
+<p>La seguridad en el sistema es sumamente importante.</p>
+<p>Existe un modo de fallo que puede ocurrir cuando el vehiculo esta en una curva.</p>
+<p>Es posible que las llantas atras pueden deslizar</p>
+<p>a) por exceso de velocidad
+b) por exceso de aceleración
+c) por frenado</p>
+<p>En cualquier caso se considera que lo más seguro es que el sistema 4x4 se debe desconectar.</p>
+<p>Se deja como proyecto de investigación la posibilidad de corrección del deslizo activo por parte de las llantas traseras.</p>
+<p>Para detectar el caso de la perdida de tracción es necesario sensar la atitude, posicion, velocidad y aceleración del carro.</p>
+<h1 id=""><a class="header" href="#"></a></h1>
+<h1 id="unidad-de-medición-inercial"><a class="header" href="#unidad-de-medición-inercial">Unidad de medición inercial</a></h1>
+<p>Se propone utilizar 2 sensores IMU, uno en la parte adelante del vehiculo y uno trasero.</p>
+<h1 id="filtro-kalman"><a class="header" href="#filtro-kalman">Filtro Kalman</a></h1>
+<p>Para (Sensor Fusion)</p>
+<h1 id="filtro-kalman-extendido"><a class="header" href="#filtro-kalman-extendido">Filtro Kalman Extendido</a></h1>
+<p>Integración de GPS requiere Extendido... </p>
+<p>An algorithm for fusing low-cost triaxial MEMS gyroscope and accelerometer measurements.
+https://crates.io/crates/dcmimu</p>
+<p>A DCM Based Attitude Estimation Algorithm for Low-Cost MEMS IMUs</p>
+<blockquote>
+<p>To be able to use these low-cost MEMS sensors with precision in all situations, a novel attitude estimation algorithm is proposed for fusing triaxial gyroscope and accelerometer measurements. An extended Kalman filter is implemented to estimate attitude in direction cosine matrix (DCM) formation and to calibrate gyroscope biases online.</p>
+</blockquote>
+<p>Navigation filter based on an Error State Kalman Filter (ESKF) 
+https://crates.io/crates/eskf</p>
+<p>An Error State Kalman Filter is a navigation filter based on regular Kalman filters, more specifically Extended Kalman Filters, that model the &quot;error state&quot; of the system instead of modelling the movement of the system explicitly.</p>
+<p>The navigation filter is used to track position, velocity and orientation of an object which is sensing its state through an Inertial Measurement Unit (IMU) and some means of observing the true state of the filter such as GPS, LIDAR or visual odometry.</p>
+<p>Quaternion kinematics for the error-state Kalman filter
+https://github.com/nordmoen/eskf-rs/blob/HEAD/docs/Error_State_Kalman_Filter.pdf</p>
+<h1 id="ahrs-attitude-and-heading-reference-system"><a class="header" href="#ahrs-attitude-and-heading-reference-system">AHRS attitude and heading reference system</a></h1>
+<p>https://x-io.co.uk/open-source-imu-and-ahrs-algorithms/</p>
+<p>The AHRS sensor fusion algorithm to combines gyroscope, accelerometer, and magnetometer measurements into a single measurement of orientation relative to the Earth (NWU convention).</p>
+<p>The algorithm provides the measurement of orientation as a quaternion. The library includes functions for converting this quaternion to a rotation matrix and Euler angles.</p>
+<p>The algorithm also provides a measurement of linear acceleration and Earth acceleration. Linear acceleration is equal to the accelerometer measurement with the 1 g of gravity removed. Earth acceleration is a measurement of linear acceleration in the Earth coordinate frame.</p>
+<p>Fuente https://github.com/xioTechnologies/Fusion</p>
+<p>Paper https://ieeexplore.ieee.org/document/4608934</p>
+<p>https://www.x-io.co.uk/res/doc/madgwick_internal_report.pdf</p>
+<p>A Rust port of Madgwick's AHRS algorithm
+https://crates.io/crates/ahrs</p>
+<h1 id="adas"><a class="header" href="#adas">ADAS</a></h1>
+<p>Se puede detectar que las condiciones se estan aproximando a perder tracción y avisar al conductor.</p>
+<h1 id="arquitectura"><a class="header" href="#arquitectura">Arquitectura</a></h1>
+<pre><code class="language-plantuml">@startuml
+skinparam handwritten true
+@startdot
+digraph foo {
+  node [style=rounded]
+  node1 [shape=box]
+  node2 [fillcolor=yellow, style=&quot;rounded,filled&quot;, shape=diamond]
+  node3 [shape=record, label=&quot;{ a | b | c }&quot;]
+
+  node1 -&gt; node2 -&gt; node3
+}
+@enddot
+@enduml
+</code></pre>
+<p><a href="https://plantuml.com/ditaa">https://plantuml.com/ditaa</a></p>
+<pre><code class="language-plantuml">@startuml
+ditaa
++--------+   +-------+    +-------+
+|        +---+ ditaa +--&gt; |       |
+|  Text  |   +-------+    |diagram|
+|Document|   |!magic!|    |       |
+|     {d}|   |       |    |       |
++---+----+   +-------+    +-------+
+    :                         ^
+    |       Lots of work      |
+    +-------------------------+
+@enduml
+</code></pre>
+<pre><code class="language-plantuml">@startuml
+@startmindmap
+* root node
+	* some first level node
+		* second level node
+		* another second level node
+	* another first level node
+@endmindmap
+@enduml
+</code></pre>
+<h1 id="secuencia"><a class="header" href="#secuencia">Secuencia</a></h1>
+<pre><code class="language-plantuml">@startuml
+skinparam handwritten true
+actor Bob [[http://plantuml.com/sequence]]
+actor &quot;This is [[http://plantuml.com/sequence Alice]] actor&quot; as Alice
+Bob -&gt; Alice [[http://plantuml.com/start]] : hello
+note left [[http://plantuml.com/start]]
+  a note with a link
+end note
+Alice -&gt; Bob : hello with [[http://plantuml.com/start{Tooltip for message} some link]]
+note right [[http://plantuml.com/start]] : another note
+note left of Bob
+You can use [[http://plantuml.com/start links in notes]] also.
+end note
+@enduml
+</code></pre>
+<h1 id="clases"><a class="header" href="#clases">Clases</a></h1>
+<pre><code class="language-plantuml">@startuml
+skinparam handwritten true
+class Carro [[http://plantuml.com/link]]
+class Llanta [[http://plantuml.com/sequence]]
+note left [[http://plantuml.com]]
+foo
+end note
+Carro *-- Llanta [[http://plantuml.com/class]] : has some
+@enduml
+</code></pre>
+<pre><code class="language-plantuml">@startuml
+skinparam handwritten true
+nwdiag {
+  network IP {
+      //address = &quot;210.x.x.x/24&quot;
+
+      CAN_gateway 
+      //[address = &quot;210.x.x.1&quot;];
+  }
+  network CAN {
+      //address = &quot;172.x.x.x/24&quot;;
+
+      CAN_gateway 
+      //[address = &quot;172.x.x.1&quot;];
+      db01;
+      db02;
+  }
+}
+@enduml
+</code></pre>
+<h1 id="stlog"><a class="header" href="#stlog">StLog</a></h1>
+<p>Ultra lightweight logging framework for resource constrained devices</p>
+<ul>
+<li>
+<p>O(1) execution time. Logging a message of arbitrary size is done in a constant number of instructions.</p>
+</li>
+<li>
+<p>O(0) memory usage. The messages are NOT stored in the target device memory.</p>
+</li>
+<li>
+<p>Supports different logging levels: error, warning, info, debug and trace, in decreasing level of severity. By default, the dev profile logs debug, and more severe, messages and the release profile logs info, and more severe, messages, but this can changed using the Cargo features of this crate.</p>
+</li>
+<li>
+<p>Provides a global logging mode</p>
+</li>
+</ul>
+<p><a href="https://crates.io/crates/stlog">https://crates.io/crates/stlog</a></p>
+<p><a href="https://japaric.github.io/stlog/stlog/">https://japaric.github.io/stlog/stlog/</a></p>
+<p>Decoded with</p>
+<p><a href="https://crates.io/crates/stcat">https://crates.io/crates/stcat</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
