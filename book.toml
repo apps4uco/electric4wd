@@ -1,0 +1,14 @@
+[book]
+authors = ["Andrew Bailey"]
+language = "es"
+multilingual = false
+src = "src"
+
+[output.html]
+mathjax-support = true
+
+[preprocessor.plantuml]
+#plantuml-cmd="plantuml.exe"
+jplantuml-cmd="java -jar $HOME/lib/plantuml.jar"
+
+#see uml_parser = "0.1.1"
