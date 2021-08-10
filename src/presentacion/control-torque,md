@@ -1,0 +1,13 @@
+# Control de Torque Llantas Traseras
+
+## Requerimientos
+
+CAN Bus
+
+Sensors: Corriente, Voltaje, Encoder (2a CAN Bus?)
+
+Sensores opcionales: Puerta, Volante, 9DOF (Accelerometro, Giro, Magnetometro)
+
+Sistema Tiempo Real (Microcontroller / Beagle X14)
+
+Modelo del sistema en Firmware (emfasis en Seguridad)

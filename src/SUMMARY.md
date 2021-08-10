@@ -2,6 +2,17 @@
 
 - [Proyecto](./proyecto.md)
 - [Objetivos](./objetivos.md)
+- [Avances del Proyecto](./presentacion/index.md)
+	- [Personal](./presentacion/personal.md)
+	- [Aspectos Transversales](./presentacion/transversal.md)
+		- [Lenguaje de Programación](./presentacion/lenguaje.md)
+	- [Control de Torque Llantas Traseras](./presentacion/control-torque,md)
+	- [Diagnosticar Funcionamiento del Vehiculo](./presentacion/diagnosticar.md)
+	- [Optimización Eje Trasero](./presentacion/optimizacion.md)
+	- [Interfaz de Control Manual](./presentacion/control-manual.md)
+	- [Interfaz de Control Automático](./presentacion/control-automatico.md)
+	- [Software](./presentacion/software.md)
+	- [Proximos Pasos](./presentacion/proximos-pasos.md)
 - [Cronograma](./cronograma.md)
 - [Fase 1](./fase_1.md)
 	- [Fase 1.1](./fase_1_1.md)
@@ -23,6 +34,8 @@
 - [OBDII](./obd2.md)
 - [J1939](./j1939.md)
 - [J1939 PGN](./j1939-pgn.md)
+- [CAN Analisis](./can_analisis.md)
+	- [CAN IDs](./can_ids.md)
 - [Plataforma](./plataforma.md)
 - [Interfaz de Usuario](./interfaz_usuario.md)
 	- [Icons](./icons.md)
@@ -42,5 +55,3 @@
 - [Secuencia](./secuencia.md)
 - [Clases](./clases.md)
 - [Logging](./logging.md)
-
-
