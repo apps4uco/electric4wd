@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html lang="es" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>CAN IDs</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+                <link rel="stylesheet" href="css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+                <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="proyecto.html"><strong aria-hidden="true">1.</strong> Proyecto</a></li><li class="chapter-item expanded "><a href="objetivos.html"><strong aria-hidden="true">2.</strong> Objetivos</a></li><li class="chapter-item expanded "><a href="presentacion/index.html"><strong aria-hidden="true">3.</strong> Avances del Proyecto</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="presentacion/personal.html"><strong aria-hidden="true">3.1.</strong> Personal</a></li><li class="chapter-item expanded "><a href="presentacion/transversal.html"><strong aria-hidden="true">3.2.</strong> Aspectos Transversales</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="presentacion/lenguaje.html"><strong aria-hidden="true">3.2.1.</strong> Lenguaje de Programación</a></li></ol></li><li class="chapter-item expanded "><a href="presentacion/control-torque,md.html"><strong aria-hidden="true">3.3.</strong> Control de Torque Llantas Traseras</a></li><li class="chapter-item expanded "><a href="presentacion/diagnosticar.html"><strong aria-hidden="true">3.4.</strong> Diagnosticar Funcionamiento del Vehiculo</a></li><li class="chapter-item expanded "><a href="presentacion/optimizacion.html"><strong aria-hidden="true">3.5.</strong> Optimización Eje Trasero</a></li><li class="chapter-item expanded "><a href="presentacion/control-manual.html"><strong aria-hidden="true">3.6.</strong> Interfaz de Control Manual</a></li><li class="chapter-item expanded "><a href="presentacion/control-automatico.html"><strong aria-hidden="true">3.7.</strong> Interfaz de Control Automático</a></li><li class="chapter-item expanded "><a href="presentacion/software.html"><strong aria-hidden="true">3.8.</strong> Software</a></li><li class="chapter-item expanded "><a href="presentacion/proximos-pasos.html"><strong aria-hidden="true">3.9.</strong> Proximos Pasos</a></li></ol></li><li class="chapter-item expanded "><a href="cronograma.html"><strong aria-hidden="true">4.</strong> Cronograma</a></li><li class="chapter-item expanded "><a href="fase_1.html"><strong aria-hidden="true">5.</strong> Fase 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="fase_1_1.html"><strong aria-hidden="true">5.1.</strong> Fase 1.1</a></li></ol></li><li class="chapter-item expanded "><a href="fase_2.html"><strong aria-hidden="true">6.</strong> Fase 2</a></li><li class="chapter-item expanded "><a href="fase_3.html"><strong aria-hidden="true">7.</strong> Fase 3</a></li><li class="chapter-item expanded "><a href="fase_4.html"><strong aria-hidden="true">8.</strong> Fase 4</a></li><li class="chapter-item expanded "><a href="fase_5.html"><strong aria-hidden="true">9.</strong> Fase 5</a></li><li class="chapter-item expanded "><a href="fase_6.html"><strong aria-hidden="true">10.</strong> Fase 6</a></li><li class="chapter-item expanded "><a href="fase_7.html"><strong aria-hidden="true">11.</strong> Fase 7</a></li><li class="chapter-item expanded "><a href="fase_8.html"><strong aria-hidden="true">12.</strong> Fase 8</a></li><li class="chapter-item expanded "><a href="fase_9.html"><strong aria-hidden="true">13.</strong> Fase 9</a></li><li class="chapter-item expanded "><a href="fase_10.html"><strong aria-hidden="true">14.</strong> Fase 10</a></li><li class="chapter-item expanded "><a href="normatividad.html"><strong aria-hidden="true">15.</strong> Normatividad</a></li><li class="chapter-item expanded "><a href="modelos.html"><strong aria-hidden="true">16.</strong> Modelos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="modelo_pruebas.html"><strong aria-hidden="true">16.1.</strong> Pruebas del Modelo</a></li><li class="chapter-item expanded "><a href="modelo_validacion.html"><strong aria-hidden="true">16.2.</strong> Validación del Modelo</a></li></ol></li><li class="chapter-item expanded "><a href="escenarios.html"><strong aria-hidden="true">17.</strong> Escenarios</a></li><li class="chapter-item expanded "><a href="obd2.html"><strong aria-hidden="true">18.</strong> OBDII</a></li><li class="chapter-item expanded "><a href="j1939.html"><strong aria-hidden="true">19.</strong> J1939</a></li><li class="chapter-item expanded "><a href="j1939-pgn.html"><strong aria-hidden="true">20.</strong> J1939 PGN</a></li><li class="chapter-item expanded "><a href="can_analisis.html"><strong aria-hidden="true">21.</strong> CAN Analisis</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="can_ids.html" class="active"><strong aria-hidden="true">21.1.</strong> CAN IDs</a></li></ol></li><li class="chapter-item expanded "><a href="plataforma.html"><strong aria-hidden="true">22.</strong> Plataforma</a></li><li class="chapter-item expanded "><a href="interfaz_usuario.html"><strong aria-hidden="true">23.</strong> Interfaz de Usuario</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="icons.html"><strong aria-hidden="true">23.1.</strong> Icons</a></li><li class="chapter-item expanded "><a href="interfaz_usuario_libreria.html"><strong aria-hidden="true">23.2.</strong> Interfaz de Usuario Libreria</a></li></ol></li><li class="chapter-item expanded "><a href="lenguaje.html"><strong aria-hidden="true">24.</strong> Lenguaje de Programación</a></li><li class="chapter-item expanded "><a href="rtos.html"><strong aria-hidden="true">25.</strong> RTOS</a></li><li class="chapter-item expanded "><a href="dbc.html"><strong aria-hidden="true">26.</strong> DBC</a></li><li class="chapter-item expanded "><a href="mdf.html"><strong aria-hidden="true">27.</strong> MDF</a></li><li class="chapter-item expanded "><a href="simulacion_fisica.html"><strong aria-hidden="true">28.</strong> Simulación Física</a></li><li class="chapter-item expanded "><a href="actividades.html"><strong aria-hidden="true">29.</strong> Actividades</a></li><li class="chapter-item expanded "><a href="pruebas_unidad.html"><strong aria-hidden="true">30.</strong> Pruebas de Unidad</a></li><li class="chapter-item expanded "><a href="pruebas_integracion.html"><strong aria-hidden="true">31.</strong> Pruebas de Integración</a></li><li class="chapter-item expanded "><a href="pruebas_HIL.html"><strong aria-hidden="true">32.</strong> Pruebas HIL</a></li><li class="chapter-item expanded "><a href="publicaciones.html"><strong aria-hidden="true">33.</strong> Publicaciones</a></li><li class="chapter-item expanded "><a href="medicion_inercial.html"><strong aria-hidden="true">34.</strong> Medición Inercial</a></li><li class="chapter-item expanded "><a href="arquitectura.html"><strong aria-hidden="true">35.</strong> Arquitectura</a></li><li class="chapter-item expanded "><a href="secuencia.html"><strong aria-hidden="true">36.</strong> Secuencia</a></li><li class="chapter-item expanded "><a href="clases.html"><strong aria-hidden="true">37.</strong> Clases</a></li><li class="chapter-item expanded "><a href="logging.html"><strong aria-hidden="true">38.</strong> Logging</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="archivo-1"><a class="header" href="#archivo-1">Archivo 1</a></h1>
+<h2 id="b50e907e_00000008_00000001-c0374501158d9f78484c11a60d7019a2049a8593c8bc197fc893284266e38ac0_cancsv"><a class="header" href="#b50e907e_00000008_00000001-c0374501158d9f78484c11a60d7019a2049a8593c8bc197fc893284266e38ac0_cancsv">B50E907E_00000008_00000001-C0374501158D9F78484C11A60D7019A2049A8593C8BC197FC893284266E38AC0_CAN.csv</a></h2>
+<h3 id="inicio-14-jul-2021-164138--000000us-utc"><a class="header" href="#inicio-14-jul-2021-164138--000000us-utc">Inicio 14-jul-2021 16:41:38 + 000000us UTC</a></h3>
+<pre><code>+-----+-------+
+| ID  | N     |
++-----+-------+
+| 600 | 19137 |
+| 601 | 19137 |
+| 604 | 19137 |
+| 80  | 19137 |
+| A0  | 19137 |
+| 101 | 12168 |
+| 251 | 9568  |
+| 3C4 | 9568  |
+| 226 | 8109  |
+| 211 | 6120  |
+| 311 | 3828  |
+| 112 | 2438  |
+| 380 | 1914  |
+| 381 | 1914  |
+| 382 | 1914  |
+| 390 | 1914  |
+| 393 | 1914  |
+| 3C0 | 1914  |
+| 602 | 1914  |
+| 603 | 1914  |
+| 605 | 1914  |
+| 610 | 1914  |
+| 81  | 1914  |
+| 3C3 | 1912  |
+| 5B3 | 1753  |
+| 371 | 1215  |
+| 420 | 655   |
+| 422 | 654   |
+| 423 | 654   |
+| 5D1 | 383   |
+| 5D3 | 383   |
+| 5D4 | 383   |
+| 5D5 | 383   |
+| 5D6 | 383   |
+| 5D7 | 383   |
+| 5D8 | 383   |
+| 5D9 | 383   |
+| 5DA | 383   |
+| 5DB | 383   |
+| 5DC | 383   |
+| 5DD | 383   |
+| 5ED | 383   |
+| 5EE | 382   |
+| 5B4 | 349   |
+| 612 | 192   |
+| 613 | 192   |
+| 622 | 192   |
+| 614 | 174   |
+| 611 | 120   |
++-----+-------+
+
+</code></pre>
+<h2 id="observaciones"><a class="header" href="#observaciones">Observaciones</a></h2>
+<p>Hay grupos de IDs que aparecen el mismo número de veces.</p>
+<h3 id="grupo-1-600-601-604-80-a0"><a class="header" href="#grupo-1-600-601-604-80-a0">Grupo 1: 600 601 604 80 A0</a></h3>
+<h3 id="grupo-2-251-3c4"><a class="header" href="#grupo-2-251-3c4">Grupo 2: 251 3C4</a></h3>
+<h3 id="grupo-3-380-381-382-390-393-3c0-602-603-605-610-81"><a class="header" href="#grupo-3-380-381-382-390-393-3c0-602-603-605-610-81">Grupo 3: 380 381 382 390 393 3C0 602 603 605 610 81</a></h3>
+<h3 id="grupo-4-5d1-5d3-5d4-5d5-5d6-5d7-5d8-5d9-5da-5db-5dc-5dd-5ed-5ee"><a class="header" href="#grupo-4-5d1-5d3-5d4-5d5-5d6-5d7-5d8-5d9-5da-5db-5dc-5dd-5ed-5ee">Grupo 4: 5D1 5D3 5D4 5D5 5D6 5D7 5D8 5D9 5DA 5DB 5DC 5DD 5ED 5EE</a></h3>
+<p>Pueden ser relacionados (o puede ser una coincidencia)</p>
+<h1 id="archivo-2"><a class="header" href="#archivo-2">Archivo 2</a></h1>
+<h2 id="b50e907e_00000009_00000001-41221eedded05370015e6062ba9f6329abf14e0a254bb49abadedda3b5a02bdf_cancsv"><a class="header" href="#b50e907e_00000009_00000001-41221eedded05370015e6062ba9f6329abf14e0a254bb49abadedda3b5a02bdf_cancsv">B50E907E_00000009_00000001-41221EEDDED05370015E6062BA9F6329ABF14E0A254BB49ABADEDDA3B5A02BDF_CAN.csv</a></h2>
+<h3 id="inicio-14-jul-2021-164534--000000us-utc"><a class="header" href="#inicio-14-jul-2021-164534--000000us-utc">Inicio 14-jul-2021 16:45:34 + 000000us UTC</a></h3>
+<pre><code>+-----+-------+
+| ID  | N     |
++-----+-------+
+| A0  | 22146 |
+| 80  | 22131 |
+| 600 | 22081 |
+| 601 | 22068 |
+| 604 | 22065 |
+| 251 | 11086 |
+| 3C4 | 11080 |
+| 101 | 10339 |
+| 211 | 5222  |
+| 226 | 4882  |
+| 311 | 4432  |
+| 380 | 2218  |
+| 381 | 2218  |
+| 3C3 | 2218  |
+| 81  | 2217  |
+| 602 | 2211  |
+| 603 | 2211  |
+| 382 | 2207  |
+| 390 | 2207  |
+| 393 | 2207  |
+| 3C0 | 2207  |
+| 605 | 2207  |
+| 610 | 2207  |
+| 112 | 2074  |
+| 371 | 1035  |
+| 5B3 | 1027  |
+| 422 | 758   |
+| 423 | 758   |
+| 420 | 755   |
+| 5D3 | 443   |
+| 5D4 | 443   |
+| 5D5 | 443   |
+| 5D6 | 443   |
+| 5D7 | 443   |
+| 5D8 | 443   |
+| 5DB | 443   |
+| 5DC | 443   |
+| 5DD | 443   |
+| 5ED | 443   |
+| 5EE | 443   |
+| 5D1 | 442   |
+| 5D9 | 440   |
+| 5DA | 440   |
+| 613 | 222   |
+| 622 | 222   |
+| 612 | 221   |
+| 5B4 | 207   |
+| 611 | 103   |
+| 614 | 103   |
++-----+-------+
+
+</code></pre>
+<h1 id="archivo-3"><a class="header" href="#archivo-3">Archivo 3</a></h1>
+<h2 id="b50e907e_00000010_00000001-cf9acdba2f371ba4f9793abd00b615014facad24b775ba38a9acd408706b19e5_cancsv"><a class="header" href="#b50e907e_00000010_00000001-cf9acdba2f371ba4f9793abd00b615014facad24b775ba38a9acd408706b19e5_cancsv">B50E907E_00000010_00000001-CF9ACDBA2F371BA4F9793ABD00B615014FACAD24B775BA38A9ACD408706B19E5_CAN.csv</a></h2>
+<h3 id="inicio-14-jul-2021-164920--000000us-utc"><a class="header" href="#inicio-14-jul-2021-164920--000000us-utc">Inicio 14-jul-2021 16:49:20 + 000000us UTC</a></h3>
+<pre><code>+-----+-----+
+| ID  | N   |
++-----+-----+
+| 101 | 167 |
+| 601 | 150 |
+| 600 | 134 |
+| 80  | 129 |
+| A0  | 129 |
+| 211 | 101 |
+| 251 | 100 |
+| 3C4 | 100 |
+| 604 | 97  |
+| 226 | 88  |
+| 112 | 33  |
+| 311 | 20  |
+| 380 | 20  |
+| 381 | 20  |
+| 3C3 | 20  |
+| 5B3 | 20  |
+| 610 | 19  |
+| 371 | 18  |
+| 605 | 12  |
+| 390 | 11  |
+| 3C0 | 11  |
+| 602 | 11  |
+| 603 | 11  |
+| 81  | 11  |
+| 382 | 10  |
+| 393 | 10  |
+| 420 | 7   |
+| 423 | 7   |
+| 5B4 | 4   |
+| 5D3 | 4   |
+| 5D4 | 4   |
+| 5D5 | 4   |
+| 5D6 | 4   |
+| 5D7 | 4   |
+| 5D8 | 4   |
+| 5DA | 4   |
+| 5DC | 4   |
+| 5DD | 4   |
+| 5ED | 4   |
+| 5EE | 4   |
+| 422 | 3   |
+| 5DB | 3   |
+| 5D1 | 2   |
+| 5D9 | 2   |
+| 612 | 2   |
+| 613 | 2   |
+| 622 | 2   |
+| 611 | 1   |
+| 614 | 1   |
++-----+-----+
+
+</code></pre>
+<h1 id="archivo-4"><a class="header" href="#archivo-4">Archivo 4</a></h1>
+<h2 id="b50e907e_00000011_00000001-fc99cde60865d2b776af38da611b649ecdf2d76a57a81cb872e751e0f6cb3ab6_cancsv"><a class="header" href="#b50e907e_00000011_00000001-fc99cde60865d2b776af38da611b649ecdf2d76a57a81cb872e751e0f6cb3ab6_cancsv">B50E907E_00000011_00000001-FC99CDE60865D2B776AF38DA611B649ECDF2D76A57A81CB872E751E0F6CB3AB6_CAN.csv</a></h2>
+<h3 id="inicio-14-jul-2021-164926--000000us-utc"><a class="header" href="#inicio-14-jul-2021-164926--000000us-utc">Inicio 14-jul-2021 16:49:26 + 000000us UTC</a></h3>
+<pre><code>+-----+------+
+| ID  | N    |
++-----+------+
+| 80  | 6273 |
+| A0  | 6256 |
+| 600 | 6234 |
+| 604 | 6202 |
+| 601 | 6200 |
+| 101 | 5455 |
+| 251 | 3152 |
+| 3C4 | 3100 |
+| 211 | 2751 |
+| 226 | 2424 |
+| 311 | 1251 |
+| 112 | 1083 |
+| 382 | 630  |
+| 393 | 630  |
+| 81  | 630  |
+| 380 | 628  |
+| 3C3 | 627  |
+| 390 | 625  |
+| 3C0 | 622  |
+| 610 | 621  |
+| 602 | 620  |
+| 603 | 620  |
+| 605 | 620  |
+| 381 | 619  |
+| 371 | 546  |
+| 5B3 | 536  |
+| 420 | 217  |
+| 422 | 217  |
+| 423 | 217  |
+| 5DB | 127  |
+| 5DC | 127  |
+| 5DD | 127  |
+| 5D1 | 126  |
+| 5D3 | 126  |
+| 5D4 | 126  |
+| 5D5 | 126  |
+| 5D6 | 126  |
+| 5D7 | 126  |
+| 5D8 | 126  |
+| 5DA | 126  |
+| 5ED | 126  |
+| 5EE | 126  |
+| 5D9 | 125  |
+| 5B4 | 105  |
+| 612 | 63   |
+| 613 | 63   |
+| 622 | 62   |
+| 611 | 54   |
+| 614 | 54   |
++-----+------+
+
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="can_analisis.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="plataforma.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="can_analisis.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="plataforma.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
