@@ -1,6 +1,7 @@
 # Summary
 
 - [Proyecto](./proyecto.md)
+- [Colaborar](./colaborar.md)
 - [Objetivos](./objetivos.md)
 - [Avances del Proyecto](./presentacion/index.md)
 	- [Personal](./presentacion/personal.md)
