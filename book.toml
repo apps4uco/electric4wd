@@ -6,6 +6,7 @@ src = "src"
 
 [output.html]
 mathjax-support = true
+additional-css= ["style.css"]
 
 [preprocessor.plantuml]
 #plantuml-cmd="plantuml.exe"

@@ -36,6 +36,7 @@
 - [J1939 PGN](./j1939-pgn.md)
 - [CAN Analisis](./can_analisis.md)
 	- [CAN IDs](./can_ids.md)
+	- [CAN Diagramas](./can_img.md)
 - [Plataforma](./plataforma.md)
 - [Interfaz de Usuario](./interfaz_usuario.md)
 	- [Icons](./icons.md)
